@@ -1,0 +1,167 @@
+@import "../_variables.module.scss";
+
+.recipePage {
+  .placeholder {
+    background-color: #E5E4E4;
+  }
+
+  .recipeTopSection {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing:border-box;
+    margin-left: -$spacing-s;
+    margin-right: -$spacing-s;
+
+    .intro {
+      flex-basis: 100%;
+      max-width: 100%;
+      box-sizing: border-box;
+      padding: 0 $spacing-s;
+      order: 2;
+
+      @media (min-width: $screen-xs) {
+        flex-basis: 85%;
+        max-width: 85%;
+        order: 1;
+      }
+
+      p {
+        color: $color-text-secondary;
+        margin-bottom: $spacing-l;
+        margin-right: 0;
+
+        @media (min-width: $screen-xs) {
+          margin-right: $spacing-xxxl;
+        }
+      }
+
+      .placeholder {
+        width: 100%;
+        height: 400px;
+        margin-bottom: $spacing-l;
+
+        @media (min-width: $screen-xs) {
+          width: 600px;
+        }
+      }
+    }
+
+    .adSection {
+      flex-basis: 100%;
+      max-width: 100%;
+      box-sizing: border-box;
+      padding: 0 $spacing-s;
+      order: 1;
+      margin-bottom: $spacing-m;
+
+      @media (min-width: $screen-xs) {
+        flex-basis: 15%;
+        max-width: 15%;
+        order: 2;
+        margin-bottom: 0;
+      }
+
+      .placeholder {
+        height: 100px;
+
+        @media (min-width: $screen-xs) {
+          height: 1000px;
+        }
+
+      }
+    }
+  }
+
+  .recipeSection {
+    .recipeName {
+      margin-bottom: $spacing-m;
+    }
+
+    .specs {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: $spacing-l;
+
+      .specItem {
+        padding-right: $spacing-l ;
+
+        .primary {
+          font-weight: $font-weight-bold;
+        }
+
+        .secondary {
+          color: $color-text-secondary;
+        }
+      }
+    }
+
+    .recipeContentSection {
+      .title {
+        font-weight: $font-weight-bold;
+        margin-bottom: $spacing-default;
+        font-size: $font-size-default;
+      }
+
+      .ingredientsSection {
+        flex-basis: 100%;
+        max-width: 100%;
+
+        @media (min-width: $screen-xs) {
+          flex-basis: 33%;
+          max-width: 33%;
+        }
+
+        .ingredients {
+          color: $color-text-secondary;
+
+          li {
+            .quantity {
+              width: $size-l;
+              display: inline-block;
+              text-align: right;
+            }
+
+            .ingredient {
+              padding-left: $spacing-default;
+            }
+          }
+        }
+      }
+
+      .stepsSection {
+        flex-basis: 100%;
+        max-width: 100%;
+
+        @media (min-width: $screen-xs) {
+          flex-basis: 66%;
+          max-width: 66%;
+        }
+
+        ol {
+          counter-reset: item;
+        }
+
+        li {
+          padding-bottom: $spacing-default;
+          color: $color-text-secondary;
+        }
+
+        li:before {
+          font-weight: $font-weight-bold;
+          content: "Step " counter(item);
+          counter-increment: item;
+          display: block;
+          color: $color-text-primary;
+        }
+      }
+    }
+
+  }
+
+  .underRecipeAd {
+    .placeholder {
+      width: 100%;
+      height: 100px;
+    }
+  }
+}

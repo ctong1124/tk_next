@@ -1,0 +1,64 @@
+@import "../../styles/_variables.module.scss";
+
+.heroContainer {
+  margin-bottom: var(--size-xl);
+  text-align: center;
+  background-color: $color-white;
+
+  @media (min-width: $screen-xxs) {
+    align-items: center;
+    display: flex;
+    min-height: 400px;
+    overflow: visible;
+    position: relative;
+  }
+
+  .mediaContainer {
+    height: 300px;
+
+    @media (min-width: $screen-xxs) {
+      flex-basis: 50%;
+      order: 2;
+      min-height: 400px;
+    }
+
+    @media (min-width: $screen-xxl) {
+      min-height: 600px;
+    }
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .textContainer {
+    padding: 0 $spacing-default $spacing-l $spacing-default;
+
+    @media (min-width: $screen-xxs) {
+      padding-bottom: 0;
+      flex-basis: 50%;
+      position: relative;
+      z-index: 2;
+      order: 1;
+    }
+
+    .bar {
+      width: 40px;
+      height: 4px;
+      border-radius: 2px;
+      background-color: $color-red;
+      margin: $spacing-m auto;
+    }
+
+    .preText {
+      text-transform: capitalize;
+      margin-bottom: 0;
+    }
+
+    .hero-headline {
+      margin: $spacing-default;
+    }
+  }
+}

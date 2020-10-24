@@ -1,0 +1,75 @@
+@import "../../styles/_variables.module.scss";
+
+.headerContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: $spacing-default;
+  height: $spacing-xl;
+  box-shadow: 0 1px 2px 0 rgba(12,18,28,.12);
+  background-color: $color-white;
+  position: relative;
+  z-index: $z-index-header;
+
+  .logo {
+    display: flex;
+    height: $size-xl;
+
+    img {
+      height: $size-xl;
+      width: $size-xl;
+    }
+
+    .logoText {
+      flex-direction: row;
+      padding-left: $spacing-s;
+      white-space: pre-wrap;
+      font-size: 20px;
+      line-height: 22px;
+    }
+
+    .highlight {
+      height: 0;
+      background-color: $color-red;
+      border-radius: $card-border-radius;
+      transition: height 0.08s;
+      margin-top: 3px;
+    }
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .linkContainer {
+      align-self: center;
+      height: 40px;
+      .headerLink {
+        padding: $spacing-s;
+        color: $color-text-primary;
+        display: inline-block;
+
+        :hover .highlight {
+          height: 3px;
+        }
+      }
+
+      .highlight {
+        height: 0;
+        background-color: $color-red;
+        border-radius: $card-border-radius;
+        transition: height 0.08s;
+      }
+    }
+
+  }
+
+  .linkContainer:hover  .highlight {
+    height: 3px;
+  }
+
+  .logo:hover  .highlight {
+    height: 3px;
+  }
+}

@@ -1,0 +1,63 @@
+@import "../../styles/_variables.module.scss";
+
+.buttonContainer {
+  display: block;
+  margin-top: $spacing-default;
+
+  .buttonArea {
+    border: 3px solid $color-red;
+    border-radius: $button-radius;
+    transition: background-color 0.15s;
+
+    .text {
+      text-transform: uppercase;
+      font-size: $font-size-secondary;
+      line-height: 28px;
+      letter-spacing: 1px;
+      margin: $spacing-s auto;
+      text-align: center;
+      padding-left: $spacing-default;
+      padding-right: $spacing-default;
+      transition: color, font-weight 0.15s;
+    }
+  }
+}
+
+.buttonArea:hover {
+  background-color: $color-red;
+
+  .text {
+    color: $color-white;
+    font-weight: $font-weight-bold;
+  }
+}
+
+@each $size-var, $media-query in $screen-sizes {
+  @media (min-width: #{$media-query}) {
+    .#{$size-var} {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    .buttonArea {
+      .text {
+          padding-left: $spacing-xl;
+          padding-right: $spacing-xl;
+        }
+      }
+    }
+  }
+}
+
+/*
+$screen-xxxs: 480px;
+$screen-xxs: 600px;
+$screen-xs: 720px;
+$screen-s: 840px;
+$screen-m: 960px;
+$screen-l: 1024px;
+$screen-xl: 1280px;
+$screen-xxl: 1440px;
+$screen-xxxl: 1600px;
+$screen-xxxxl: 1920px;
+*/

@@ -1,0 +1,98 @@
+@import "../../styles/_variables.module.scss";
+
+.cardContainer {
+  background-color: $color-white;
+  border-radius: $card-border-radius;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: $spacing-default;
+  position: relative;
+
+  @media (min-width: $screen-xxs) {
+    flex-direction: row;
+  }
+
+  .mediaContainer {
+    height: 0;
+    padding-top: 56.65%; // 16:9
+    position: relative;
+    overflow: hidden;
+
+    @media (min-width: $screen-xxs) {
+      height: 204px;
+      padding-top: 0;
+      position: static;
+      overflow: visible;
+    }
+
+    .imageContainer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+
+      @media (min-width: $screen-xxs) {
+        width: 272px;
+        height: 204px;
+        position: static;
+      }
+
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: $card-border-radius $card-border-radius 0 0;
+
+        @media (min-width: $screen-xxs) {
+          border-radius: $card-border-radius 0 0 $card-border-radius;
+        }
+      }
+    }
+  }
+
+  .textContainer {
+    padding: $spacing-default;
+
+    .cardTextTop {
+      padding-bottom: $spacing-default;
+
+      .title {
+        font-size: $large-card-title;
+        line-height: $line-height;
+      }
+
+      .description {
+        padding-top: $spacing-default;
+        height: 60px;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+      }
+    }
+
+    .cardTextBottom {
+      display: flex;
+
+      .cardTextBottomSection {
+        padding-right: $spacing-default;
+      }
+    }
+  }
+
+  .highlight {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    width: 0;
+    background-color: $color-red;
+    border-radius: 0 $card-border-radius $card-border-radius 0;
+    transition: width 0.08s;
+  }
+}
+
+.cardContainer:hover  .highlight {
+	width: 3px;
+}

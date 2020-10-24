@@ -1,0 +1,1 @@
+{"ast":null,"code":"import Button from './Button.jsx';\nexport default Button;","map":{"version":3,"sources":["/Users/ctong/Documents/tongskitchen/tk_next/components/Button/index.js"],"names":["Button"],"mappings":"AAAA,OAAOA,MAAP,MAAmB,cAAnB;AAEA,eAAeA,MAAf","sourcesContent":["import Button from './Button.jsx';\n\nexport default Button;\n"]},"metadata":{},"sourceType":"module"}

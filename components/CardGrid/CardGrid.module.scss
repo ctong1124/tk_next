@@ -1,0 +1,25 @@
+@import "../../styles/_variables.module.scss";
+
+.cardGridContainer {
+  h2 {
+    margin-bottom: $spacing-default;
+  }
+
+  .cardsContainer {
+    .cardChildContainer {
+      margin-bottom: $spacing-default;
+      flex-basis: 100%;
+      max-width: 100%;
+
+      @media (min-width: $screen-xxs) {
+        flex-basis: 50%;
+        max-width: 50%;
+      }
+
+      @media (min-width: $screen-s) {
+        flex-basis: 33.33%;
+        max-width: 33.33%;
+      }
+    }
+  }
+}

@@ -1,0 +1,79 @@
+/* Size vars */
+$size-s: 8px;
+$size-default: 16px;
+$size-m: 24px;
+$size-l: 36px;
+$size-xl: 48px;
+$size-xxl: 72px;
+$size-xxxl: 96px;
+$size-xxxxl: 192px;
+
+/* Spacing vars */
+$spacing-s: $size-s;
+$spacing-default: $size-default;
+$spacing-m: $size-m;
+$spacing-l: $size-l;
+$spacing-xl: $size-xl;
+$spacing-xxl: $size-xl;
+$spacing-xxxl: $size-xxxl;
+$spacing-xxxxl: $size-xxxxl;
+
+/* Media vars */
+$screen-xxxs: 480px;
+$screen-xxs: 600px;
+$screen-xs: 720px;
+$screen-s: 840px;
+$screen-m: 960px;
+$screen-l: 1024px;
+$screen-xl: 1280px;
+$screen-xxl: 1440px;
+$screen-xxxl: 1600px;
+$screen-xxxxl: 1920px;
+$screen-sizes:
+  "screen-xxxs" $screen-xxxs,
+  "screen-xxs" $screen-xxs,
+  "screen-xs" $screen-xs,
+  "screen-s" $screen-s,
+  "screen-m" $screen-m,
+  "screen-l" $screen-l,
+  "screen-xl" $screen-xl,
+  "screen-xxl" $screen-xxl,
+  "screen-xxxl" $screen-xxxl,
+  "screen-xxxxl" $screen-xxxxl;
+
+
+/* color vars */
+$color-black-primary: #2C313B;
+$color-black-secondary: #6B6E75;
+$color-black-tertiary: #A9AAAF;
+$color-black-quartenary: #E3E4E5;
+$color-background-gray: #F9F8F8;
+$color-white: #FFFFFF;
+$color-red: #C3161C;
+
+$color-text-primary: $color-black-primary;
+$color-text-secondary: $color-black-secondary;
+$color-divider: $color-black-quartenary;
+
+/* typography */
+$font-family: 'Work Sans', Helvetica, Arial, sans-serif;
+$font-size-default: 16px;
+$font-size-secondary: 14px;
+$line-height-secondary: 20px;
+$headline2: 1.875em; // 30px;
+$headline-mobile: 2.5em;     // 40px
+$headline-desktop: 3.75em; // 60px
+$text-small: 0.75em; // 12px;
+$headline-line-height: 1.25em;
+$large-card-title: 1.5em;
+$line-height: 1.5em;
+
+$font-weight-regular: 400;
+$font-weight-bold: 600;
+
+/* border-radius */
+$card-border-radius: 4px;
+$button-radius: 24px;
+
+/* z-index */
+$z-index-header: 100;

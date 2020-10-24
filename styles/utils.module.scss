@@ -1,0 +1,74 @@
+@import "./_variables.module.scss";
+
+/* Section spacing */
+.containedSection {
+  margin-left: $spacing-default;
+  margin-right: $spacing-default;
+
+  @media (min-width: $screen-l) {
+    max-width: 996px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.sectionSpacing {
+  margin-bottom: $spacing-xl;
+
+  @media (min-width: $screen-s) {
+      margin-bottom: $spacing-xxl;
+  }
+
+  @media (min-width: $screen-xl) {
+      margin-bottom: $spacing-xxxl;
+  }
+}
+
+/* Typography */
+.bold {
+  font-weight: $font-weight-bold;
+}
+
+.headline {
+  font-size: $headline-mobile;
+  line-height: 1.5em;
+
+  @media (min-width: $screen-s) {
+    font-size: $headline-desktop;
+  }
+}
+
+.headline2 {
+  font-size: $headline2;
+  line-height: $headline-line-height;
+}
+
+.textSmall {
+  font-size: $text-small;
+}
+
+.primaryText {
+  font-weight: $font-weight-bold;
+}
+
+.secondaryText {
+  font-size: $font-size-secondary;
+  line-height: $line-height-secondary;
+  color: $color-text-secondary;
+}
+
+
+/* Flexbox grid styles */
+.flexboxGridContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -$spacing-s;
+  margin-right: -$spacing-s;
+  box-sizing: border-box;
+}
+
+.flexboxGridChild {
+  box-sizing: border-box;
+  padding-left: $spacing-s;
+  padding-right: $spacing-s;
+}

@@ -1,0 +1,66 @@
+@import "../../styles/_variables.module.scss";
+
+.cardContainer {
+  background-color: $color-white;
+  border-radius: $card-border-radius;
+  position: relative;
+
+  .mediaContainer {
+    height: 0;
+    padding-top: 56.65%; // 16:9
+    position: relative;
+    overflow: hidden;
+
+    @media (min-width: $screen-s) {
+      padding-top: 75%; // 4:3
+    }
+
+    .imageContainer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: $card-border-radius $card-border-radius 0 0;
+      }
+    }
+  }
+
+  .textContainer {
+    // padding: $spacing-default;
+
+    .cardTextTop {
+      padding: $spacing-default;
+      height: 72px;
+    }
+
+    .cardTextBottom {
+      display: flex;
+      padding: 0 $spacing-default $spacing-default $spacing-default;
+
+      .cardTextBottomSection {
+        padding-right: $spacing-default;
+      }
+    }
+  }
+
+  .highlight {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+    background-color: $color-red;
+    border-radius: 0 0 $card-border-radius $card-border-radius;
+    transition: height 0.08s;
+  }
+}
+
+.cardContainer:hover  .highlight {
+	height: 3px;
+}

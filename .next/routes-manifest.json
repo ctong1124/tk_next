@@ -1,0 +1,1 @@
+{"version":1,"pages404":true,"basePath":"","redirects":[],"rewrites":[],"headers":[],"dynamicRoutes":[{"page":"/recipe/[id]","regex":"^\\/recipe\\/([^/]+?)(?:\\/)?$"}],"dataRoutes":[{"page":"/","dataRouteRegex":"^\\/_next\\/data\\/oQSK6VCFBRRyZrmgqCXB2\\/index.json$"},{"page":"/recipe/[id]","dataRouteRegex":"^\\/_next\\/data\\/oQSK6VCFBRRyZrmgqCXB2\\/recipe\\/([^/]+?)\\.json$"}]}

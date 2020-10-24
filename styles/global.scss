@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600&display=swap');
+@import "./_variables.module.scss";
+
+/* Styles */
+body {
+  font-family: $font-family;
+  font-size: $font-size-default;
+  line-height: 1.5em;
+  margin: 0 auto;
+  color: $color-text-primary;
+  -webkit-font-soothing: antialiased;
+  -moz-font-soothing: antialiased;
+  font-soothing: antialiased;
+  font-weight: $font-weight-regular;
+  background-color: $color-background-gray;
+}
+
+
+/* Typography */
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+
+/* List styles */
+li {
+  list-style-type: none;
+}
+
+ul, ol {
+  padding-inline-start: 0;
+}
