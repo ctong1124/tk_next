@@ -4,7 +4,7 @@ title: Example blog post
 date: 2020-10-25T19:31:37.071Z
 thumbnail: /public/images/uploads/shutterstock_256003411.jpg
 ---
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sit amet efficitur sapien. Phasellus libero felis, laoreet in purus sollicitudin, eleifend volutpat sapien. Proin maximus condimentum ipsum, imperdiet euismod dui dapibus ac. Praesent sit amet ex dolor. Nunc scelerisque risus id maximus varius. Suspendisse a nec rutrum purus, ut tempor nisl. Ut eu justo eleifend, interdum odio sit amet, tincidunt arcu.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sit amet efficitur sapien. Phasellus libero felis, laoreet in purus sollicitudin, eleifend volutpat sapien. Proin maximus condimentum ipsum, imperdiet euismod dui dapibus ac. Praesent sit amet ex dolor. Nunc scelerisque risus id a maximus varius. Suspendisse a nec rutrum purus, ut tempor nisl. Ut eu justo eleifend, interdum odio sit amet, tincidunt arcu.
 
 ![](/public/images/uploads/shutterstock_376532611.jpg)
 
