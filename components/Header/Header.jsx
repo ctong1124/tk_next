@@ -28,9 +28,13 @@ const Header = () => {
           <div className={classes.highlight} />
         </div>
         <div className={classes.linkContainer}>
+          <Link href="/blog"><a className={classes.headerLink}>Blog</a></Link>
+          <div className={classes.highlight} />
+        </div>
+        <div className={classes.linkContainer}>
           <Link href="/about"><a className={classes.headerLink}>About</a></Link>
           <div className={classes.highlight} />
-      </div>
+        </div>
       </nav>
     </header>
   );

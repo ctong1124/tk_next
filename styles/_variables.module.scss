@@ -14,7 +14,7 @@ $spacing-default: $size-default;
 $spacing-m: $size-m;
 $spacing-l: $size-l;
 $spacing-xl: $size-xl;
-$spacing-xxl: $size-xl;
+$spacing-xxl: $size-xxl;
 $spacing-xxxl: $size-xxxl;
 $spacing-xxxxl: $size-xxxxl;
 
@@ -48,17 +48,24 @@ $color-black-secondary: #6B6E75;
 $color-black-tertiary: #A9AAAF;
 $color-black-quartenary: #E3E4E5;
 $color-background-gray: #F9F8F8;
+$color-background-dark: #2C313B;
 $color-white: #FFFFFF;
-$color-red: #C3161C;
+$color-white-secondary: #B1B2B6;
+// $color-red: #C3161C;
+// $color-red: #F01516;
+$color-red: #E03137;
 
 $color-text-primary: $color-black-primary;
 $color-text-secondary: $color-black-secondary;
+$color-text-inverse-primary: $color-white;
+$color-text-inverse-secondary: $color-white-secondary;
 $color-divider: $color-black-quartenary;
 
 /* typography */
 $font-family: 'Work Sans', Helvetica, Arial, sans-serif;
 $font-size-default: 16px;
 $font-size-secondary: 14px;
+$font-size-small: 12px;
 $line-height-secondary: 20px;
 $headline2: 1.875em; // 30px;
 $headline-mobile: 2.5em;     // 40px
@@ -68,8 +75,8 @@ $headline-line-height: 1.25em;
 $large-card-title: 1.5em;
 $line-height: 1.5em;
 
-$font-weight-regular: 400;
-$font-weight-bold: 600;
+$font-weight-regular: 300;
+$font-weight-bold: 500;
 
 /* border-radius */
 $card-border-radius: 4px;

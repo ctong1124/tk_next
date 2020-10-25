@@ -1,0 +1,114 @@
+@import "../../styles/_variables.module.scss";
+
+.footerContainer {
+  background-color: $color-background-dark;
+  padding: $spacing-l;
+  color: $color-text-inverse-primary;
+
+  .content {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @media (min-width: $screen-xxxs) {
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
+    @media (min-width: $screen-xs) {
+      flex-wrap: nowrap;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      @media (min-width: $screen-xxxs) {
+        justify-content: flex-start;
+      }
+
+      a {
+        display: block;
+        color: $color-text-inverse-secondary;
+        font-weight: $font-weight-bold;
+        font-size: 1.5em;
+        padding: $spacing-s $spacing-xl $spacing-s 0;
+      }
+
+      a:hover {
+        color: $color-text-inverse-primary;
+      }
+    }
+
+    .instagram, .youtube {
+      width: 40px;
+      height: 40px;
+      background-color: #5D6169;
+    }
+
+    .footerNonLinks {
+      order: 1;
+      @media (min-width: $screen-xxxs) {
+        order: 2;
+      }
+      @media (min-width: $screen-xs) {
+        order: 1;
+      }
+      .description {
+        font-size: $font-size-secondary;
+        line-height: $line-height-secondary;
+        padding: $spacing-m $spacing-default $spacing-m 0;
+        max-width: 400px;
+
+        @media (min-width: $screen-xxxs) {
+          padding-bottom: $spacing-s
+        }
+
+        @media (min-width: $screen-xs) {
+          padding-top: $spacing-s;
+        }
+      }
+      .mobileSocial {
+        text-align: center;
+        @media (min-width: $screen-xxxs) {
+          display: none;
+        }
+
+        .instagram, .youtube {
+          display: inline-block;
+        }
+
+        .youtube {
+          margin-left: 4px;
+        }
+      }
+
+      .copyright {
+        text-align: center;
+        font-size: $font-size-small;
+
+        @media (min-width: $screen-xxxs) {
+          text-align: left;
+        }
+      }
+    }
+
+
+    .desktopSocial {
+      display: none;
+      order: 1;
+      @media (min-width: $screen-xxxs) {
+        display: block;
+      }
+      @media (min-width: $screen-xs) {
+        order: 2;
+      }
+
+      .youtube {
+        margin-top: 4px;
+      }
+    }
+  }
+}

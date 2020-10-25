@@ -1,0 +1,177 @@
+@import "../_variables.module.scss";
+
+.aboutPage {
+  width: 85%;
+  margin: $spacing-xxxl auto;
+
+  .aspectRatioBox {
+    height: 0;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .imageContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  p {
+    line-height: 1.5em;
+
+    @media (min-width: $screen-xs) {
+      font-size: 1.5em;
+    }
+  }
+
+  .textSection {
+    margin-bottom: $spacing-xxl;
+    position: relative;
+
+    @media (min-width: $screen-s) {
+      width: 80%;
+    }
+
+    p {
+      @media (min-width: $screen-m) {
+        padding-left: $spacing-xxl;
+      }
+    }
+  }
+
+  .section1 {
+    position: relative;
+    height: 320px;
+
+    @media (min-width: $screen-xxxs) {
+      height: 400px;
+    }
+    @media (min-width: $screen-xxs) {
+      height: 480px;
+    }
+    @media (min-width: $screen-s) {
+      height: 560px;
+    }
+    @media (min-width: $screen-s) {
+      height: 600px;
+    }
+    @media (min-width: $screen-l) {
+      height: 680px;
+    }
+    @media (min-width: $screen-xxl) {
+      height: 800px;
+    }
+    @media (min-width: $screen-xxxxl) {
+      height: 1000px;
+    }
+
+    .image1 {
+      width: 75%;
+      position: absolute;
+      right: 0;
+      top: 120px;
+      z-index: -1;
+
+      .aspectRatioBox {
+        padding-top: 56.25%; //16:9
+      }
+    }
+
+    h1 {
+      line-height: 1em;
+      color: $color-red;
+      font-size: 3em;
+
+      @media (min-width: $screen-xxxs) {
+        font-size: 4em;
+      }
+      @media (min-width: $screen-xxs) {
+        font-size: 5em;
+      }
+      @media (min-width: $screen-s) {
+        font-size: 6em;
+      }
+      @media (min-width: $screen-l) {
+        font-size: 6.5em;
+      }
+      @media (min-width: $screen-xxxl) {
+        font-size: 8em;
+      }
+    }
+  }
+
+  .section2 {
+
+  }
+
+  .section3 {
+    position: relative;
+    height: 600px;
+    @media (min-width: $screen-xxs) {
+      height: 500px;
+    }
+    @media (min-width: $screen-s) {
+      height: 600px;
+    }
+    @media (min-width: $screen-s) {
+      height: 700px;
+    }
+    @media (min-width: $screen-l) {
+      height: 800px;
+    }
+    @media (min-width: $screen-xxl) {
+      height: 1000px;
+    }
+    @media (min-width: $screen-xxxxl) {
+      height: 1200px;
+    }
+
+    .image2 {
+      position: absolute;
+      z-index: -1;
+      width: 75%;
+      left: 0;
+
+      @media (min-width: $screen-xxxs) {
+        width: 60%;
+      }
+      @media (min-width: $screen-xxs) {
+        width: 40%;
+        left: 15%;
+      }
+
+      .aspectRatioBox {
+        padding-top: 133%; //3:4
+      }
+    }
+
+    .image3 {
+      position: absolute;
+      width: 80%;
+      right: 0;
+      top: 45%;
+      @media (min-width: $screen-xxxs) {
+        width: 70%;
+        top: 45%;
+      }
+
+      @media (min-width: $screen-xxs) {
+        width: 50%;
+        right: 8%;
+        top: 50%;
+      }
+
+      .aspectRatioBox {
+        padding-top: 56.25%; //3:4
+      }
+    }
+  }
+}

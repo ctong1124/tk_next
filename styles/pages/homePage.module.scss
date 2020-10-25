@@ -4,13 +4,13 @@
   background-color: #E5E4E4;
 }
 
-.featuredRecipes {
+.descriptionCardGrid {
 
   h2 {
     margin-bottom: $spacing-default;
   }
 
-  .featuredRecipesFlex {
+  .descriptionCardGridFlex {
 
     @media (min-width: $screen-s) {
       flex-wrap: nowrap;

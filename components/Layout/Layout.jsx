@@ -3,6 +3,7 @@ import styles from './Layout.module.scss';
 import utilStyles from '../../styles/utils.module.scss';
 import Link from 'next/link';
 import Header from '../Header';
+import Footer from '../Footer';
 
 const NAME = 'CARISA';
 
@@ -23,6 +24,7 @@ const Layout = ({ children }) => {
       <main>
         {children}
       </main>
+      <Footer />
     </div>
   )
 };

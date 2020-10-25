@@ -45,10 +45,16 @@
     .linkContainer {
       align-self: center;
       height: 40px;
+
       .headerLink {
         padding: $spacing-s;
         color: $color-text-primary;
         display: inline-block;
+        font-size: $font-size-secondary;
+
+        @media (min-width: $screen-xxxs) {
+          font-size: $font-size-default;
+        }
 
         :hover .highlight {
           height: 3px;

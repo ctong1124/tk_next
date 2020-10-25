@@ -19,9 +19,9 @@ const HomePage = ({
         />
       </div>
       <div className={utils.containedSection}>
-        <div className={cn(utils.sectionSpacing, classes.featuredRecipes)}>
+        <div className={cn(utils.sectionSpacing, classes.descriptionCardGrid)}>
           <h2>Featured recipes</h2>
-          <div className={cn(utils.flexboxGridContainer, classes.featuredRecipesFlex)}>
+          <div className={cn(utils.flexboxGridContainer, classes.descriptionCardGridFlex)}>
             <div className={cn(utils.flexboxGridChild, classes.cardSection)}>
 
               <DescriptionCard
@@ -89,6 +89,37 @@ const HomePage = ({
               />
             </CardGrid>
             <Button text="See all" link="/recipes"/>
+          </div>
+
+          <div className={cn(utils.sectionSpacing, classes.descriptionCardGrid)}>
+            <h2>Featured recipes</h2>
+            <div className={cn(utils.flexboxGridContainer, classes.descriptionCardGrid, classes.descriptionCardGridFlex)}>
+              <div className={cn(utils.flexboxGridChild, classes.cardSection)}>
+
+                <DescriptionCard
+                  cardTitle={`Card title`}
+                  cardBottomInfo={[{title: 'Time', subtitle: '20 mins'}, {title: 'Time', subtitle: '20 mins'}]}
+                  cardImage="https://picsum.photos/id/1045/1000/500"
+                  cardLink="/recipe/recipe1"
+                />
+                <DescriptionCard
+                  cardTitle={`Card title`}
+                  cardBottomInfo={[{title: 'Time', subtitle: '20 mins'}, {title: 'Time', subtitle: '20 mins'}]}
+                  cardImage="https://picsum.photos/id/1045/1000/500"
+                  cardLink="/recipe/recipe1"
+                />
+                <DescriptionCard
+                  cardTitle={`Card title`}
+                  cardBottomInfo={[{title: 'Time', subtitle: '20 mins'}, {title: 'Time', subtitle: '20 mins'}]}
+                  cardImage="https://picsum.photos/id/1045/1000/500"
+                  cardLink="/recipe/recipe1"
+                />
+              </div>
+              <div className={cn(classes.adSection, utils.flexboxGridChild)}>
+                <div className={classes.placeholder}></div>
+              </div>
+            </div>
+            <Button text="See all" link="/blog"/>
           </div>
       </div>
 

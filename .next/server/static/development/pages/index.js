@@ -792,10 +792,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "prop-types");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! classnames */ "classnames");
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _Footer_module_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Footer.module.scss */ "./components/Footer/Footer.module.scss");
-/* harmony import */ var _Footer_module_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_Footer_module_scss__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! classnames */ "classnames");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../styles/utils.module.scss */ "./styles/utils.module.scss");
+/* harmony import */ var _styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _Footer_module_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Footer.module.scss */ "./components/Footer/Footer.module.scss");
+/* harmony import */ var _Footer_module_scss__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_Footer_module_scss__WEBPACK_IMPORTED_MODULE_5__);
 var _jsxFileName = "/Users/ctong/Documents/tongskitchen/tk_next/components/Footer/Footer.jsx";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -803,16 +807,187 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
+
+
 const Footer = () => {
   return __jsx("footer", {
-    className: "footer-container",
+    className: _Footer_module_scss__WEBPACK_IMPORTED_MODULE_5___default.a.footerContainer,
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8,
+      lineNumber: 10,
       columnNumber: 5
     }
-  });
+  }, __jsx("div", {
+    className: _Footer_module_scss__WEBPACK_IMPORTED_MODULE_5___default.a.content,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11,
+      columnNumber: 7
+    }
+  }, __jsx("div", {
+    className: _Footer_module_scss__WEBPACK_IMPORTED_MODULE_5___default.a.links,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12,
+      columnNumber: 9
+    }
+  }, __jsx("div", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13,
+      columnNumber: 11
+    }
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: "/",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14,
+      columnNumber: 13
+    }
+  }, __jsx("a", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14,
+      columnNumber: 28
+    }
+  }, "Home")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: "/recipes",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15,
+      columnNumber: 13
+    }
+  }, __jsx("a", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15,
+      columnNumber: 35
+    }
+  }, "Recipes"))), __jsx("div", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17,
+      columnNumber: 11
+    }
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: "/blog",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18,
+      columnNumber: 13
+    }
+  }, __jsx("a", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18,
+      columnNumber: 32
+    }
+  }, "Blog")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: "/about",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19,
+      columnNumber: 13
+    }
+  }, __jsx("a", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19,
+      columnNumber: 33
+    }
+  }, "About")))), __jsx("div", {
+    className: _Footer_module_scss__WEBPACK_IMPORTED_MODULE_5___default.a.footerNonLinks,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22,
+      columnNumber: 9
+    }
+  }, __jsx("div", {
+    className: _Footer_module_scss__WEBPACK_IMPORTED_MODULE_5___default.a.description,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 23,
+      columnNumber: 11
+    }
+  }, __jsx("p", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 24,
+      columnNumber: 13
+    }
+  }, "Tong\u2019s Kitchen is a recipe blah blah blah. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do e.")), __jsx("div", {
+    className: _Footer_module_scss__WEBPACK_IMPORTED_MODULE_5___default.a.mobileSocial,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26,
+      columnNumber: 11
+    }
+  }, __jsx("div", {
+    className: _Footer_module_scss__WEBPACK_IMPORTED_MODULE_5___default.a.instagram,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27,
+      columnNumber: 13
+    }
+  }), __jsx("div", {
+    className: _Footer_module_scss__WEBPACK_IMPORTED_MODULE_5___default.a.youtube,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 28,
+      columnNumber: 13
+    }
+  })), __jsx("div", {
+    className: _Footer_module_scss__WEBPACK_IMPORTED_MODULE_5___default.a.copyright,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30,
+      columnNumber: 11
+    }
+  }, "\xA9 2020 Carisa Tong. All Rights Reserved.")), __jsx("div", {
+    className: _Footer_module_scss__WEBPACK_IMPORTED_MODULE_5___default.a.desktopSocial,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 32,
+      columnNumber: 9
+    }
+  }, __jsx("div", {
+    className: _Footer_module_scss__WEBPACK_IMPORTED_MODULE_5___default.a.instagram,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 33,
+      columnNumber: 11
+    }
+  }), __jsx("div", {
+    className: _Footer_module_scss__WEBPACK_IMPORTED_MODULE_5___default.a.youtube,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 34,
+      columnNumber: 11
+    }
+  }))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Footer);
@@ -826,7 +1001,19 @@ const Footer = () => {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-
+// Exports
+module.exports = {
+	"footerContainer": "Footer_footerContainer__2sLHm",
+	"content": "Footer_content__1bpu6",
+	"links": "Footer_links__3LX9g",
+	"instagram": "Footer_instagram__hYJTD",
+	"youtube": "Footer_youtube__3QxDz",
+	"footerNonLinks": "Footer_footerNonLinks__1tDNn",
+	"description": "Footer_description__3olpd",
+	"mobileSocial": "Footer_mobileSocial__25dvN",
+	"copyright": "Footer_copyright__3I8Dv",
+	"desktopSocial": "Footer_desktopSocial__Sb9O9"
+};
 
 /***/ }),
 
@@ -983,7 +1170,7 @@ const Header = () => {
       columnNumber: 9
     }
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    href: "/about",
+    href: "/blog",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
@@ -996,6 +1183,38 @@ const Header = () => {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 31,
+      columnNumber: 30
+    }
+  }, "Blog")), __jsx("div", {
+    className: _Header_module_scss__WEBPACK_IMPORTED_MODULE_5___default.a.highlight,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 32,
+      columnNumber: 11
+    }
+  })), __jsx("div", {
+    className: _Header_module_scss__WEBPACK_IMPORTED_MODULE_5___default.a.linkContainer,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 34,
+      columnNumber: 9
+    }
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: "/about",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 35,
+      columnNumber: 11
+    }
+  }, __jsx("a", {
+    className: _Header_module_scss__WEBPACK_IMPORTED_MODULE_5___default.a.headerLink,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 35,
       columnNumber: 31
     }
   }, "About")), __jsx("div", {
@@ -1003,7 +1222,7 @@ const Header = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32,
+      lineNumber: 36,
       columnNumber: 11
     }
   }))));
@@ -1177,7 +1396,8 @@ module.exports = {
 	"textContainer": "Hero_textContainer__3JZZU",
 	"bar": "Hero_bar__3GfU5",
 	"preText": "Hero_preText__hTrs_",
-	"hero-headline": "Hero_hero-headline__C_zft"
+	"hero-headline": "Hero_hero-headline__C_zft",
+	"postText": "Hero_postText__2eSUh"
 };
 
 /***/ }),
@@ -1217,9 +1437,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../Header */ "./components/Header/index.js");
+/* harmony import */ var _Footer__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../Footer */ "./components/Footer/index.js");
 var _jsxFileName = "/Users/ctong/Documents/tongskitchen/tk_next/components/Layout/Layout.jsx";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 
 
 
@@ -1234,14 +1456,14 @@ const Layout = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11,
+      lineNumber: 12,
       columnNumber: 5
     }
   }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_1___default.a, {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12,
+      lineNumber: 13,
       columnNumber: 7
     }
   }, __jsx("link", {
@@ -1250,7 +1472,7 @@ const Layout = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13,
+      lineNumber: 14,
       columnNumber: 9
     }
   }), __jsx("meta", {
@@ -1259,7 +1481,7 @@ const Layout = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14,
+      lineNumber: 15,
       columnNumber: 9
     }
   }), __jsx("meta", {
@@ -1268,7 +1490,7 @@ const Layout = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18,
+      lineNumber: 19,
       columnNumber: 9
     }
   }), __jsx("meta", {
@@ -1277,7 +1499,7 @@ const Layout = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19,
+      lineNumber: 20,
       columnNumber: 9
     }
   }), __jsx("meta", {
@@ -1286,24 +1508,31 @@ const Layout = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20,
+      lineNumber: 21,
       columnNumber: 9
     }
   })), __jsx(_Header__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22,
+      lineNumber: 23,
       columnNumber: 7
     }
   }), __jsx("main", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23,
+      lineNumber: 24,
       columnNumber: 7
     }
-  }, children));
+  }, children), __jsx(_Footer__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27,
+      columnNumber: 7
+    }
+  }));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Layout);
@@ -3229,7 +3458,7 @@ const HomePage = ({
       columnNumber: 7
     }
   }, __jsx("div", {
-    className: classnames__WEBPACK_IMPORTED_MODULE_3___default()(_styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_7___default.a.sectionSpacing, _styles_pages_homePage_module_scss__WEBPACK_IMPORTED_MODULE_6___default.a.featuredRecipes),
+    className: classnames__WEBPACK_IMPORTED_MODULE_3___default()(_styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_7___default.a.sectionSpacing, _styles_pages_homePage_module_scss__WEBPACK_IMPORTED_MODULE_6___default.a.descriptionCardGrid),
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
@@ -3244,7 +3473,7 @@ const HomePage = ({
       columnNumber: 11
     }
   }, "Featured recipes"), __jsx("div", {
-    className: classnames__WEBPACK_IMPORTED_MODULE_3___default()(_styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_7___default.a.flexboxGridContainer, _styles_pages_homePage_module_scss__WEBPACK_IMPORTED_MODULE_6___default.a.featuredRecipesFlex),
+    className: classnames__WEBPACK_IMPORTED_MODULE_3___default()(_styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_7___default.a.flexboxGridContainer, _styles_pages_homePage_module_scss__WEBPACK_IMPORTED_MODULE_6___default.a.descriptionCardGridFlex),
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
@@ -3453,6 +3682,113 @@ const HomePage = ({
       lineNumber: 91,
       columnNumber: 13
     }
+  })), __jsx("div", {
+    className: classnames__WEBPACK_IMPORTED_MODULE_3___default()(_styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_7___default.a.sectionSpacing, _styles_pages_homePage_module_scss__WEBPACK_IMPORTED_MODULE_6___default.a.descriptionCardGrid),
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 94,
+      columnNumber: 11
+    }
+  }, __jsx("h2", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 95,
+      columnNumber: 13
+    }
+  }, "Featured recipes"), __jsx("div", {
+    className: classnames__WEBPACK_IMPORTED_MODULE_3___default()(_styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_7___default.a.flexboxGridContainer, _styles_pages_homePage_module_scss__WEBPACK_IMPORTED_MODULE_6___default.a.descriptionCardGrid, _styles_pages_homePage_module_scss__WEBPACK_IMPORTED_MODULE_6___default.a.descriptionCardGridFlex),
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 96,
+      columnNumber: 13
+    }
+  }, __jsx("div", {
+    className: classnames__WEBPACK_IMPORTED_MODULE_3___default()(_styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_7___default.a.flexboxGridChild, _styles_pages_homePage_module_scss__WEBPACK_IMPORTED_MODULE_6___default.a.cardSection),
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 97,
+      columnNumber: 15
+    }
+  }, __jsx(_components__WEBPACK_IMPORTED_MODULE_4__["DescriptionCard"], {
+    cardTitle: `Card title`,
+    cardBottomInfo: [{
+      title: 'Time',
+      subtitle: '20 mins'
+    }, {
+      title: 'Time',
+      subtitle: '20 mins'
+    }],
+    cardImage: "https://picsum.photos/id/1045/1000/500",
+    cardLink: "/recipe/recipe1",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 99,
+      columnNumber: 17
+    }
+  }), __jsx(_components__WEBPACK_IMPORTED_MODULE_4__["DescriptionCard"], {
+    cardTitle: `Card title`,
+    cardBottomInfo: [{
+      title: 'Time',
+      subtitle: '20 mins'
+    }, {
+      title: 'Time',
+      subtitle: '20 mins'
+    }],
+    cardImage: "https://picsum.photos/id/1045/1000/500",
+    cardLink: "/recipe/recipe1",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 105,
+      columnNumber: 17
+    }
+  }), __jsx(_components__WEBPACK_IMPORTED_MODULE_4__["DescriptionCard"], {
+    cardTitle: `Card title`,
+    cardBottomInfo: [{
+      title: 'Time',
+      subtitle: '20 mins'
+    }, {
+      title: 'Time',
+      subtitle: '20 mins'
+    }],
+    cardImage: "https://picsum.photos/id/1045/1000/500",
+    cardLink: "/recipe/recipe1",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 111,
+      columnNumber: 17
+    }
+  })), __jsx("div", {
+    className: classnames__WEBPACK_IMPORTED_MODULE_3___default()(_styles_pages_homePage_module_scss__WEBPACK_IMPORTED_MODULE_6___default.a.adSection, _styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_7___default.a.flexboxGridChild),
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 118,
+      columnNumber: 15
+    }
+  }, __jsx("div", {
+    className: _styles_pages_homePage_module_scss__WEBPACK_IMPORTED_MODULE_6___default.a.placeholder,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 119,
+      columnNumber: 17
+    }
+  }))), __jsx(_components__WEBPACK_IMPORTED_MODULE_4__["Button"], {
+    text: "See all",
+    link: "/blog",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 122,
+      columnNumber: 13
+    }
   }))));
 };
 
@@ -3478,8 +3814,8 @@ async function getStaticProps() {
 // Exports
 module.exports = {
 	"placeholder": "homePage_placeholder__1J2VI",
-	"featuredRecipes": "homePage_featuredRecipes__EpRQY",
-	"featuredRecipesFlex": "homePage_featuredRecipesFlex__1dreP",
+	"descriptionCardGrid": "homePage_descriptionCardGrid__1TGW2",
+	"descriptionCardGridFlex": "homePage_descriptionCardGridFlex__1wNNC",
 	"cardSection": "homePage_cardSection__3DfTv",
 	"adSection": "homePage_adSection__1lMeh"
 };

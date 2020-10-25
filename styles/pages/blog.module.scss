@@ -1,0 +1,87 @@
+@import "../_variables.module.scss";
+
+.recipePage {
+  .placeholder {
+    background-color: #E5E4E4;
+  }
+
+  .blogSection {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing:border-box;
+    margin-left: -$spacing-s;
+    margin-right: -$spacing-s;
+
+    .intro {
+      flex-basis: 100%;
+      max-width: 100%;
+      box-sizing: border-box;
+      padding: 0 $spacing-s;
+      order: 2;
+
+      @media (min-width: $screen-xs) {
+        flex-basis: 85%;
+        max-width: 85%;
+        order: 1;
+      }
+
+      p {
+        color: $color-text-secondary;
+        margin-bottom: $spacing-l;
+        margin-right: 0;
+
+        @media (min-width: $screen-xs) {
+          margin-right: $spacing-xxxl;
+        }
+      }
+
+      .placeholder {
+        width: 100%;
+        height: 400px;
+        margin-bottom: $spacing-l;
+
+        @media (min-width: $screen-xs) {
+          width: 600px;
+        }
+      }
+    }
+
+    .adSection {
+      flex-basis: 100%;
+      max-width: 100%;
+      box-sizing: border-box;
+      padding: 0 $spacing-s;
+      order: 1;
+      margin-bottom: $spacing-m;
+
+      @media (min-width: $screen-xs) {
+        flex-basis: 15%;
+        max-width: 15%;
+        order: 2;
+        margin-bottom: 0;
+      }
+
+      .placeholder {
+        height: 100px;
+
+        @media (min-width: $screen-xs) {
+          height: 1000px;
+        }
+
+      }
+    }
+  }
+
+  .underBlogAd {
+    .placeholder {
+      width: 100%;
+      height: 100px;
+    }
+  }
+
+  .moreBlogPosts {
+    h2 {
+      padding: $spacing-m 0;
+    }
+  }
+}

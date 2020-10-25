@@ -847,10 +847,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _Footer_module_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Footer.module.scss */ "./components/Footer/Footer.module.scss");
-/* harmony import */ var _Footer_module_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_Footer_module_scss__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../styles/utils.module.scss */ "./styles/utils.module.scss");
+/* harmony import */ var _styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _Footer_module_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Footer.module.scss */ "./components/Footer/Footer.module.scss");
+/* harmony import */ var _Footer_module_scss__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_Footer_module_scss__WEBPACK_IMPORTED_MODULE_5__);
 var _this = undefined,
     _jsxFileName = "/Users/ctong/Documents/tongskitchen/tk_next/components/Footer/Footer.jsx";
 
@@ -860,16 +864,187 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
+
+
 var Footer = function Footer() {
   return __jsx("footer", {
-    className: "footer-container",
+    className: _Footer_module_scss__WEBPACK_IMPORTED_MODULE_5___default.a.footerContainer,
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8,
+      lineNumber: 10,
       columnNumber: 5
     }
-  });
+  }, __jsx("div", {
+    className: _Footer_module_scss__WEBPACK_IMPORTED_MODULE_5___default.a.content,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11,
+      columnNumber: 7
+    }
+  }, __jsx("div", {
+    className: _Footer_module_scss__WEBPACK_IMPORTED_MODULE_5___default.a.links,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12,
+      columnNumber: 9
+    }
+  }, __jsx("div", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13,
+      columnNumber: 11
+    }
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: "/",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14,
+      columnNumber: 13
+    }
+  }, __jsx("a", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14,
+      columnNumber: 28
+    }
+  }, "Home")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: "/recipes",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15,
+      columnNumber: 13
+    }
+  }, __jsx("a", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15,
+      columnNumber: 35
+    }
+  }, "Recipes"))), __jsx("div", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17,
+      columnNumber: 11
+    }
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: "/blog",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18,
+      columnNumber: 13
+    }
+  }, __jsx("a", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18,
+      columnNumber: 32
+    }
+  }, "Blog")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: "/about",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19,
+      columnNumber: 13
+    }
+  }, __jsx("a", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19,
+      columnNumber: 33
+    }
+  }, "About")))), __jsx("div", {
+    className: _Footer_module_scss__WEBPACK_IMPORTED_MODULE_5___default.a.footerNonLinks,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22,
+      columnNumber: 9
+    }
+  }, __jsx("div", {
+    className: _Footer_module_scss__WEBPACK_IMPORTED_MODULE_5___default.a.description,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 23,
+      columnNumber: 11
+    }
+  }, __jsx("p", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 24,
+      columnNumber: 13
+    }
+  }, "Tong\u2019s Kitchen is a recipe blah blah blah. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do e.")), __jsx("div", {
+    className: _Footer_module_scss__WEBPACK_IMPORTED_MODULE_5___default.a.mobileSocial,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26,
+      columnNumber: 11
+    }
+  }, __jsx("div", {
+    className: _Footer_module_scss__WEBPACK_IMPORTED_MODULE_5___default.a.instagram,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27,
+      columnNumber: 13
+    }
+  }), __jsx("div", {
+    className: _Footer_module_scss__WEBPACK_IMPORTED_MODULE_5___default.a.youtube,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 28,
+      columnNumber: 13
+    }
+  })), __jsx("div", {
+    className: _Footer_module_scss__WEBPACK_IMPORTED_MODULE_5___default.a.copyright,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30,
+      columnNumber: 11
+    }
+  }, "\xA9 2020 Carisa Tong. All Rights Reserved.")), __jsx("div", {
+    className: _Footer_module_scss__WEBPACK_IMPORTED_MODULE_5___default.a.desktopSocial,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 32,
+      columnNumber: 9
+    }
+  }, __jsx("div", {
+    className: _Footer_module_scss__WEBPACK_IMPORTED_MODULE_5___default.a.instagram,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 33,
+      columnNumber: 11
+    }
+  }), __jsx("div", {
+    className: _Footer_module_scss__WEBPACK_IMPORTED_MODULE_5___default.a.youtube,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 34,
+      columnNumber: 11
+    }
+  }))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Footer);
@@ -1092,7 +1267,7 @@ var Header = function Header() {
       columnNumber: 9
     }
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    href: "/about",
+    href: "/blog",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
@@ -1105,6 +1280,38 @@ var Header = function Header() {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 31,
+      columnNumber: 30
+    }
+  }, "Blog")), __jsx("div", {
+    className: _Header_module_scss__WEBPACK_IMPORTED_MODULE_5___default.a.highlight,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 32,
+      columnNumber: 11
+    }
+  })), __jsx("div", {
+    className: _Header_module_scss__WEBPACK_IMPORTED_MODULE_5___default.a.linkContainer,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 34,
+      columnNumber: 9
+    }
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: "/about",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 35,
+      columnNumber: 11
+    }
+  }, __jsx("a", {
+    className: _Header_module_scss__WEBPACK_IMPORTED_MODULE_5___default.a.headerLink,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 35,
       columnNumber: 31
     }
   }, "About")), __jsx("div", {
@@ -1112,7 +1319,7 @@ var Header = function Header() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32,
+      lineNumber: 36,
       columnNumber: 11
     }
   }))));
@@ -1411,11 +1618,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../Header */ "./components/Header/index.js");
+/* harmony import */ var _Footer__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../Footer */ "./components/Footer/index.js");
 var _this = undefined,
     _jsxFileName = "/Users/ctong/Documents/tongskitchen/tk_next/components/Layout/Layout.jsx";
 
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 
 
 
@@ -1429,14 +1638,14 @@ var Layout = function Layout(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11,
+      lineNumber: 12,
       columnNumber: 5
     }
   }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_1___default.a, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12,
+      lineNumber: 13,
       columnNumber: 7
     }
   }, __jsx("link", {
@@ -1445,7 +1654,7 @@ var Layout = function Layout(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13,
+      lineNumber: 14,
       columnNumber: 9
     }
   }), __jsx("meta", {
@@ -1454,7 +1663,7 @@ var Layout = function Layout(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14,
+      lineNumber: 15,
       columnNumber: 9
     }
   }), __jsx("meta", {
@@ -1463,7 +1672,7 @@ var Layout = function Layout(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18,
+      lineNumber: 19,
       columnNumber: 9
     }
   }), __jsx("meta", {
@@ -1472,7 +1681,7 @@ var Layout = function Layout(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19,
+      lineNumber: 20,
       columnNumber: 9
     }
   }), __jsx("meta", {
@@ -1481,24 +1690,31 @@ var Layout = function Layout(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20,
+      lineNumber: 21,
       columnNumber: 9
     }
   })), __jsx(_Header__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22,
+      lineNumber: 23,
       columnNumber: 7
     }
   }), __jsx("main", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23,
+      lineNumber: 24,
       columnNumber: 7
     }
-  }, children));
+  }, children), __jsx(_Footer__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27,
+      columnNumber: 7
+    }
+  }));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Layout);
@@ -2177,7 +2393,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
 
 exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(true);
 // Module
-exports.push([module.i, "/* Size vars */\n/* Spacing vars */\n/* Media vars */\n/* color vars */\n/* typography */\n/* border-radius */\n/* z-index */\n.Button_buttonContainer__3sZyM {\n  display: block;\n  margin-top: 16px; }\n  .Button_buttonContainer__3sZyM .Button_buttonArea__1jcW3 {\n    border: 3px solid #C3161C;\n    border-radius: 24px;\n    transition: background-color 0.15s; }\n    .Button_buttonContainer__3sZyM .Button_buttonArea__1jcW3 .Button_text__3qTV9 {\n      text-transform: uppercase;\n      font-size: 14px;\n      line-height: 28px;\n      letter-spacing: 1px;\n      margin: 8px auto;\n      text-align: center;\n      padding-left: 16px;\n      padding-right: 16px;\n      transition: color, font-weight 0.15s; }\n\n.Button_buttonArea__1jcW3:hover {\n  background-color: #C3161C; }\n  .Button_buttonArea__1jcW3:hover .Button_text__3qTV9 {\n    color: #FFFFFF;\n    font-weight: 600; }\n\n@media (min-width: 480px) {\n  .Button_screen-xxxs__IdSSJ {\n    display: flex;\n    justify-content: center;\n    align-items: center; }\n    .Button_screen-xxxs__IdSSJ .Button_buttonArea__1jcW3 .Button_text__3qTV9 {\n      padding-left: 48px;\n      padding-right: 48px; } }\n\n@media (min-width: 600px) {\n  .Button_screen-xxs__3DVmH {\n    display: flex;\n    justify-content: center;\n    align-items: center; }\n    .Button_screen-xxs__3DVmH .Button_buttonArea__1jcW3 .Button_text__3qTV9 {\n      padding-left: 48px;\n      padding-right: 48px; } }\n\n@media (min-width: 720px) {\n  .Button_screen-xs__Hcc7f {\n    display: flex;\n    justify-content: center;\n    align-items: center; }\n    .Button_screen-xs__Hcc7f .Button_buttonArea__1jcW3 .Button_text__3qTV9 {\n      padding-left: 48px;\n      padding-right: 48px; } }\n\n@media (min-width: 840px) {\n  .Button_screen-s__TdNOE {\n    display: flex;\n    justify-content: center;\n    align-items: center; }\n    .Button_screen-s__TdNOE .Button_buttonArea__1jcW3 .Button_text__3qTV9 {\n      padding-left: 48px;\n      padding-right: 48px; } }\n\n@media (min-width: 960px) {\n  .Button_screen-m__3VRaQ {\n    display: flex;\n    justify-content: center;\n    align-items: center; }\n    .Button_screen-m__3VRaQ .Button_buttonArea__1jcW3 .Button_text__3qTV9 {\n      padding-left: 48px;\n      padding-right: 48px; } }\n\n@media (min-width: 1024px) {\n  .Button_screen-l__1EQrE {\n    display: flex;\n    justify-content: center;\n    align-items: center; }\n    .Button_screen-l__1EQrE .Button_buttonArea__1jcW3 .Button_text__3qTV9 {\n      padding-left: 48px;\n      padding-right: 48px; } }\n\n@media (min-width: 1280px) {\n  .Button_screen-xl__3SarM {\n    display: flex;\n    justify-content: center;\n    align-items: center; }\n    .Button_screen-xl__3SarM .Button_buttonArea__1jcW3 .Button_text__3qTV9 {\n      padding-left: 48px;\n      padding-right: 48px; } }\n\n@media (min-width: 1440px) {\n  .Button_screen-xxl__3UNI_ {\n    display: flex;\n    justify-content: center;\n    align-items: center; }\n    .Button_screen-xxl__3UNI_ .Button_buttonArea__1jcW3 .Button_text__3qTV9 {\n      padding-left: 48px;\n      padding-right: 48px; } }\n\n@media (min-width: 1600px) {\n  .Button_screen-xxxl__8Nnui {\n    display: flex;\n    justify-content: center;\n    align-items: center; }\n    .Button_screen-xxxl__8Nnui .Button_buttonArea__1jcW3 .Button_text__3qTV9 {\n      padding-left: 48px;\n      padding-right: 48px; } }\n\n@media (min-width: 1920px) {\n  .Button_screen-xxxxl__3VXgC {\n    display: flex;\n    justify-content: center;\n    align-items: center; }\n    .Button_screen-xxxxl__3VXgC .Button_buttonArea__1jcW3 .Button_text__3qTV9 {\n      padding-left: 48px;\n      padding-right: 48px; } }\n\n/*\n$screen-xxxs: 480px;\n$screen-xxs: 600px;\n$screen-xs: 720px;\n$screen-s: 840px;\n$screen-m: 960px;\n$screen-l: 1024px;\n$screen-xl: 1280px;\n$screen-xxl: 1440px;\n$screen-xxxl: 1600px;\n$screen-xxxxl: 1920px;\n*/\n", "",{"version":3,"sources":["/Users/ctong/Documents/tongskitchen/tk_next/styles/_variables.module.scss","/Users/ctong/Documents/tongskitchen/tk_next/components/Button/Button.module.scss"],"names":[],"mappings":"AAAA,cAAA;AAUA,iBAAA;AAUA,eAAA;AAwBA,eAAA;AAaA,eAAA;AAgBA,kBAAA;AAIA,YAAA;AC3EA;EACE,cAAc;EACd,gBDFiB,EAAA;ECAnB;IAKI,yBD4Ce;IC3Cf,mBDmEgB;IClEhB,kCAAkC,EAAA;IAPtC;MAUM,yBAAyB;MACzB,eD+CoB;MC9CpB,iBAAiB;MACjB,mBAAmB;MACnB,gBAAuB;MACvB,kBAAkB;MAClB,kBDhBa;MCiBb,mBDjBa;MCkBb,oCAAoC,EAAA;;AAK1C;EACE,yBDyBiB,EAAA;EC1BnB;IAII,cDqBiB;ICpBjB,gBDyCkB,EAAA;;ACpCpB;EACE;IACE,aAAa;IACb,uBAAuB;IACvB,mBAAmB,EAAA;IAHrB;MAOM,kBDtCI;MCuCJ,mBDvCI,EAAA,ECwCL;;AAVP;EACE;IACE,aAAa;IACb,uBAAuB;IACvB,mBAAmB,EAAA;IAHrB;MAOM,kBDtCI;MCuCJ,mBDvCI,EAAA,ECwCL;;AAVP;EACE;IACE,aAAa;IACb,uBAAuB;IACvB,mBAAmB,EAAA;IAHrB;MAOM,kBDtCI;MCuCJ,mBDvCI,EAAA,ECwCL;;AAVP;EACE;IACE,aAAa;IACb,uBAAuB;IACvB,mBAAmB,EAAA;IAHrB;MAOM,kBDtCI;MCuCJ,mBDvCI,EAAA,ECwCL;;AAVP;EACE;IACE,aAAa;IACb,uBAAuB;IACvB,mBAAmB,EAAA;IAHrB;MAOM,kBDtCI;MCuCJ,mBDvCI,EAAA,ECwCL;;AAVP;EACE;IACE,aAAa;IACb,uBAAuB;IACvB,mBAAmB,EAAA;IAHrB;MAOM,kBDtCI;MCuCJ,mBDvCI,EAAA,ECwCL;;AAVP;EACE;IACE,aAAa;IACb,uBAAuB;IACvB,mBAAmB,EAAA;IAHrB;MAOM,kBDtCI;MCuCJ,mBDvCI,EAAA,ECwCL;;AAVP;EACE;IACE,aAAa;IACb,uBAAuB;IACvB,mBAAmB,EAAA;IAHrB;MAOM,kBDtCI;MCuCJ,mBDvCI,EAAA,ECwCL;;AAVP;EACE;IACE,aAAa;IACb,uBAAuB;IACvB,mBAAmB,EAAA;IAHrB;MAOM,kBDtCI;MCuCJ,mBDvCI,EAAA,ECwCL;;AAVP;EACE;IACE,aAAa;IACb,uBAAuB;IACvB,mBAAmB,EAAA;IAHrB;MAOM,kBDtCI;MCuCJ,mBDvCI,EAAA,ECwCL;;AAMT;;;;;;;;;;;CAiFC","file":"Button.module.scss","sourcesContent":["/* Size vars */\n$size-s: 8px;\n$size-default: 16px;\n$size-m: 24px;\n$size-l: 36px;\n$size-xl: 48px;\n$size-xxl: 72px;\n$size-xxxl: 96px;\n$size-xxxxl: 192px;\n\n/* Spacing vars */\n$spacing-s: $size-s;\n$spacing-default: $size-default;\n$spacing-m: $size-m;\n$spacing-l: $size-l;\n$spacing-xl: $size-xl;\n$spacing-xxl: $size-xl;\n$spacing-xxxl: $size-xxxl;\n$spacing-xxxxl: $size-xxxxl;\n\n/* Media vars */\n$screen-xxxs: 480px;\n$screen-xxs: 600px;\n$screen-xs: 720px;\n$screen-s: 840px;\n$screen-m: 960px;\n$screen-l: 1024px;\n$screen-xl: 1280px;\n$screen-xxl: 1440px;\n$screen-xxxl: 1600px;\n$screen-xxxxl: 1920px;\n$screen-sizes:\n  \"screen-xxxs\" $screen-xxxs,\n  \"screen-xxs\" $screen-xxs,\n  \"screen-xs\" $screen-xs,\n  \"screen-s\" $screen-s,\n  \"screen-m\" $screen-m,\n  \"screen-l\" $screen-l,\n  \"screen-xl\" $screen-xl,\n  \"screen-xxl\" $screen-xxl,\n  \"screen-xxxl\" $screen-xxxl,\n  \"screen-xxxxl\" $screen-xxxxl;\n\n\n/* color vars */\n$color-black-primary: #2C313B;\n$color-black-secondary: #6B6E75;\n$color-black-tertiary: #A9AAAF;\n$color-black-quartenary: #E3E4E5;\n$color-background-gray: #F9F8F8;\n$color-white: #FFFFFF;\n$color-red: #C3161C;\n\n$color-text-primary: $color-black-primary;\n$color-text-secondary: $color-black-secondary;\n$color-divider: $color-black-quartenary;\n\n/* typography */\n$font-family: 'Work Sans', Helvetica, Arial, sans-serif;\n$font-size-default: 16px;\n$font-size-secondary: 14px;\n$line-height-secondary: 20px;\n$headline2: 1.875em; // 30px;\n$headline-mobile: 2.5em;     // 40px\n$headline-desktop: 3.75em; // 60px\n$text-small: 0.75em; // 12px;\n$headline-line-height: 1.25em;\n$large-card-title: 1.5em;\n$line-height: 1.5em;\n\n$font-weight-regular: 400;\n$font-weight-bold: 600;\n\n/* border-radius */\n$card-border-radius: 4px;\n$button-radius: 24px;\n\n/* z-index */\n$z-index-header: 100;\n","@import \"../../styles/_variables.module.scss\";\n\n.buttonContainer {\n  display: block;\n  margin-top: $spacing-default;\n\n  .buttonArea {\n    border: 3px solid $color-red;\n    border-radius: $button-radius;\n    transition: background-color 0.15s;\n\n    .text {\n      text-transform: uppercase;\n      font-size: $font-size-secondary;\n      line-height: 28px;\n      letter-spacing: 1px;\n      margin: $spacing-s auto;\n      text-align: center;\n      padding-left: $spacing-default;\n      padding-right: $spacing-default;\n      transition: color, font-weight 0.15s;\n    }\n  }\n}\n\n.buttonArea:hover {\n  background-color: $color-red;\n\n  .text {\n    color: $color-white;\n    font-weight: $font-weight-bold;\n  }\n}\n\n@each $size-var, $media-query in $screen-sizes {\n  @media (min-width: #{$media-query}) {\n    .#{$size-var} {\n      display: flex;\n      justify-content: center;\n      align-items: center;\n\n    .buttonArea {\n      .text {\n          padding-left: $spacing-xl;\n          padding-right: $spacing-xl;\n        }\n      }\n    }\n  }\n}\n\n/*\n$screen-xxxs: 480px;\n$screen-xxs: 600px;\n$screen-xs: 720px;\n$screen-s: 840px;\n$screen-m: 960px;\n$screen-l: 1024px;\n$screen-xl: 1280px;\n$screen-xxl: 1440px;\n$screen-xxxl: 1600px;\n$screen-xxxxl: 1920px;\n*/\n"]}]);
+exports.push([module.i, "/* Size vars */\n/* Spacing vars */\n/* Media vars */\n/* color vars */\n/* typography */\n/* border-radius */\n/* z-index */\n.Button_buttonContainer__3sZyM {\n  display: block;\n  margin-top: 16px; }\n  .Button_buttonContainer__3sZyM .Button_buttonArea__1jcW3 {\n    border: 3px solid #E03137;\n    border-radius: 24px;\n    transition: background-color 0.15s; }\n    .Button_buttonContainer__3sZyM .Button_buttonArea__1jcW3 .Button_text__3qTV9 {\n      text-transform: uppercase;\n      font-size: 14px;\n      line-height: 28px;\n      letter-spacing: 1px;\n      margin: 8px auto;\n      text-align: center;\n      padding-left: 16px;\n      padding-right: 16px;\n      transition: color, font-weight 0.15s;\n      font-weight: 500;\n      color: #E03137; }\n\n.Button_buttonArea__1jcW3:hover {\n  background-color: #E03137; }\n  .Button_buttonArea__1jcW3:hover .Button_text__3qTV9 {\n    color: #FFFFFF;\n    font-weight: 500; }\n\n@media (min-width: 480px) {\n  .Button_screen-xxxs__IdSSJ {\n    display: flex;\n    justify-content: center;\n    align-items: center; }\n    .Button_screen-xxxs__IdSSJ .Button_buttonArea__1jcW3 .Button_text__3qTV9 {\n      padding-left: 48px;\n      padding-right: 48px; } }\n\n@media (min-width: 600px) {\n  .Button_screen-xxs__3DVmH {\n    display: flex;\n    justify-content: center;\n    align-items: center; }\n    .Button_screen-xxs__3DVmH .Button_buttonArea__1jcW3 .Button_text__3qTV9 {\n      padding-left: 48px;\n      padding-right: 48px; } }\n\n@media (min-width: 720px) {\n  .Button_screen-xs__Hcc7f {\n    display: flex;\n    justify-content: center;\n    align-items: center; }\n    .Button_screen-xs__Hcc7f .Button_buttonArea__1jcW3 .Button_text__3qTV9 {\n      padding-left: 48px;\n      padding-right: 48px; } }\n\n@media (min-width: 840px) {\n  .Button_screen-s__TdNOE {\n    display: flex;\n    justify-content: center;\n    align-items: center; }\n    .Button_screen-s__TdNOE .Button_buttonArea__1jcW3 .Button_text__3qTV9 {\n      padding-left: 48px;\n      padding-right: 48px; } }\n\n@media (min-width: 960px) {\n  .Button_screen-m__3VRaQ {\n    display: flex;\n    justify-content: center;\n    align-items: center; }\n    .Button_screen-m__3VRaQ .Button_buttonArea__1jcW3 .Button_text__3qTV9 {\n      padding-left: 48px;\n      padding-right: 48px; } }\n\n@media (min-width: 1024px) {\n  .Button_screen-l__1EQrE {\n    display: flex;\n    justify-content: center;\n    align-items: center; }\n    .Button_screen-l__1EQrE .Button_buttonArea__1jcW3 .Button_text__3qTV9 {\n      padding-left: 48px;\n      padding-right: 48px; } }\n\n@media (min-width: 1280px) {\n  .Button_screen-xl__3SarM {\n    display: flex;\n    justify-content: center;\n    align-items: center; }\n    .Button_screen-xl__3SarM .Button_buttonArea__1jcW3 .Button_text__3qTV9 {\n      padding-left: 48px;\n      padding-right: 48px; } }\n\n@media (min-width: 1440px) {\n  .Button_screen-xxl__3UNI_ {\n    display: flex;\n    justify-content: center;\n    align-items: center; }\n    .Button_screen-xxl__3UNI_ .Button_buttonArea__1jcW3 .Button_text__3qTV9 {\n      padding-left: 48px;\n      padding-right: 48px; } }\n\n@media (min-width: 1600px) {\n  .Button_screen-xxxl__8Nnui {\n    display: flex;\n    justify-content: center;\n    align-items: center; }\n    .Button_screen-xxxl__8Nnui .Button_buttonArea__1jcW3 .Button_text__3qTV9 {\n      padding-left: 48px;\n      padding-right: 48px; } }\n\n@media (min-width: 1920px) {\n  .Button_screen-xxxxl__3VXgC {\n    display: flex;\n    justify-content: center;\n    align-items: center; }\n    .Button_screen-xxxxl__3VXgC .Button_buttonArea__1jcW3 .Button_text__3qTV9 {\n      padding-left: 48px;\n      padding-right: 48px; } }\n\n/*\n$screen-xxxs: 480px;\n$screen-xxs: 600px;\n$screen-xs: 720px;\n$screen-s: 840px;\n$screen-m: 960px;\n$screen-l: 1024px;\n$screen-xl: 1280px;\n$screen-xxl: 1440px;\n$screen-xxxl: 1600px;\n$screen-xxxxl: 1920px;\n*/\n", "",{"version":3,"sources":["/Users/ctong/Documents/tongskitchen/tk_next/styles/_variables.module.scss","/Users/ctong/Documents/tongskitchen/tk_next/components/Button/Button.module.scss"],"names":[],"mappings":"AAAA,cAAA;AAUA,iBAAA;AAUA,eAAA;AAwBA,eAAA;AAmBA,eAAA;AAiBA,kBAAA;AAIA,YAAA;AClFA;EACE,cAAc;EACd,gBDFiB,EAAA;ECAnB;IAKI,yBDgDe;IC/Cf,mBD0EgB;ICzEhB,kCAAkC,EAAA;IAPtC;MAUM,yBAAyB;MACzB,eDqDoB;MCpDpB,iBAAiB;MACjB,mBAAmB;MACnB,gBAAuB;MACvB,kBAAkB;MAClB,kBDhBa;MCiBb,mBDjBa;MCkBb,oCAAoC;MACpC,gBDyDgB;MCxDhB,cDiCa,EAAA;;AC5BnB;EACE,yBD2BiB,EAAA;EC5BnB;IAII,cDoBiB;ICnBjB,gBD8CkB,EAAA;;ACzCpB;EACE;IACE,aAAa;IACb,uBAAuB;IACvB,mBAAmB,EAAA;IAHrB;MAOM,kBDxCI;MCyCJ,mBDzCI,EAAA,EC0CL;;AAVP;EACE;IACE,aAAa;IACb,uBAAuB;IACvB,mBAAmB,EAAA;IAHrB;MAOM,kBDxCI;MCyCJ,mBDzCI,EAAA,EC0CL;;AAVP;EACE;IACE,aAAa;IACb,uBAAuB;IACvB,mBAAmB,EAAA;IAHrB;MAOM,kBDxCI;MCyCJ,mBDzCI,EAAA,EC0CL;;AAVP;EACE;IACE,aAAa;IACb,uBAAuB;IACvB,mBAAmB,EAAA;IAHrB;MAOM,kBDxCI;MCyCJ,mBDzCI,EAAA,EC0CL;;AAVP;EACE;IACE,aAAa;IACb,uBAAuB;IACvB,mBAAmB,EAAA;IAHrB;MAOM,kBDxCI;MCyCJ,mBDzCI,EAAA,EC0CL;;AAVP;EACE;IACE,aAAa;IACb,uBAAuB;IACvB,mBAAmB,EAAA;IAHrB;MAOM,kBDxCI;MCyCJ,mBDzCI,EAAA,EC0CL;;AAVP;EACE;IACE,aAAa;IACb,uBAAuB;IACvB,mBAAmB,EAAA;IAHrB;MAOM,kBDxCI;MCyCJ,mBDzCI,EAAA,EC0CL;;AAVP;EACE;IACE,aAAa;IACb,uBAAuB;IACvB,mBAAmB,EAAA;IAHrB;MAOM,kBDxCI;MCyCJ,mBDzCI,EAAA,EC0CL;;AAVP;EACE;IACE,aAAa;IACb,uBAAuB;IACvB,mBAAmB,EAAA;IAHrB;MAOM,kBDxCI;MCyCJ,mBDzCI,EAAA,EC0CL;;AAVP;EACE;IACE,aAAa;IACb,uBAAuB;IACvB,mBAAmB,EAAA;IAHrB;MAOM,kBDxCI;MCyCJ,mBDzCI,EAAA,EC0CL;;AAMT;;;;;;;;;;;CAiFC","file":"Button.module.scss","sourcesContent":["/* Size vars */\n$size-s: 8px;\n$size-default: 16px;\n$size-m: 24px;\n$size-l: 36px;\n$size-xl: 48px;\n$size-xxl: 72px;\n$size-xxxl: 96px;\n$size-xxxxl: 192px;\n\n/* Spacing vars */\n$spacing-s: $size-s;\n$spacing-default: $size-default;\n$spacing-m: $size-m;\n$spacing-l: $size-l;\n$spacing-xl: $size-xl;\n$spacing-xxl: $size-xxl;\n$spacing-xxxl: $size-xxxl;\n$spacing-xxxxl: $size-xxxxl;\n\n/* Media vars */\n$screen-xxxs: 480px;\n$screen-xxs: 600px;\n$screen-xs: 720px;\n$screen-s: 840px;\n$screen-m: 960px;\n$screen-l: 1024px;\n$screen-xl: 1280px;\n$screen-xxl: 1440px;\n$screen-xxxl: 1600px;\n$screen-xxxxl: 1920px;\n$screen-sizes:\n  \"screen-xxxs\" $screen-xxxs,\n  \"screen-xxs\" $screen-xxs,\n  \"screen-xs\" $screen-xs,\n  \"screen-s\" $screen-s,\n  \"screen-m\" $screen-m,\n  \"screen-l\" $screen-l,\n  \"screen-xl\" $screen-xl,\n  \"screen-xxl\" $screen-xxl,\n  \"screen-xxxl\" $screen-xxxl,\n  \"screen-xxxxl\" $screen-xxxxl;\n\n\n/* color vars */\n$color-black-primary: #2C313B;\n$color-black-secondary: #6B6E75;\n$color-black-tertiary: #A9AAAF;\n$color-black-quartenary: #E3E4E5;\n$color-background-gray: #F9F8F8;\n$color-background-dark: #2C313B;\n$color-white: #FFFFFF;\n$color-white-secondary: #B1B2B6;\n// $color-red: #C3161C;\n// $color-red: #F01516;\n$color-red: #E03137;\n\n$color-text-primary: $color-black-primary;\n$color-text-secondary: $color-black-secondary;\n$color-text-inverse-primary: $color-white;\n$color-text-inverse-secondary: $color-white-secondary;\n$color-divider: $color-black-quartenary;\n\n/* typography */\n$font-family: 'Work Sans', Helvetica, Arial, sans-serif;\n$font-size-default: 16px;\n$font-size-secondary: 14px;\n$font-size-small: 12px;\n$line-height-secondary: 20px;\n$headline2: 1.875em; // 30px;\n$headline-mobile: 2.5em;     // 40px\n$headline-desktop: 3.75em; // 60px\n$text-small: 0.75em; // 12px;\n$headline-line-height: 1.25em;\n$large-card-title: 1.5em;\n$line-height: 1.5em;\n\n$font-weight-regular: 300;\n$font-weight-bold: 500;\n\n/* border-radius */\n$card-border-radius: 4px;\n$button-radius: 24px;\n\n/* z-index */\n$z-index-header: 100;\n","@import \"../../styles/_variables.module.scss\";\n\n.buttonContainer {\n  display: block;\n  margin-top: $spacing-default;\n\n  .buttonArea {\n    border: 3px solid $color-red;\n    border-radius: $button-radius;\n    transition: background-color 0.15s;\n\n    .text {\n      text-transform: uppercase;\n      font-size: $font-size-secondary;\n      line-height: 28px;\n      letter-spacing: 1px;\n      margin: $spacing-s auto;\n      text-align: center;\n      padding-left: $spacing-default;\n      padding-right: $spacing-default;\n      transition: color, font-weight 0.15s;\n      font-weight: $font-weight-bold;\n      color: $color-red;\n    }\n  }\n}\n\n.buttonArea:hover {\n  background-color: $color-red;\n\n  .text {\n    color: $color-white;\n    font-weight: $font-weight-bold;\n  }\n}\n\n@each $size-var, $media-query in $screen-sizes {\n  @media (min-width: #{$media-query}) {\n    .#{$size-var} {\n      display: flex;\n      justify-content: center;\n      align-items: center;\n\n    .buttonArea {\n      .text {\n          padding-left: $spacing-xl;\n          padding-right: $spacing-xl;\n        }\n      }\n    }\n  }\n}\n\n/*\n$screen-xxxs: 480px;\n$screen-xxs: 600px;\n$screen-xs: 720px;\n$screen-s: 840px;\n$screen-m: 960px;\n$screen-l: 1024px;\n$screen-xl: 1280px;\n$screen-xxl: 1440px;\n$screen-xxxl: 1600px;\n$screen-xxxxl: 1920px;\n*/\n"]}]);
 // Exports
 exports.locals = {
 	"buttonContainer": "Button_buttonContainer__3sZyM",
@@ -2206,7 +2422,7 @@ exports.locals = {
 
 exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(true);
 // Module
-exports.push([module.i, "/* Size vars */\n/* Spacing vars */\n/* Media vars */\n/* color vars */\n/* typography */\n/* border-radius */\n/* z-index */\n.Card_cardContainer__3Etoi {\n  background-color: #FFFFFF;\n  border-radius: 4px;\n  position: relative; }\n  .Card_cardContainer__3Etoi .Card_mediaContainer__1GZGo {\n    height: 0;\n    padding-top: 56.65%;\n    position: relative;\n    overflow: hidden; }\n    @media (min-width: 840px) {\n      .Card_cardContainer__3Etoi .Card_mediaContainer__1GZGo {\n        padding-top: 75%; } }\n    .Card_cardContainer__3Etoi .Card_mediaContainer__1GZGo .Card_imageContainer__3erCM {\n      position: absolute;\n      top: 0;\n      left: 0;\n      width: 100%;\n      height: 100%; }\n      .Card_cardContainer__3Etoi .Card_mediaContainer__1GZGo .Card_imageContainer__3erCM img {\n        height: 100%;\n        width: 100%;\n        -o-object-fit: cover;\n           object-fit: cover;\n        border-radius: 4px 4px 0 0; }\n  .Card_cardContainer__3Etoi .Card_textContainer__3BB6T .Card_cardTextTop__dXw13 {\n    padding: 16px;\n    height: 72px; }\n  .Card_cardContainer__3Etoi .Card_textContainer__3BB6T .Card_cardTextBottom__3q_Mg {\n    display: flex;\n    padding: 0 16px 16px 16px; }\n    .Card_cardContainer__3Etoi .Card_textContainer__3BB6T .Card_cardTextBottom__3q_Mg .Card_cardTextBottomSection__3SrOW {\n      padding-right: 16px; }\n  .Card_cardContainer__3Etoi .Card_highlight__io8St {\n    position: absolute;\n    bottom: 0;\n    left: 0;\n    right: 0;\n    height: 0;\n    background-color: #C3161C;\n    border-radius: 0 0 4px 4px;\n    transition: height 0.08s; }\n\n.Card_cardContainer__3Etoi:hover .Card_highlight__io8St {\n  height: 3px; }\n", "",{"version":3,"sources":["/Users/ctong/Documents/tongskitchen/tk_next/styles/_variables.module.scss","/Users/ctong/Documents/tongskitchen/tk_next/components/Card/Card.module.scss"],"names":[],"mappings":"AAAA,cAAA;AAUA,iBAAA;AAUA,eAAA;AAwBA,eAAA;AAaA,eAAA;AAgBA,kBAAA;AAIA,YAAA;AC3EA;EACE,yBD+CmB;EC9CnB,kBDsEsB;ECrEtB,kBAAkB,EAAA;EAHpB;IAMI,SAAS;IACT,mBAAmB;IACnB,kBAAkB;IAClB,gBAAgB,EAAA;IAEhB;MAXJ;QAYM,gBAAgB,EAAA,EAiBnB;IA7BH;MAgBM,kBAAkB;MAClB,MAAM;MACN,OAAO;MACP,WAAW;MACX,YAAY,EAAA;MApBlB;QAuBQ,YAAY;QACZ,WAAW;QACX,oBAAiB;WAAjB,iBAAiB;QACjB,0BAA0D,EAAA;EA1BlE;IAmCM,aDnCa;ICoCb,YAAY,EAAA;EApClB;IAwCM,aAAa;IACb,yBDzCa,EAAA;ICAnB;MA4CQ,mBD5CW,EAAA;ECAnB;IAkDI,kBAAkB;IAClB,SAAS;IACT,OAAO;IACP,QAAQ;IACR,SAAS;IACT,yBDNe;ICOf,0BDgBoB;ICfpB,wBAAwB,EAAA;;AAI5B;EACC,WAAW,EAAA","file":"Card.module.scss","sourcesContent":["/* Size vars */\n$size-s: 8px;\n$size-default: 16px;\n$size-m: 24px;\n$size-l: 36px;\n$size-xl: 48px;\n$size-xxl: 72px;\n$size-xxxl: 96px;\n$size-xxxxl: 192px;\n\n/* Spacing vars */\n$spacing-s: $size-s;\n$spacing-default: $size-default;\n$spacing-m: $size-m;\n$spacing-l: $size-l;\n$spacing-xl: $size-xl;\n$spacing-xxl: $size-xl;\n$spacing-xxxl: $size-xxxl;\n$spacing-xxxxl: $size-xxxxl;\n\n/* Media vars */\n$screen-xxxs: 480px;\n$screen-xxs: 600px;\n$screen-xs: 720px;\n$screen-s: 840px;\n$screen-m: 960px;\n$screen-l: 1024px;\n$screen-xl: 1280px;\n$screen-xxl: 1440px;\n$screen-xxxl: 1600px;\n$screen-xxxxl: 1920px;\n$screen-sizes:\n  \"screen-xxxs\" $screen-xxxs,\n  \"screen-xxs\" $screen-xxs,\n  \"screen-xs\" $screen-xs,\n  \"screen-s\" $screen-s,\n  \"screen-m\" $screen-m,\n  \"screen-l\" $screen-l,\n  \"screen-xl\" $screen-xl,\n  \"screen-xxl\" $screen-xxl,\n  \"screen-xxxl\" $screen-xxxl,\n  \"screen-xxxxl\" $screen-xxxxl;\n\n\n/* color vars */\n$color-black-primary: #2C313B;\n$color-black-secondary: #6B6E75;\n$color-black-tertiary: #A9AAAF;\n$color-black-quartenary: #E3E4E5;\n$color-background-gray: #F9F8F8;\n$color-white: #FFFFFF;\n$color-red: #C3161C;\n\n$color-text-primary: $color-black-primary;\n$color-text-secondary: $color-black-secondary;\n$color-divider: $color-black-quartenary;\n\n/* typography */\n$font-family: 'Work Sans', Helvetica, Arial, sans-serif;\n$font-size-default: 16px;\n$font-size-secondary: 14px;\n$line-height-secondary: 20px;\n$headline2: 1.875em; // 30px;\n$headline-mobile: 2.5em;     // 40px\n$headline-desktop: 3.75em; // 60px\n$text-small: 0.75em; // 12px;\n$headline-line-height: 1.25em;\n$large-card-title: 1.5em;\n$line-height: 1.5em;\n\n$font-weight-regular: 400;\n$font-weight-bold: 600;\n\n/* border-radius */\n$card-border-radius: 4px;\n$button-radius: 24px;\n\n/* z-index */\n$z-index-header: 100;\n","@import \"../../styles/_variables.module.scss\";\n\n.cardContainer {\n  background-color: $color-white;\n  border-radius: $card-border-radius;\n  position: relative;\n\n  .mediaContainer {\n    height: 0;\n    padding-top: 56.65%; // 16:9\n    position: relative;\n    overflow: hidden;\n\n    @media (min-width: $screen-s) {\n      padding-top: 75%; // 4:3\n    }\n\n    .imageContainer {\n      position: absolute;\n      top: 0;\n      left: 0;\n      width: 100%;\n      height: 100%;\n\n      img {\n        height: 100%;\n        width: 100%;\n        object-fit: cover;\n        border-radius: $card-border-radius $card-border-radius 0 0;\n      }\n    }\n  }\n\n  .textContainer {\n    // padding: $spacing-default;\n\n    .cardTextTop {\n      padding: $spacing-default;\n      height: 72px;\n    }\n\n    .cardTextBottom {\n      display: flex;\n      padding: 0 $spacing-default $spacing-default $spacing-default;\n\n      .cardTextBottomSection {\n        padding-right: $spacing-default;\n      }\n    }\n  }\n\n  .highlight {\n    position: absolute;\n    bottom: 0;\n    left: 0;\n    right: 0;\n    height: 0;\n    background-color: $color-red;\n    border-radius: 0 0 $card-border-radius $card-border-radius;\n    transition: height 0.08s;\n  }\n}\n\n.cardContainer:hover  .highlight {\n\theight: 3px;\n}\n"]}]);
+exports.push([module.i, "/* Size vars */\n/* Spacing vars */\n/* Media vars */\n/* color vars */\n/* typography */\n/* border-radius */\n/* z-index */\n.Card_cardContainer__3Etoi {\n  background-color: #FFFFFF;\n  border-radius: 4px;\n  position: relative; }\n  .Card_cardContainer__3Etoi .Card_mediaContainer__1GZGo {\n    height: 0;\n    padding-top: 56.65%;\n    position: relative;\n    overflow: hidden; }\n    @media (min-width: 840px) {\n      .Card_cardContainer__3Etoi .Card_mediaContainer__1GZGo {\n        padding-top: 75%; } }\n    .Card_cardContainer__3Etoi .Card_mediaContainer__1GZGo .Card_imageContainer__3erCM {\n      position: absolute;\n      top: 0;\n      left: 0;\n      width: 100%;\n      height: 100%; }\n      .Card_cardContainer__3Etoi .Card_mediaContainer__1GZGo .Card_imageContainer__3erCM img {\n        height: 100%;\n        width: 100%;\n        -o-object-fit: cover;\n           object-fit: cover;\n        border-radius: 4px 4px 0 0; }\n  .Card_cardContainer__3Etoi .Card_textContainer__3BB6T .Card_cardTextTop__dXw13 {\n    padding: 16px;\n    height: 72px; }\n  .Card_cardContainer__3Etoi .Card_textContainer__3BB6T .Card_cardTextBottom__3q_Mg {\n    display: flex;\n    padding: 0 16px 16px 16px; }\n    .Card_cardContainer__3Etoi .Card_textContainer__3BB6T .Card_cardTextBottom__3q_Mg .Card_cardTextBottomSection__3SrOW {\n      padding-right: 16px; }\n  .Card_cardContainer__3Etoi .Card_highlight__io8St {\n    position: absolute;\n    bottom: 0;\n    left: 0;\n    right: 0;\n    height: 0;\n    background-color: #E03137;\n    border-radius: 0 0 4px 4px;\n    transition: height 0.08s; }\n\n.Card_cardContainer__3Etoi:hover .Card_highlight__io8St {\n  height: 3px; }\n", "",{"version":3,"sources":["/Users/ctong/Documents/tongskitchen/tk_next/styles/_variables.module.scss","/Users/ctong/Documents/tongskitchen/tk_next/components/Card/Card.module.scss"],"names":[],"mappings":"AAAA,cAAA;AAUA,iBAAA;AAUA,eAAA;AAwBA,eAAA;AAmBA,eAAA;AAiBA,kBAAA;AAIA,YAAA;AClFA;EACE,yBDgDmB;EC/CnB,kBD6EsB;EC5EtB,kBAAkB,EAAA;EAHpB;IAMI,SAAS;IACT,mBAAmB;IACnB,kBAAkB;IAClB,gBAAgB,EAAA;IAEhB;MAXJ;QAYM,gBAAgB,EAAA,EAiBnB;IA7BH;MAgBM,kBAAkB;MAClB,MAAM;MACN,OAAO;MACP,WAAW;MACX,YAAY,EAAA;MApBlB;QAuBQ,YAAY;QACZ,WAAW;QACX,oBAAiB;WAAjB,iBAAiB;QACjB,0BAA0D,EAAA;EA1BlE;IAmCM,aDnCa;ICoCb,YAAY,EAAA;EApClB;IAwCM,aAAa;IACb,yBDzCa,EAAA;ICAnB;MA4CQ,mBD5CW,EAAA;ECAnB;IAkDI,kBAAkB;IAClB,SAAS;IACT,OAAO;IACP,QAAQ;IACR,SAAS;IACT,yBDFe;ICGf,0BDuBoB;ICtBpB,wBAAwB,EAAA;;AAI5B;EACC,WAAW,EAAA","file":"Card.module.scss","sourcesContent":["/* Size vars */\n$size-s: 8px;\n$size-default: 16px;\n$size-m: 24px;\n$size-l: 36px;\n$size-xl: 48px;\n$size-xxl: 72px;\n$size-xxxl: 96px;\n$size-xxxxl: 192px;\n\n/* Spacing vars */\n$spacing-s: $size-s;\n$spacing-default: $size-default;\n$spacing-m: $size-m;\n$spacing-l: $size-l;\n$spacing-xl: $size-xl;\n$spacing-xxl: $size-xxl;\n$spacing-xxxl: $size-xxxl;\n$spacing-xxxxl: $size-xxxxl;\n\n/* Media vars */\n$screen-xxxs: 480px;\n$screen-xxs: 600px;\n$screen-xs: 720px;\n$screen-s: 840px;\n$screen-m: 960px;\n$screen-l: 1024px;\n$screen-xl: 1280px;\n$screen-xxl: 1440px;\n$screen-xxxl: 1600px;\n$screen-xxxxl: 1920px;\n$screen-sizes:\n  \"screen-xxxs\" $screen-xxxs,\n  \"screen-xxs\" $screen-xxs,\n  \"screen-xs\" $screen-xs,\n  \"screen-s\" $screen-s,\n  \"screen-m\" $screen-m,\n  \"screen-l\" $screen-l,\n  \"screen-xl\" $screen-xl,\n  \"screen-xxl\" $screen-xxl,\n  \"screen-xxxl\" $screen-xxxl,\n  \"screen-xxxxl\" $screen-xxxxl;\n\n\n/* color vars */\n$color-black-primary: #2C313B;\n$color-black-secondary: #6B6E75;\n$color-black-tertiary: #A9AAAF;\n$color-black-quartenary: #E3E4E5;\n$color-background-gray: #F9F8F8;\n$color-background-dark: #2C313B;\n$color-white: #FFFFFF;\n$color-white-secondary: #B1B2B6;\n// $color-red: #C3161C;\n// $color-red: #F01516;\n$color-red: #E03137;\n\n$color-text-primary: $color-black-primary;\n$color-text-secondary: $color-black-secondary;\n$color-text-inverse-primary: $color-white;\n$color-text-inverse-secondary: $color-white-secondary;\n$color-divider: $color-black-quartenary;\n\n/* typography */\n$font-family: 'Work Sans', Helvetica, Arial, sans-serif;\n$font-size-default: 16px;\n$font-size-secondary: 14px;\n$font-size-small: 12px;\n$line-height-secondary: 20px;\n$headline2: 1.875em; // 30px;\n$headline-mobile: 2.5em;     // 40px\n$headline-desktop: 3.75em; // 60px\n$text-small: 0.75em; // 12px;\n$headline-line-height: 1.25em;\n$large-card-title: 1.5em;\n$line-height: 1.5em;\n\n$font-weight-regular: 300;\n$font-weight-bold: 500;\n\n/* border-radius */\n$card-border-radius: 4px;\n$button-radius: 24px;\n\n/* z-index */\n$z-index-header: 100;\n","@import \"../../styles/_variables.module.scss\";\n\n.cardContainer {\n  background-color: $color-white;\n  border-radius: $card-border-radius;\n  position: relative;\n\n  .mediaContainer {\n    height: 0;\n    padding-top: 56.65%; // 16:9\n    position: relative;\n    overflow: hidden;\n\n    @media (min-width: $screen-s) {\n      padding-top: 75%; // 4:3\n    }\n\n    .imageContainer {\n      position: absolute;\n      top: 0;\n      left: 0;\n      width: 100%;\n      height: 100%;\n\n      img {\n        height: 100%;\n        width: 100%;\n        object-fit: cover;\n        border-radius: $card-border-radius $card-border-radius 0 0;\n      }\n    }\n  }\n\n  .textContainer {\n    // padding: $spacing-default;\n\n    .cardTextTop {\n      padding: $spacing-default;\n      height: 72px;\n    }\n\n    .cardTextBottom {\n      display: flex;\n      padding: 0 $spacing-default $spacing-default $spacing-default;\n\n      .cardTextBottomSection {\n        padding-right: $spacing-default;\n      }\n    }\n  }\n\n  .highlight {\n    position: absolute;\n    bottom: 0;\n    left: 0;\n    right: 0;\n    height: 0;\n    background-color: $color-red;\n    border-radius: 0 0 $card-border-radius $card-border-radius;\n    transition: height 0.08s;\n  }\n}\n\n.cardContainer:hover  .highlight {\n\theight: 3px;\n}\n"]}]);
 // Exports
 exports.locals = {
 	"cardContainer": "Card_cardContainer__3Etoi",
@@ -2230,7 +2446,7 @@ exports.locals = {
 
 exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(true);
 // Module
-exports.push([module.i, "/* Size vars */\n/* Spacing vars */\n/* Media vars */\n/* color vars */\n/* typography */\n/* border-radius */\n/* z-index */\n.CardGrid_cardGridContainer__3aHV1 h2 {\n  margin-bottom: 16px; }\n\n.CardGrid_cardGridContainer__3aHV1 .CardGrid_cardsContainer__CM9Jj .CardGrid_cardChildContainer__2kQoe {\n  margin-bottom: 16px;\n  flex-basis: 100%;\n  max-width: 100%; }\n  @media (min-width: 600px) {\n    .CardGrid_cardGridContainer__3aHV1 .CardGrid_cardsContainer__CM9Jj .CardGrid_cardChildContainer__2kQoe {\n      flex-basis: 50%;\n      max-width: 50%; } }\n  @media (min-width: 840px) {\n    .CardGrid_cardGridContainer__3aHV1 .CardGrid_cardsContainer__CM9Jj .CardGrid_cardChildContainer__2kQoe {\n      flex-basis: 33.33%;\n      max-width: 33.33%; } }\n", "",{"version":3,"sources":["/Users/ctong/Documents/tongskitchen/tk_next/styles/_variables.module.scss","/Users/ctong/Documents/tongskitchen/tk_next/components/CardGrid/CardGrid.module.scss"],"names":[],"mappings":"AAAA,cAAA;AAUA,iBAAA;AAUA,eAAA;AAwBA,eAAA;AAaA,eAAA;AAgBA,kBAAA;AAIA,YAAA;AC3EA;EAEI,mBDFe,EAAA;;ACAnB;EAOM,mBDPa;ECQb,gBAAgB;EAChB,eAAe,EAAA;EAEf;IAXN;MAYQ,eAAe;MACf,cAAc,EAAA,EAOjB;EAJC;IAhBN;MAiBQ,kBAAkB;MAClB,iBAAiB,EAAA,EAEpB","file":"CardGrid.module.scss","sourcesContent":["/* Size vars */\n$size-s: 8px;\n$size-default: 16px;\n$size-m: 24px;\n$size-l: 36px;\n$size-xl: 48px;\n$size-xxl: 72px;\n$size-xxxl: 96px;\n$size-xxxxl: 192px;\n\n/* Spacing vars */\n$spacing-s: $size-s;\n$spacing-default: $size-default;\n$spacing-m: $size-m;\n$spacing-l: $size-l;\n$spacing-xl: $size-xl;\n$spacing-xxl: $size-xl;\n$spacing-xxxl: $size-xxxl;\n$spacing-xxxxl: $size-xxxxl;\n\n/* Media vars */\n$screen-xxxs: 480px;\n$screen-xxs: 600px;\n$screen-xs: 720px;\n$screen-s: 840px;\n$screen-m: 960px;\n$screen-l: 1024px;\n$screen-xl: 1280px;\n$screen-xxl: 1440px;\n$screen-xxxl: 1600px;\n$screen-xxxxl: 1920px;\n$screen-sizes:\n  \"screen-xxxs\" $screen-xxxs,\n  \"screen-xxs\" $screen-xxs,\n  \"screen-xs\" $screen-xs,\n  \"screen-s\" $screen-s,\n  \"screen-m\" $screen-m,\n  \"screen-l\" $screen-l,\n  \"screen-xl\" $screen-xl,\n  \"screen-xxl\" $screen-xxl,\n  \"screen-xxxl\" $screen-xxxl,\n  \"screen-xxxxl\" $screen-xxxxl;\n\n\n/* color vars */\n$color-black-primary: #2C313B;\n$color-black-secondary: #6B6E75;\n$color-black-tertiary: #A9AAAF;\n$color-black-quartenary: #E3E4E5;\n$color-background-gray: #F9F8F8;\n$color-white: #FFFFFF;\n$color-red: #C3161C;\n\n$color-text-primary: $color-black-primary;\n$color-text-secondary: $color-black-secondary;\n$color-divider: $color-black-quartenary;\n\n/* typography */\n$font-family: 'Work Sans', Helvetica, Arial, sans-serif;\n$font-size-default: 16px;\n$font-size-secondary: 14px;\n$line-height-secondary: 20px;\n$headline2: 1.875em; // 30px;\n$headline-mobile: 2.5em;     // 40px\n$headline-desktop: 3.75em; // 60px\n$text-small: 0.75em; // 12px;\n$headline-line-height: 1.25em;\n$large-card-title: 1.5em;\n$line-height: 1.5em;\n\n$font-weight-regular: 400;\n$font-weight-bold: 600;\n\n/* border-radius */\n$card-border-radius: 4px;\n$button-radius: 24px;\n\n/* z-index */\n$z-index-header: 100;\n","@import \"../../styles/_variables.module.scss\";\n\n.cardGridContainer {\n  h2 {\n    margin-bottom: $spacing-default;\n  }\n\n  .cardsContainer {\n    .cardChildContainer {\n      margin-bottom: $spacing-default;\n      flex-basis: 100%;\n      max-width: 100%;\n\n      @media (min-width: $screen-xxs) {\n        flex-basis: 50%;\n        max-width: 50%;\n      }\n\n      @media (min-width: $screen-s) {\n        flex-basis: 33.33%;\n        max-width: 33.33%;\n      }\n    }\n  }\n}\n"]}]);
+exports.push([module.i, "/* Size vars */\n/* Spacing vars */\n/* Media vars */\n/* color vars */\n/* typography */\n/* border-radius */\n/* z-index */\n.CardGrid_cardGridContainer__3aHV1 h2 {\n  margin-bottom: 16px; }\n\n.CardGrid_cardGridContainer__3aHV1 .CardGrid_cardsContainer__CM9Jj .CardGrid_cardChildContainer__2kQoe {\n  margin-bottom: 16px;\n  flex-basis: 100%;\n  max-width: 100%; }\n  @media (min-width: 600px) {\n    .CardGrid_cardGridContainer__3aHV1 .CardGrid_cardsContainer__CM9Jj .CardGrid_cardChildContainer__2kQoe {\n      flex-basis: 50%;\n      max-width: 50%; } }\n  @media (min-width: 840px) {\n    .CardGrid_cardGridContainer__3aHV1 .CardGrid_cardsContainer__CM9Jj .CardGrid_cardChildContainer__2kQoe {\n      flex-basis: 33.33%;\n      max-width: 33.33%; } }\n", "",{"version":3,"sources":["/Users/ctong/Documents/tongskitchen/tk_next/styles/_variables.module.scss","/Users/ctong/Documents/tongskitchen/tk_next/components/CardGrid/CardGrid.module.scss"],"names":[],"mappings":"AAAA,cAAA;AAUA,iBAAA;AAUA,eAAA;AAwBA,eAAA;AAmBA,eAAA;AAiBA,kBAAA;AAIA,YAAA;AClFA;EAEI,mBDFe,EAAA;;ACAnB;EAOM,mBDPa;ECQb,gBAAgB;EAChB,eAAe,EAAA;EAEf;IAXN;MAYQ,eAAe;MACf,cAAc,EAAA,EAOjB;EAJC;IAhBN;MAiBQ,kBAAkB;MAClB,iBAAiB,EAAA,EAEpB","file":"CardGrid.module.scss","sourcesContent":["/* Size vars */\n$size-s: 8px;\n$size-default: 16px;\n$size-m: 24px;\n$size-l: 36px;\n$size-xl: 48px;\n$size-xxl: 72px;\n$size-xxxl: 96px;\n$size-xxxxl: 192px;\n\n/* Spacing vars */\n$spacing-s: $size-s;\n$spacing-default: $size-default;\n$spacing-m: $size-m;\n$spacing-l: $size-l;\n$spacing-xl: $size-xl;\n$spacing-xxl: $size-xxl;\n$spacing-xxxl: $size-xxxl;\n$spacing-xxxxl: $size-xxxxl;\n\n/* Media vars */\n$screen-xxxs: 480px;\n$screen-xxs: 600px;\n$screen-xs: 720px;\n$screen-s: 840px;\n$screen-m: 960px;\n$screen-l: 1024px;\n$screen-xl: 1280px;\n$screen-xxl: 1440px;\n$screen-xxxl: 1600px;\n$screen-xxxxl: 1920px;\n$screen-sizes:\n  \"screen-xxxs\" $screen-xxxs,\n  \"screen-xxs\" $screen-xxs,\n  \"screen-xs\" $screen-xs,\n  \"screen-s\" $screen-s,\n  \"screen-m\" $screen-m,\n  \"screen-l\" $screen-l,\n  \"screen-xl\" $screen-xl,\n  \"screen-xxl\" $screen-xxl,\n  \"screen-xxxl\" $screen-xxxl,\n  \"screen-xxxxl\" $screen-xxxxl;\n\n\n/* color vars */\n$color-black-primary: #2C313B;\n$color-black-secondary: #6B6E75;\n$color-black-tertiary: #A9AAAF;\n$color-black-quartenary: #E3E4E5;\n$color-background-gray: #F9F8F8;\n$color-background-dark: #2C313B;\n$color-white: #FFFFFF;\n$color-white-secondary: #B1B2B6;\n// $color-red: #C3161C;\n// $color-red: #F01516;\n$color-red: #E03137;\n\n$color-text-primary: $color-black-primary;\n$color-text-secondary: $color-black-secondary;\n$color-text-inverse-primary: $color-white;\n$color-text-inverse-secondary: $color-white-secondary;\n$color-divider: $color-black-quartenary;\n\n/* typography */\n$font-family: 'Work Sans', Helvetica, Arial, sans-serif;\n$font-size-default: 16px;\n$font-size-secondary: 14px;\n$font-size-small: 12px;\n$line-height-secondary: 20px;\n$headline2: 1.875em; // 30px;\n$headline-mobile: 2.5em;     // 40px\n$headline-desktop: 3.75em; // 60px\n$text-small: 0.75em; // 12px;\n$headline-line-height: 1.25em;\n$large-card-title: 1.5em;\n$line-height: 1.5em;\n\n$font-weight-regular: 300;\n$font-weight-bold: 500;\n\n/* border-radius */\n$card-border-radius: 4px;\n$button-radius: 24px;\n\n/* z-index */\n$z-index-header: 100;\n","@import \"../../styles/_variables.module.scss\";\n\n.cardGridContainer {\n  h2 {\n    margin-bottom: $spacing-default;\n  }\n\n  .cardsContainer {\n    .cardChildContainer {\n      margin-bottom: $spacing-default;\n      flex-basis: 100%;\n      max-width: 100%;\n\n      @media (min-width: $screen-xxs) {\n        flex-basis: 50%;\n        max-width: 50%;\n      }\n\n      @media (min-width: $screen-s) {\n        flex-basis: 33.33%;\n        max-width: 33.33%;\n      }\n    }\n  }\n}\n"]}]);
 // Exports
 exports.locals = {
 	"cardGridContainer": "CardGrid_cardGridContainer__3aHV1",
@@ -2249,7 +2465,7 @@ exports.locals = {
 
 exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(true);
 // Module
-exports.push([module.i, "/* Size vars */\n/* Spacing vars */\n/* Media vars */\n/* color vars */\n/* typography */\n/* border-radius */\n/* z-index */\n.DescriptionCard_cardContainer__2qHLP {\n  background-color: #FFFFFF;\n  border-radius: 4px;\n  display: flex;\n  flex-direction: column;\n  margin-bottom: 16px;\n  position: relative; }\n  @media (min-width: 600px) {\n    .DescriptionCard_cardContainer__2qHLP {\n      flex-direction: row; } }\n  .DescriptionCard_cardContainer__2qHLP .DescriptionCard_mediaContainer__SMczL {\n    height: 0;\n    padding-top: 56.65%;\n    position: relative;\n    overflow: hidden; }\n    @media (min-width: 600px) {\n      .DescriptionCard_cardContainer__2qHLP .DescriptionCard_mediaContainer__SMczL {\n        height: 204px;\n        padding-top: 0;\n        position: static;\n        overflow: visible; } }\n    .DescriptionCard_cardContainer__2qHLP .DescriptionCard_mediaContainer__SMczL .DescriptionCard_imageContainer__2VkG1 {\n      position: absolute;\n      top: 0;\n      left: 0;\n      width: 100%;\n      height: 100%; }\n      @media (min-width: 600px) {\n        .DescriptionCard_cardContainer__2qHLP .DescriptionCard_mediaContainer__SMczL .DescriptionCard_imageContainer__2VkG1 {\n          width: 272px;\n          height: 204px;\n          position: static; } }\n      .DescriptionCard_cardContainer__2qHLP .DescriptionCard_mediaContainer__SMczL .DescriptionCard_imageContainer__2VkG1 img {\n        height: 100%;\n        width: 100%;\n        -o-object-fit: cover;\n           object-fit: cover;\n        border-radius: 4px 4px 0 0; }\n        @media (min-width: 600px) {\n          .DescriptionCard_cardContainer__2qHLP .DescriptionCard_mediaContainer__SMczL .DescriptionCard_imageContainer__2VkG1 img {\n            border-radius: 4px 0 0 4px; } }\n  .DescriptionCard_cardContainer__2qHLP .DescriptionCard_textContainer__3LxQ- {\n    padding: 16px; }\n    .DescriptionCard_cardContainer__2qHLP .DescriptionCard_textContainer__3LxQ- .DescriptionCard_cardTextTop__9K3zx {\n      padding-bottom: 16px; }\n      .DescriptionCard_cardContainer__2qHLP .DescriptionCard_textContainer__3LxQ- .DescriptionCard_cardTextTop__9K3zx .DescriptionCard_title__3L3UH {\n        font-size: 1.5em;\n        line-height: 1.5em; }\n      .DescriptionCard_cardContainer__2qHLP .DescriptionCard_textContainer__3LxQ- .DescriptionCard_cardTextTop__9K3zx .DescriptionCard_description__CPM2h {\n        padding-top: 16px;\n        height: 60px;\n        overflow: hidden;\n        display: -webkit-box;\n        -webkit-line-clamp: 3;\n        -webkit-box-orient: vertical; }\n    .DescriptionCard_cardContainer__2qHLP .DescriptionCard_textContainer__3LxQ- .DescriptionCard_cardTextBottom__Tvwko {\n      display: flex; }\n      .DescriptionCard_cardContainer__2qHLP .DescriptionCard_textContainer__3LxQ- .DescriptionCard_cardTextBottom__Tvwko .DescriptionCard_cardTextBottomSection__20GYJ {\n        padding-right: 16px; }\n  .DescriptionCard_cardContainer__2qHLP .DescriptionCard_highlight__2gQhf {\n    position: absolute;\n    bottom: 0;\n    top: 0;\n    right: 0;\n    width: 0;\n    background-color: #C3161C;\n    border-radius: 0 4px 4px 0;\n    transition: width 0.08s; }\n\n.DescriptionCard_cardContainer__2qHLP:hover .DescriptionCard_highlight__2gQhf {\n  width: 3px; }\n", "",{"version":3,"sources":["/Users/ctong/Documents/tongskitchen/tk_next/styles/_variables.module.scss","/Users/ctong/Documents/tongskitchen/tk_next/components/DescriptionCard/DescriptionCard.module.scss"],"names":[],"mappings":"AAAA,cAAA;AAUA,iBAAA;AAUA,eAAA;AAwBA,eAAA;AAaA,eAAA;AAgBA,kBAAA;AAIA,YAAA;AC3EA;EACE,yBD+CmB;EC9CnB,kBDsEsB;ECrEtB,aAAa;EACb,sBAAsB;EACtB,mBDLiB;ECMjB,kBAAkB,EAAA;EAElB;IARF;MASI,mBAAmB,EAAA,EAkFtB;EA3FD;IAaI,SAAS;IACT,mBAAmB;IACnB,kBAAkB;IAClB,gBAAgB,EAAA;IAEhB;MAlBJ;QAmBM,aAAa;QACb,cAAc;QACd,gBAAgB;QAChB,iBAAiB,EAAA,EA2BpB;IAjDH;MA0BM,kBAAkB;MAClB,MAAM;MACN,OAAO;MACP,WAAW;MACX,YAAY,EAAA;MAEZ;QAhCN;UAiCQ,YAAY;UACZ,aAAa;UACb,gBAAgB,EAAA,EAanB;MAhDL;QAuCQ,YAAY;QACZ,WAAW;QACX,oBAAiB;WAAjB,iBAAiB;QACjB,0BAA0D,EAAA;QAE1D;UA5CR;YA6CU,0BD2Bc,EAAA,ECzBjB;EA/CP;IAoDI,aDpDe,EAAA;ICAnB;MAuDM,oBDvDa,EAAA;MCAnB;QA0DQ,gBDOgB;QCNhB,kBDOW,EAAA;MClEnB;QA+DQ,iBD/DW;QCgEX,YAAY;QACZ,gBAAgB;QAChB,oBAAoB;QACpB,qBAAqB;QACrB,4BAA4B,EAAA;IApEpC;MAyEM,aAAa,EAAA;MAzEnB;QA4EQ,mBD5EW,EAAA;ECAnB;IAkFI,kBAAkB;IAClB,SAAS;IACT,MAAM;IACN,QAAQ;IACR,QAAQ;IACR,yBDtCe;ICuCf,0BAA0D;IAC1D,uBAAuB,EAAA;;AAI3B;EACC,UAAU,EAAA","file":"DescriptionCard.module.scss","sourcesContent":["/* Size vars */\n$size-s: 8px;\n$size-default: 16px;\n$size-m: 24px;\n$size-l: 36px;\n$size-xl: 48px;\n$size-xxl: 72px;\n$size-xxxl: 96px;\n$size-xxxxl: 192px;\n\n/* Spacing vars */\n$spacing-s: $size-s;\n$spacing-default: $size-default;\n$spacing-m: $size-m;\n$spacing-l: $size-l;\n$spacing-xl: $size-xl;\n$spacing-xxl: $size-xl;\n$spacing-xxxl: $size-xxxl;\n$spacing-xxxxl: $size-xxxxl;\n\n/* Media vars */\n$screen-xxxs: 480px;\n$screen-xxs: 600px;\n$screen-xs: 720px;\n$screen-s: 840px;\n$screen-m: 960px;\n$screen-l: 1024px;\n$screen-xl: 1280px;\n$screen-xxl: 1440px;\n$screen-xxxl: 1600px;\n$screen-xxxxl: 1920px;\n$screen-sizes:\n  \"screen-xxxs\" $screen-xxxs,\n  \"screen-xxs\" $screen-xxs,\n  \"screen-xs\" $screen-xs,\n  \"screen-s\" $screen-s,\n  \"screen-m\" $screen-m,\n  \"screen-l\" $screen-l,\n  \"screen-xl\" $screen-xl,\n  \"screen-xxl\" $screen-xxl,\n  \"screen-xxxl\" $screen-xxxl,\n  \"screen-xxxxl\" $screen-xxxxl;\n\n\n/* color vars */\n$color-black-primary: #2C313B;\n$color-black-secondary: #6B6E75;\n$color-black-tertiary: #A9AAAF;\n$color-black-quartenary: #E3E4E5;\n$color-background-gray: #F9F8F8;\n$color-white: #FFFFFF;\n$color-red: #C3161C;\n\n$color-text-primary: $color-black-primary;\n$color-text-secondary: $color-black-secondary;\n$color-divider: $color-black-quartenary;\n\n/* typography */\n$font-family: 'Work Sans', Helvetica, Arial, sans-serif;\n$font-size-default: 16px;\n$font-size-secondary: 14px;\n$line-height-secondary: 20px;\n$headline2: 1.875em; // 30px;\n$headline-mobile: 2.5em;     // 40px\n$headline-desktop: 3.75em; // 60px\n$text-small: 0.75em; // 12px;\n$headline-line-height: 1.25em;\n$large-card-title: 1.5em;\n$line-height: 1.5em;\n\n$font-weight-regular: 400;\n$font-weight-bold: 600;\n\n/* border-radius */\n$card-border-radius: 4px;\n$button-radius: 24px;\n\n/* z-index */\n$z-index-header: 100;\n","@import \"../../styles/_variables.module.scss\";\n\n.cardContainer {\n  background-color: $color-white;\n  border-radius: $card-border-radius;\n  display: flex;\n  flex-direction: column;\n  margin-bottom: $spacing-default;\n  position: relative;\n\n  @media (min-width: $screen-xxs) {\n    flex-direction: row;\n  }\n\n  .mediaContainer {\n    height: 0;\n    padding-top: 56.65%; // 16:9\n    position: relative;\n    overflow: hidden;\n\n    @media (min-width: $screen-xxs) {\n      height: 204px;\n      padding-top: 0;\n      position: static;\n      overflow: visible;\n    }\n\n    .imageContainer {\n      position: absolute;\n      top: 0;\n      left: 0;\n      width: 100%;\n      height: 100%;\n\n      @media (min-width: $screen-xxs) {\n        width: 272px;\n        height: 204px;\n        position: static;\n      }\n\n      img {\n        height: 100%;\n        width: 100%;\n        object-fit: cover;\n        border-radius: $card-border-radius $card-border-radius 0 0;\n\n        @media (min-width: $screen-xxs) {\n          border-radius: $card-border-radius 0 0 $card-border-radius;\n        }\n      }\n    }\n  }\n\n  .textContainer {\n    padding: $spacing-default;\n\n    .cardTextTop {\n      padding-bottom: $spacing-default;\n\n      .title {\n        font-size: $large-card-title;\n        line-height: $line-height;\n      }\n\n      .description {\n        padding-top: $spacing-default;\n        height: 60px;\n        overflow: hidden;\n        display: -webkit-box;\n        -webkit-line-clamp: 3;\n        -webkit-box-orient: vertical;\n      }\n    }\n\n    .cardTextBottom {\n      display: flex;\n\n      .cardTextBottomSection {\n        padding-right: $spacing-default;\n      }\n    }\n  }\n\n  .highlight {\n    position: absolute;\n    bottom: 0;\n    top: 0;\n    right: 0;\n    width: 0;\n    background-color: $color-red;\n    border-radius: 0 $card-border-radius $card-border-radius 0;\n    transition: width 0.08s;\n  }\n}\n\n.cardContainer:hover  .highlight {\n\twidth: 3px;\n}\n"]}]);
+exports.push([module.i, "/* Size vars */\n/* Spacing vars */\n/* Media vars */\n/* color vars */\n/* typography */\n/* border-radius */\n/* z-index */\n.DescriptionCard_cardContainer__2qHLP {\n  background-color: #FFFFFF;\n  border-radius: 4px;\n  display: flex;\n  flex-direction: column;\n  margin-bottom: 16px;\n  position: relative; }\n  @media (min-width: 600px) {\n    .DescriptionCard_cardContainer__2qHLP {\n      flex-direction: row; } }\n  .DescriptionCard_cardContainer__2qHLP .DescriptionCard_mediaContainer__SMczL {\n    height: 0;\n    padding-top: 56.65%;\n    position: relative;\n    overflow: hidden; }\n    @media (min-width: 600px) {\n      .DescriptionCard_cardContainer__2qHLP .DescriptionCard_mediaContainer__SMczL {\n        height: 204px;\n        padding-top: 0;\n        position: static;\n        overflow: visible; } }\n    .DescriptionCard_cardContainer__2qHLP .DescriptionCard_mediaContainer__SMczL .DescriptionCard_imageContainer__2VkG1 {\n      position: absolute;\n      top: 0;\n      left: 0;\n      width: 100%;\n      height: 100%; }\n      @media (min-width: 600px) {\n        .DescriptionCard_cardContainer__2qHLP .DescriptionCard_mediaContainer__SMczL .DescriptionCard_imageContainer__2VkG1 {\n          width: 272px;\n          height: 204px;\n          position: static; } }\n      .DescriptionCard_cardContainer__2qHLP .DescriptionCard_mediaContainer__SMczL .DescriptionCard_imageContainer__2VkG1 img {\n        height: 100%;\n        width: 100%;\n        -o-object-fit: cover;\n           object-fit: cover;\n        border-radius: 4px 4px 0 0; }\n        @media (min-width: 600px) {\n          .DescriptionCard_cardContainer__2qHLP .DescriptionCard_mediaContainer__SMczL .DescriptionCard_imageContainer__2VkG1 img {\n            border-radius: 4px 0 0 4px; } }\n  .DescriptionCard_cardContainer__2qHLP .DescriptionCard_textContainer__3LxQ- {\n    padding: 16px; }\n    .DescriptionCard_cardContainer__2qHLP .DescriptionCard_textContainer__3LxQ- .DescriptionCard_cardTextTop__9K3zx {\n      padding-bottom: 16px; }\n      .DescriptionCard_cardContainer__2qHLP .DescriptionCard_textContainer__3LxQ- .DescriptionCard_cardTextTop__9K3zx .DescriptionCard_title__3L3UH {\n        font-size: 1.5em;\n        line-height: 1.5em; }\n      .DescriptionCard_cardContainer__2qHLP .DescriptionCard_textContainer__3LxQ- .DescriptionCard_cardTextTop__9K3zx .DescriptionCard_description__CPM2h {\n        padding-top: 16px;\n        height: 60px;\n        overflow: hidden;\n        display: -webkit-box;\n        -webkit-line-clamp: 3;\n        -webkit-box-orient: vertical; }\n    .DescriptionCard_cardContainer__2qHLP .DescriptionCard_textContainer__3LxQ- .DescriptionCard_cardTextBottom__Tvwko {\n      display: flex; }\n      .DescriptionCard_cardContainer__2qHLP .DescriptionCard_textContainer__3LxQ- .DescriptionCard_cardTextBottom__Tvwko .DescriptionCard_cardTextBottomSection__20GYJ {\n        padding-right: 16px; }\n  .DescriptionCard_cardContainer__2qHLP .DescriptionCard_highlight__2gQhf {\n    position: absolute;\n    bottom: 0;\n    top: 0;\n    right: 0;\n    width: 0;\n    background-color: #E03137;\n    border-radius: 0 4px 4px 0;\n    transition: width 0.08s; }\n\n.DescriptionCard_cardContainer__2qHLP:hover .DescriptionCard_highlight__2gQhf {\n  width: 3px; }\n", "",{"version":3,"sources":["/Users/ctong/Documents/tongskitchen/tk_next/styles/_variables.module.scss","/Users/ctong/Documents/tongskitchen/tk_next/components/DescriptionCard/DescriptionCard.module.scss"],"names":[],"mappings":"AAAA,cAAA;AAUA,iBAAA;AAUA,eAAA;AAwBA,eAAA;AAmBA,eAAA;AAiBA,kBAAA;AAIA,YAAA;AClFA;EACE,yBDgDmB;EC/CnB,kBD6EsB;EC5EtB,aAAa;EACb,sBAAsB;EACtB,mBDLiB;ECMjB,kBAAkB,EAAA;EAElB;IARF;MASI,mBAAmB,EAAA,EAkFtB;EA3FD;IAaI,SAAS;IACT,mBAAmB;IACnB,kBAAkB;IAClB,gBAAgB,EAAA;IAEhB;MAlBJ;QAmBM,aAAa;QACb,cAAc;QACd,gBAAgB;QAChB,iBAAiB,EAAA,EA2BpB;IAjDH;MA0BM,kBAAkB;MAClB,MAAM;MACN,OAAO;MACP,WAAW;MACX,YAAY,EAAA;MAEZ;QAhCN;UAiCQ,YAAY;UACZ,aAAa;UACb,gBAAgB,EAAA,EAanB;MAhDL;QAuCQ,YAAY;QACZ,WAAW;QACX,oBAAiB;WAAjB,iBAAiB;QACjB,0BAA0D,EAAA;QAE1D;UA5CR;YA6CU,0BDkCc,EAAA,EChCjB;EA/CP;IAoDI,aDpDe,EAAA;ICAnB;MAuDM,oBDvDa,EAAA;MCAnB;QA0DQ,gBDcgB;QCbhB,kBDcW,EAAA;MCzEnB;QA+DQ,iBD/DW;QCgEX,YAAY;QACZ,gBAAgB;QAChB,oBAAoB;QACpB,qBAAqB;QACrB,4BAA4B,EAAA;IApEpC;MAyEM,aAAa,EAAA;MAzEnB;QA4EQ,mBD5EW,EAAA;ECAnB;IAkFI,kBAAkB;IAClB,SAAS;IACT,MAAM;IACN,QAAQ;IACR,QAAQ;IACR,yBDlCe;ICmCf,0BAA0D;IAC1D,uBAAuB,EAAA;;AAI3B;EACC,UAAU,EAAA","file":"DescriptionCard.module.scss","sourcesContent":["/* Size vars */\n$size-s: 8px;\n$size-default: 16px;\n$size-m: 24px;\n$size-l: 36px;\n$size-xl: 48px;\n$size-xxl: 72px;\n$size-xxxl: 96px;\n$size-xxxxl: 192px;\n\n/* Spacing vars */\n$spacing-s: $size-s;\n$spacing-default: $size-default;\n$spacing-m: $size-m;\n$spacing-l: $size-l;\n$spacing-xl: $size-xl;\n$spacing-xxl: $size-xxl;\n$spacing-xxxl: $size-xxxl;\n$spacing-xxxxl: $size-xxxxl;\n\n/* Media vars */\n$screen-xxxs: 480px;\n$screen-xxs: 600px;\n$screen-xs: 720px;\n$screen-s: 840px;\n$screen-m: 960px;\n$screen-l: 1024px;\n$screen-xl: 1280px;\n$screen-xxl: 1440px;\n$screen-xxxl: 1600px;\n$screen-xxxxl: 1920px;\n$screen-sizes:\n  \"screen-xxxs\" $screen-xxxs,\n  \"screen-xxs\" $screen-xxs,\n  \"screen-xs\" $screen-xs,\n  \"screen-s\" $screen-s,\n  \"screen-m\" $screen-m,\n  \"screen-l\" $screen-l,\n  \"screen-xl\" $screen-xl,\n  \"screen-xxl\" $screen-xxl,\n  \"screen-xxxl\" $screen-xxxl,\n  \"screen-xxxxl\" $screen-xxxxl;\n\n\n/* color vars */\n$color-black-primary: #2C313B;\n$color-black-secondary: #6B6E75;\n$color-black-tertiary: #A9AAAF;\n$color-black-quartenary: #E3E4E5;\n$color-background-gray: #F9F8F8;\n$color-background-dark: #2C313B;\n$color-white: #FFFFFF;\n$color-white-secondary: #B1B2B6;\n// $color-red: #C3161C;\n// $color-red: #F01516;\n$color-red: #E03137;\n\n$color-text-primary: $color-black-primary;\n$color-text-secondary: $color-black-secondary;\n$color-text-inverse-primary: $color-white;\n$color-text-inverse-secondary: $color-white-secondary;\n$color-divider: $color-black-quartenary;\n\n/* typography */\n$font-family: 'Work Sans', Helvetica, Arial, sans-serif;\n$font-size-default: 16px;\n$font-size-secondary: 14px;\n$font-size-small: 12px;\n$line-height-secondary: 20px;\n$headline2: 1.875em; // 30px;\n$headline-mobile: 2.5em;     // 40px\n$headline-desktop: 3.75em; // 60px\n$text-small: 0.75em; // 12px;\n$headline-line-height: 1.25em;\n$large-card-title: 1.5em;\n$line-height: 1.5em;\n\n$font-weight-regular: 300;\n$font-weight-bold: 500;\n\n/* border-radius */\n$card-border-radius: 4px;\n$button-radius: 24px;\n\n/* z-index */\n$z-index-header: 100;\n","@import \"../../styles/_variables.module.scss\";\n\n.cardContainer {\n  background-color: $color-white;\n  border-radius: $card-border-radius;\n  display: flex;\n  flex-direction: column;\n  margin-bottom: $spacing-default;\n  position: relative;\n\n  @media (min-width: $screen-xxs) {\n    flex-direction: row;\n  }\n\n  .mediaContainer {\n    height: 0;\n    padding-top: 56.65%; // 16:9\n    position: relative;\n    overflow: hidden;\n\n    @media (min-width: $screen-xxs) {\n      height: 204px;\n      padding-top: 0;\n      position: static;\n      overflow: visible;\n    }\n\n    .imageContainer {\n      position: absolute;\n      top: 0;\n      left: 0;\n      width: 100%;\n      height: 100%;\n\n      @media (min-width: $screen-xxs) {\n        width: 272px;\n        height: 204px;\n        position: static;\n      }\n\n      img {\n        height: 100%;\n        width: 100%;\n        object-fit: cover;\n        border-radius: $card-border-radius $card-border-radius 0 0;\n\n        @media (min-width: $screen-xxs) {\n          border-radius: $card-border-radius 0 0 $card-border-radius;\n        }\n      }\n    }\n  }\n\n  .textContainer {\n    padding: $spacing-default;\n\n    .cardTextTop {\n      padding-bottom: $spacing-default;\n\n      .title {\n        font-size: $large-card-title;\n        line-height: $line-height;\n      }\n\n      .description {\n        padding-top: $spacing-default;\n        height: 60px;\n        overflow: hidden;\n        display: -webkit-box;\n        -webkit-line-clamp: 3;\n        -webkit-box-orient: vertical;\n      }\n    }\n\n    .cardTextBottom {\n      display: flex;\n\n      .cardTextBottomSection {\n        padding-right: $spacing-default;\n      }\n    }\n  }\n\n  .highlight {\n    position: absolute;\n    bottom: 0;\n    top: 0;\n    right: 0;\n    width: 0;\n    background-color: $color-red;\n    border-radius: 0 $card-border-radius $card-border-radius 0;\n    transition: width 0.08s;\n  }\n}\n\n.cardContainer:hover  .highlight {\n\twidth: 3px;\n}\n"]}]);
 // Exports
 exports.locals = {
 	"cardContainer": "DescriptionCard_cardContainer__2qHLP",
@@ -2275,8 +2491,20 @@ exports.locals = {
 
 exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(true);
 // Module
-exports.push([module.i, "", "",{"version":3,"sources":[],"names":[],"mappings":"","file":"Footer.module.scss"}]);
-
+exports.push([module.i, "/* Size vars */\n/* Spacing vars */\n/* Media vars */\n/* color vars */\n/* typography */\n/* border-radius */\n/* z-index */\n.Footer_footerContainer__2sLHm {\n  background-color: #2C313B;\n  padding: 36px;\n  color: #FFFFFF; }\n  .Footer_footerContainer__2sLHm .Footer_content__1bpu6 {\n    max-width: 1000px;\n    margin: 0 auto;\n    display: flex;\n    flex-direction: column;\n    justify-content: space-between; }\n    @media (min-width: 480px) {\n      .Footer_footerContainer__2sLHm .Footer_content__1bpu6 {\n        flex-wrap: wrap;\n        flex-direction: row; } }\n    @media (min-width: 720px) {\n      .Footer_footerContainer__2sLHm .Footer_content__1bpu6 {\n        flex-wrap: nowrap; } }\n    .Footer_footerContainer__2sLHm .Footer_content__1bpu6 .Footer_links__3LX9g {\n      display: flex;\n      flex-direction: row;\n      justify-content: space-between; }\n      @media (min-width: 480px) {\n        .Footer_footerContainer__2sLHm .Footer_content__1bpu6 .Footer_links__3LX9g {\n          justify-content: flex-start; } }\n      .Footer_footerContainer__2sLHm .Footer_content__1bpu6 .Footer_links__3LX9g a {\n        display: block;\n        color: #B1B2B6;\n        font-weight: 500;\n        font-size: 1.5em;\n        padding: 8px 48px 8px 0; }\n      .Footer_footerContainer__2sLHm .Footer_content__1bpu6 .Footer_links__3LX9g a:hover {\n        color: #FFFFFF; }\n    .Footer_footerContainer__2sLHm .Footer_content__1bpu6 .Footer_instagram__hYJTD, .Footer_footerContainer__2sLHm .Footer_content__1bpu6 .Footer_youtube__3QxDz {\n      width: 40px;\n      height: 40px;\n      background-color: #5D6169; }\n    .Footer_footerContainer__2sLHm .Footer_content__1bpu6 .Footer_footerNonLinks__1tDNn {\n      order: 1; }\n      @media (min-width: 480px) {\n        .Footer_footerContainer__2sLHm .Footer_content__1bpu6 .Footer_footerNonLinks__1tDNn {\n          order: 2; } }\n      @media (min-width: 720px) {\n        .Footer_footerContainer__2sLHm .Footer_content__1bpu6 .Footer_footerNonLinks__1tDNn {\n          order: 1; } }\n      .Footer_footerContainer__2sLHm .Footer_content__1bpu6 .Footer_footerNonLinks__1tDNn .Footer_description__3olpd {\n        font-size: 14px;\n        line-height: 20px;\n        padding: 24px 16px 24px 0;\n        max-width: 400px; }\n        @media (min-width: 480px) {\n          .Footer_footerContainer__2sLHm .Footer_content__1bpu6 .Footer_footerNonLinks__1tDNn .Footer_description__3olpd {\n            padding-bottom: 8px; } }\n        @media (min-width: 720px) {\n          .Footer_footerContainer__2sLHm .Footer_content__1bpu6 .Footer_footerNonLinks__1tDNn .Footer_description__3olpd {\n            padding-top: 8px; } }\n      .Footer_footerContainer__2sLHm .Footer_content__1bpu6 .Footer_footerNonLinks__1tDNn .Footer_mobileSocial__25dvN {\n        text-align: center; }\n        @media (min-width: 480px) {\n          .Footer_footerContainer__2sLHm .Footer_content__1bpu6 .Footer_footerNonLinks__1tDNn .Footer_mobileSocial__25dvN {\n            display: none; } }\n        .Footer_footerContainer__2sLHm .Footer_content__1bpu6 .Footer_footerNonLinks__1tDNn .Footer_mobileSocial__25dvN .Footer_instagram__hYJTD, .Footer_footerContainer__2sLHm .Footer_content__1bpu6 .Footer_footerNonLinks__1tDNn .Footer_mobileSocial__25dvN .Footer_youtube__3QxDz {\n          display: inline-block; }\n        .Footer_footerContainer__2sLHm .Footer_content__1bpu6 .Footer_footerNonLinks__1tDNn .Footer_mobileSocial__25dvN .Footer_youtube__3QxDz {\n          margin-left: 4px; }\n      .Footer_footerContainer__2sLHm .Footer_content__1bpu6 .Footer_footerNonLinks__1tDNn .Footer_copyright__3I8Dv {\n        text-align: center;\n        font-size: 12px; }\n        @media (min-width: 480px) {\n          .Footer_footerContainer__2sLHm .Footer_content__1bpu6 .Footer_footerNonLinks__1tDNn .Footer_copyright__3I8Dv {\n            text-align: left; } }\n    .Footer_footerContainer__2sLHm .Footer_content__1bpu6 .Footer_desktopSocial__Sb9O9 {\n      display: none;\n      order: 1; }\n      @media (min-width: 480px) {\n        .Footer_footerContainer__2sLHm .Footer_content__1bpu6 .Footer_desktopSocial__Sb9O9 {\n          display: block; } }\n      @media (min-width: 720px) {\n        .Footer_footerContainer__2sLHm .Footer_content__1bpu6 .Footer_desktopSocial__Sb9O9 {\n          order: 2; } }\n      .Footer_footerContainer__2sLHm .Footer_content__1bpu6 .Footer_desktopSocial__Sb9O9 .Footer_youtube__3QxDz {\n        margin-top: 4px; }\n", "",{"version":3,"sources":["/Users/ctong/Documents/tongskitchen/tk_next/styles/_variables.module.scss","/Users/ctong/Documents/tongskitchen/tk_next/components/Footer/Footer.module.scss"],"names":[],"mappings":"AAAA,cAAA;AAUA,iBAAA;AAUA,eAAA;AAwBA,eAAA;AAmBA,eAAA;AAiBA,kBAAA;AAIA,YAAA;AClFA;EACE,yBD+C6B;EC9C7B,aDAW;ECCX,cD8CmB,EAAA;ECjDrB;IAMI,iBAAiB;IACjB,cAAc;IACd,aAAa;IACb,sBAAsB;IACtB,8BAA8B,EAAA;IAE9B;MAZJ;QAaM,eAAe;QACf,mBAAmB,EAAA,EAgGtB;IA9FC;MAhBJ;QAiBM,iBAAiB,EAAA,EA6FpB;IA9GH;MAqBM,aAAa;MACb,mBAAmB;MACnB,8BAA8B,EAAA;MAE9B;QAzBN;UA0BQ,2BAA2B,EAAA,EAc9B;MAxCL;QA8BQ,cAAc;QACd,cDmBuB;QClBvB,gBD4Cc;QC3Cd,gBAAgB;QAChB,uBAA4C,EAAA;MAlCpD;QAsCQ,cDWa,EAAA;ICjDrB;MA2CM,WAAW;MACX,YAAY;MACZ,yBAAyB,EAAA;IA7C/B;MAiDM,QAAQ,EAAA;MACR;QAlDN;UAmDQ,QAAQ,EAAA,EA0CX;MAxCC;QArDN;UAsDQ,QAAQ,EAAA,EAuCX;MA7FL;QAyDQ,eDOkB;QCNlB,iBDQoB;QCPpB,yBAAiD;QACjD,gBAAgB,EAAA;QAEhB;UA9DR;YA+DU,mBDhEE,EAAA,ECsEL;QAHC;UAlER;YAmEU,gBDpEE,EAAA,ECsEL;MArEP;QAuEQ,kBAAkB,EAAA;QAClB;UAxER;YAyEU,aAAa,EAAA,EAUhB;QAnFP;UA6EU,qBAAqB,EAAA;QA7E/B;UAiFU,gBAAgB,EAAA;MAjF1B;QAsFQ,kBAAkB;QAClB,eDtBc,EAAA;QCwBd;UAzFR;YA0FU,gBAAgB,EAAA,EAEnB;IA5FP;MAiGM,aAAa;MACb,QAAQ,EAAA;MACR;QAnGN;UAoGQ,cAAc,EAAA,EASjB;MAPC;QAtGN;UAuGQ,QAAQ,EAAA,EAMX;MA7GL;QA2GQ,eAAe,EAAA","file":"Footer.module.scss","sourcesContent":["/* Size vars */\n$size-s: 8px;\n$size-default: 16px;\n$size-m: 24px;\n$size-l: 36px;\n$size-xl: 48px;\n$size-xxl: 72px;\n$size-xxxl: 96px;\n$size-xxxxl: 192px;\n\n/* Spacing vars */\n$spacing-s: $size-s;\n$spacing-default: $size-default;\n$spacing-m: $size-m;\n$spacing-l: $size-l;\n$spacing-xl: $size-xl;\n$spacing-xxl: $size-xxl;\n$spacing-xxxl: $size-xxxl;\n$spacing-xxxxl: $size-xxxxl;\n\n/* Media vars */\n$screen-xxxs: 480px;\n$screen-xxs: 600px;\n$screen-xs: 720px;\n$screen-s: 840px;\n$screen-m: 960px;\n$screen-l: 1024px;\n$screen-xl: 1280px;\n$screen-xxl: 1440px;\n$screen-xxxl: 1600px;\n$screen-xxxxl: 1920px;\n$screen-sizes:\n  \"screen-xxxs\" $screen-xxxs,\n  \"screen-xxs\" $screen-xxs,\n  \"screen-xs\" $screen-xs,\n  \"screen-s\" $screen-s,\n  \"screen-m\" $screen-m,\n  \"screen-l\" $screen-l,\n  \"screen-xl\" $screen-xl,\n  \"screen-xxl\" $screen-xxl,\n  \"screen-xxxl\" $screen-xxxl,\n  \"screen-xxxxl\" $screen-xxxxl;\n\n\n/* color vars */\n$color-black-primary: #2C313B;\n$color-black-secondary: #6B6E75;\n$color-black-tertiary: #A9AAAF;\n$color-black-quartenary: #E3E4E5;\n$color-background-gray: #F9F8F8;\n$color-background-dark: #2C313B;\n$color-white: #FFFFFF;\n$color-white-secondary: #B1B2B6;\n// $color-red: #C3161C;\n// $color-red: #F01516;\n$color-red: #E03137;\n\n$color-text-primary: $color-black-primary;\n$color-text-secondary: $color-black-secondary;\n$color-text-inverse-primary: $color-white;\n$color-text-inverse-secondary: $color-white-secondary;\n$color-divider: $color-black-quartenary;\n\n/* typography */\n$font-family: 'Work Sans', Helvetica, Arial, sans-serif;\n$font-size-default: 16px;\n$font-size-secondary: 14px;\n$font-size-small: 12px;\n$line-height-secondary: 20px;\n$headline2: 1.875em; // 30px;\n$headline-mobile: 2.5em;     // 40px\n$headline-desktop: 3.75em; // 60px\n$text-small: 0.75em; // 12px;\n$headline-line-height: 1.25em;\n$large-card-title: 1.5em;\n$line-height: 1.5em;\n\n$font-weight-regular: 300;\n$font-weight-bold: 500;\n\n/* border-radius */\n$card-border-radius: 4px;\n$button-radius: 24px;\n\n/* z-index */\n$z-index-header: 100;\n","@import \"../../styles/_variables.module.scss\";\n\n.footerContainer {\n  background-color: $color-background-dark;\n  padding: $spacing-l;\n  color: $color-text-inverse-primary;\n\n  .content {\n    max-width: 1000px;\n    margin: 0 auto;\n    display: flex;\n    flex-direction: column;\n    justify-content: space-between;\n\n    @media (min-width: $screen-xxxs) {\n      flex-wrap: wrap;\n      flex-direction: row;\n    }\n    @media (min-width: $screen-xs) {\n      flex-wrap: nowrap;\n    }\n\n    .links {\n      display: flex;\n      flex-direction: row;\n      justify-content: space-between;\n\n      @media (min-width: $screen-xxxs) {\n        justify-content: flex-start;\n      }\n\n      a {\n        display: block;\n        color: $color-text-inverse-secondary;\n        font-weight: $font-weight-bold;\n        font-size: 1.5em;\n        padding: $spacing-s $spacing-xl $spacing-s 0;\n      }\n\n      a:hover {\n        color: $color-text-inverse-primary;\n      }\n    }\n\n    .instagram, .youtube {\n      width: 40px;\n      height: 40px;\n      background-color: #5D6169;\n    }\n\n    .footerNonLinks {\n      order: 1;\n      @media (min-width: $screen-xxxs) {\n        order: 2;\n      }\n      @media (min-width: $screen-xs) {\n        order: 1;\n      }\n      .description {\n        font-size: $font-size-secondary;\n        line-height: $line-height-secondary;\n        padding: $spacing-m $spacing-default $spacing-m 0;\n        max-width: 400px;\n\n        @media (min-width: $screen-xxxs) {\n          padding-bottom: $spacing-s\n        }\n\n        @media (min-width: $screen-xs) {\n          padding-top: $spacing-s;\n        }\n      }\n      .mobileSocial {\n        text-align: center;\n        @media (min-width: $screen-xxxs) {\n          display: none;\n        }\n\n        .instagram, .youtube {\n          display: inline-block;\n        }\n\n        .youtube {\n          margin-left: 4px;\n        }\n      }\n\n      .copyright {\n        text-align: center;\n        font-size: $font-size-small;\n\n        @media (min-width: $screen-xxxs) {\n          text-align: left;\n        }\n      }\n    }\n\n\n    .desktopSocial {\n      display: none;\n      order: 1;\n      @media (min-width: $screen-xxxs) {\n        display: block;\n      }\n      @media (min-width: $screen-xs) {\n        order: 2;\n      }\n\n      .youtube {\n        margin-top: 4px;\n      }\n    }\n  }\n}\n"]}]);
+// Exports
+exports.locals = {
+	"footerContainer": "Footer_footerContainer__2sLHm",
+	"content": "Footer_content__1bpu6",
+	"links": "Footer_links__3LX9g",
+	"instagram": "Footer_instagram__hYJTD",
+	"youtube": "Footer_youtube__3QxDz",
+	"footerNonLinks": "Footer_footerNonLinks__1tDNn",
+	"description": "Footer_description__3olpd",
+	"mobileSocial": "Footer_mobileSocial__25dvN",
+	"copyright": "Footer_copyright__3I8Dv",
+	"desktopSocial": "Footer_desktopSocial__Sb9O9"
+};
 
 /***/ }),
 
@@ -2289,7 +2517,7 @@ exports.push([module.i, "", "",{"version":3,"sources":[],"names":[],"mappings":"
 
 exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(true);
 // Module
-exports.push([module.i, "/* Size vars */\n/* Spacing vars */\n/* Media vars */\n/* color vars */\n/* typography */\n/* border-radius */\n/* z-index */\n.Header_headerContainer__MEyVv {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  padding: 16px;\n  height: 48px;\n  box-shadow: 0 1px 2px 0 rgba(12, 18, 28, 0.12);\n  background-color: #FFFFFF;\n  position: relative;\n  z-index: 100; }\n  .Header_headerContainer__MEyVv .Header_logo__1QUnI {\n    display: flex;\n    height: 48px; }\n    .Header_headerContainer__MEyVv .Header_logo__1QUnI img {\n      height: 48px;\n      width: 48px; }\n    .Header_headerContainer__MEyVv .Header_logo__1QUnI .Header_logoText__2gUeh {\n      flex-direction: row;\n      padding-left: 8px;\n      white-space: pre-wrap;\n      font-size: 20px;\n      line-height: 22px; }\n    .Header_headerContainer__MEyVv .Header_logo__1QUnI .Header_highlight__h2VNg {\n      height: 0;\n      background-color: #C3161C;\n      border-radius: 4px;\n      transition: height 0.08s;\n      margin-top: 3px; }\n  .Header_headerContainer__MEyVv nav {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between; }\n    .Header_headerContainer__MEyVv nav .Header_linkContainer__22qxQ {\n      align-self: center;\n      height: 40px; }\n      .Header_headerContainer__MEyVv nav .Header_linkContainer__22qxQ .Header_headerLink__VSS8i {\n        padding: 8px;\n        color: #2C313B;\n        display: inline-block; }\n        .Header_headerContainer__MEyVv nav .Header_linkContainer__22qxQ .Header_headerLink__VSS8i :hover .Header_highlight__h2VNg {\n          height: 3px; }\n      .Header_headerContainer__MEyVv nav .Header_linkContainer__22qxQ .Header_highlight__h2VNg {\n        height: 0;\n        background-color: #C3161C;\n        border-radius: 4px;\n        transition: height 0.08s; }\n  .Header_headerContainer__MEyVv .Header_linkContainer__22qxQ:hover .Header_highlight__h2VNg {\n    height: 3px; }\n  .Header_headerContainer__MEyVv .Header_logo__1QUnI:hover .Header_highlight__h2VNg {\n    height: 3px; }\n", "",{"version":3,"sources":["/Users/ctong/Documents/tongskitchen/tk_next/styles/_variables.module.scss","/Users/ctong/Documents/tongskitchen/tk_next/components/Header/Header.module.scss"],"names":[],"mappings":"AAAA,cAAA;AAUA,iBAAA;AAUA,eAAA;AAwBA,eAAA;AAaA,eAAA;AAgBA,kBAAA;AAIA,YAAA;AC3EA;EACE,aAAa;EACb,mBAAmB;EACnB,8BAA8B;EAC9B,aDJiB;ECKjB,YDFY;ECGZ,8CAA0C;EAC1C,yBDyCmB;ECxCnB,kBAAkB;EAClB,YDmEkB,EAAA;EC5EpB;IAYI,aAAa;IACb,YDVU,EAAA;ICHd;MAgBM,YDbQ;MCcR,WDdQ,EAAA;ICHd;MAqBM,mBAAmB;MACnB,iBDvBM;MCwBN,qBAAqB;MACrB,eAAe;MACf,iBAAiB,EAAA;IAzBvB;MA6BM,SAAS;MACT,yBDmBa;MClBb,kBDyCkB;MCxClB,wBAAwB;MACxB,eAAe,EAAA;EAjCrB;IAsCI,aAAa;IACb,mBAAmB;IACnB,8BAA8B,EAAA;IAxClC;MA2CM,kBAAkB;MAClB,YAAY,EAAA;MA5ClB;QA8CQ,YD/CI;QCgDJ,cDJqB;QCKrB,qBAAqB,EAAA;QAhD7B;UAmDU,WAAW,EAAA;MAnDrB;QAwDQ,SAAS;QACT,yBDRW;QCSX,kBDcgB;QCbhB,wBAAwB,EAAA;EA3DhC;IAkEI,WAAW,EAAA;EAlEf;IAsEI,WAAW,EAAA","file":"Header.module.scss","sourcesContent":["/* Size vars */\n$size-s: 8px;\n$size-default: 16px;\n$size-m: 24px;\n$size-l: 36px;\n$size-xl: 48px;\n$size-xxl: 72px;\n$size-xxxl: 96px;\n$size-xxxxl: 192px;\n\n/* Spacing vars */\n$spacing-s: $size-s;\n$spacing-default: $size-default;\n$spacing-m: $size-m;\n$spacing-l: $size-l;\n$spacing-xl: $size-xl;\n$spacing-xxl: $size-xl;\n$spacing-xxxl: $size-xxxl;\n$spacing-xxxxl: $size-xxxxl;\n\n/* Media vars */\n$screen-xxxs: 480px;\n$screen-xxs: 600px;\n$screen-xs: 720px;\n$screen-s: 840px;\n$screen-m: 960px;\n$screen-l: 1024px;\n$screen-xl: 1280px;\n$screen-xxl: 1440px;\n$screen-xxxl: 1600px;\n$screen-xxxxl: 1920px;\n$screen-sizes:\n  \"screen-xxxs\" $screen-xxxs,\n  \"screen-xxs\" $screen-xxs,\n  \"screen-xs\" $screen-xs,\n  \"screen-s\" $screen-s,\n  \"screen-m\" $screen-m,\n  \"screen-l\" $screen-l,\n  \"screen-xl\" $screen-xl,\n  \"screen-xxl\" $screen-xxl,\n  \"screen-xxxl\" $screen-xxxl,\n  \"screen-xxxxl\" $screen-xxxxl;\n\n\n/* color vars */\n$color-black-primary: #2C313B;\n$color-black-secondary: #6B6E75;\n$color-black-tertiary: #A9AAAF;\n$color-black-quartenary: #E3E4E5;\n$color-background-gray: #F9F8F8;\n$color-white: #FFFFFF;\n$color-red: #C3161C;\n\n$color-text-primary: $color-black-primary;\n$color-text-secondary: $color-black-secondary;\n$color-divider: $color-black-quartenary;\n\n/* typography */\n$font-family: 'Work Sans', Helvetica, Arial, sans-serif;\n$font-size-default: 16px;\n$font-size-secondary: 14px;\n$line-height-secondary: 20px;\n$headline2: 1.875em; // 30px;\n$headline-mobile: 2.5em;     // 40px\n$headline-desktop: 3.75em; // 60px\n$text-small: 0.75em; // 12px;\n$headline-line-height: 1.25em;\n$large-card-title: 1.5em;\n$line-height: 1.5em;\n\n$font-weight-regular: 400;\n$font-weight-bold: 600;\n\n/* border-radius */\n$card-border-radius: 4px;\n$button-radius: 24px;\n\n/* z-index */\n$z-index-header: 100;\n","@import \"../../styles/_variables.module.scss\";\n\n.headerContainer {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  padding: $spacing-default;\n  height: $spacing-xl;\n  box-shadow: 0 1px 2px 0 rgba(12,18,28,.12);\n  background-color: $color-white;\n  position: relative;\n  z-index: $z-index-header;\n\n  .logo {\n    display: flex;\n    height: $size-xl;\n\n    img {\n      height: $size-xl;\n      width: $size-xl;\n    }\n\n    .logoText {\n      flex-direction: row;\n      padding-left: $spacing-s;\n      white-space: pre-wrap;\n      font-size: 20px;\n      line-height: 22px;\n    }\n\n    .highlight {\n      height: 0;\n      background-color: $color-red;\n      border-radius: $card-border-radius;\n      transition: height 0.08s;\n      margin-top: 3px;\n    }\n  }\n\n  nav {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n\n    .linkContainer {\n      align-self: center;\n      height: 40px;\n      .headerLink {\n        padding: $spacing-s;\n        color: $color-text-primary;\n        display: inline-block;\n\n        :hover .highlight {\n          height: 3px;\n        }\n      }\n\n      .highlight {\n        height: 0;\n        background-color: $color-red;\n        border-radius: $card-border-radius;\n        transition: height 0.08s;\n      }\n    }\n\n  }\n\n  .linkContainer:hover  .highlight {\n    height: 3px;\n  }\n\n  .logo:hover  .highlight {\n    height: 3px;\n  }\n}\n"]}]);
+exports.push([module.i, "/* Size vars */\n/* Spacing vars */\n/* Media vars */\n/* color vars */\n/* typography */\n/* border-radius */\n/* z-index */\n.Header_headerContainer__MEyVv {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  padding: 16px;\n  height: 48px;\n  box-shadow: 0 1px 2px 0 rgba(12, 18, 28, 0.12);\n  background-color: #FFFFFF;\n  position: relative;\n  z-index: 100; }\n  .Header_headerContainer__MEyVv .Header_logo__1QUnI {\n    display: flex;\n    height: 48px; }\n    .Header_headerContainer__MEyVv .Header_logo__1QUnI img {\n      height: 48px;\n      width: 48px; }\n    .Header_headerContainer__MEyVv .Header_logo__1QUnI .Header_logoText__2gUeh {\n      flex-direction: row;\n      padding-left: 8px;\n      white-space: pre-wrap;\n      font-size: 20px;\n      line-height: 22px; }\n    .Header_headerContainer__MEyVv .Header_logo__1QUnI .Header_highlight__h2VNg {\n      height: 0;\n      background-color: #E03137;\n      border-radius: 4px;\n      transition: height 0.08s;\n      margin-top: 3px; }\n  .Header_headerContainer__MEyVv nav {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between; }\n    .Header_headerContainer__MEyVv nav .Header_linkContainer__22qxQ {\n      align-self: center;\n      height: 40px; }\n      .Header_headerContainer__MEyVv nav .Header_linkContainer__22qxQ .Header_headerLink__VSS8i {\n        padding: 8px;\n        color: #2C313B;\n        display: inline-block;\n        font-size: 14px; }\n        @media (min-width: 480px) {\n          .Header_headerContainer__MEyVv nav .Header_linkContainer__22qxQ .Header_headerLink__VSS8i {\n            font-size: 16px; } }\n        .Header_headerContainer__MEyVv nav .Header_linkContainer__22qxQ .Header_headerLink__VSS8i :hover .Header_highlight__h2VNg {\n          height: 3px; }\n      .Header_headerContainer__MEyVv nav .Header_linkContainer__22qxQ .Header_highlight__h2VNg {\n        height: 0;\n        background-color: #E03137;\n        border-radius: 4px;\n        transition: height 0.08s; }\n  .Header_headerContainer__MEyVv .Header_linkContainer__22qxQ:hover .Header_highlight__h2VNg {\n    height: 3px; }\n  .Header_headerContainer__MEyVv .Header_logo__1QUnI:hover .Header_highlight__h2VNg {\n    height: 3px; }\n", "",{"version":3,"sources":["/Users/ctong/Documents/tongskitchen/tk_next/styles/_variables.module.scss","/Users/ctong/Documents/tongskitchen/tk_next/components/Header/Header.module.scss"],"names":[],"mappings":"AAAA,cAAA;AAUA,iBAAA;AAUA,eAAA;AAwBA,eAAA;AAmBA,eAAA;AAiBA,kBAAA;AAIA,YAAA;AClFA;EACE,aAAa;EACb,mBAAmB;EACnB,8BAA8B;EAC9B,aDJiB;ECKjB,YDFY;ECGZ,8CAA0C;EAC1C,yBD0CmB;ECzCnB,kBAAkB;EAClB,YD0EkB,EAAA;ECnFpB;IAYI,aAAa;IACb,YDVU,EAAA;ICHd;MAgBM,YDbQ;MCcR,WDdQ,EAAA;ICHd;MAqBM,mBAAmB;MACnB,iBDvBM;MCwBN,qBAAqB;MACrB,eAAe;MACf,iBAAiB,EAAA;IAzBvB;MA6BM,SAAS;MACT,yBDuBa;MCtBb,kBDgDkB;MC/ClB,wBAAwB;MACxB,eAAe,EAAA;EAjCrB;IAsCI,aAAa;IACb,mBAAmB;IACnB,8BAA8B,EAAA;IAxClC;MA2CM,kBAAkB;MAClB,YAAY,EAAA;MA5ClB;QA+CQ,YDhDI;QCiDJ,cDLqB;QCMrB,qBAAqB;QACrB,eDckB,EAAA;QCZlB;UApDR;YAqDU,eDUc,EAAA,ECJjB;QA3DP;UAyDU,WAAW,EAAA;MAzDrB;QA8DQ,SAAS;QACT,yBDVW;QCWX,kBDegB;QCdhB,wBAAwB,EAAA;EAjEhC;IAwEI,WAAW,EAAA;EAxEf;IA4EI,WAAW,EAAA","file":"Header.module.scss","sourcesContent":["/* Size vars */\n$size-s: 8px;\n$size-default: 16px;\n$size-m: 24px;\n$size-l: 36px;\n$size-xl: 48px;\n$size-xxl: 72px;\n$size-xxxl: 96px;\n$size-xxxxl: 192px;\n\n/* Spacing vars */\n$spacing-s: $size-s;\n$spacing-default: $size-default;\n$spacing-m: $size-m;\n$spacing-l: $size-l;\n$spacing-xl: $size-xl;\n$spacing-xxl: $size-xxl;\n$spacing-xxxl: $size-xxxl;\n$spacing-xxxxl: $size-xxxxl;\n\n/* Media vars */\n$screen-xxxs: 480px;\n$screen-xxs: 600px;\n$screen-xs: 720px;\n$screen-s: 840px;\n$screen-m: 960px;\n$screen-l: 1024px;\n$screen-xl: 1280px;\n$screen-xxl: 1440px;\n$screen-xxxl: 1600px;\n$screen-xxxxl: 1920px;\n$screen-sizes:\n  \"screen-xxxs\" $screen-xxxs,\n  \"screen-xxs\" $screen-xxs,\n  \"screen-xs\" $screen-xs,\n  \"screen-s\" $screen-s,\n  \"screen-m\" $screen-m,\n  \"screen-l\" $screen-l,\n  \"screen-xl\" $screen-xl,\n  \"screen-xxl\" $screen-xxl,\n  \"screen-xxxl\" $screen-xxxl,\n  \"screen-xxxxl\" $screen-xxxxl;\n\n\n/* color vars */\n$color-black-primary: #2C313B;\n$color-black-secondary: #6B6E75;\n$color-black-tertiary: #A9AAAF;\n$color-black-quartenary: #E3E4E5;\n$color-background-gray: #F9F8F8;\n$color-background-dark: #2C313B;\n$color-white: #FFFFFF;\n$color-white-secondary: #B1B2B6;\n// $color-red: #C3161C;\n// $color-red: #F01516;\n$color-red: #E03137;\n\n$color-text-primary: $color-black-primary;\n$color-text-secondary: $color-black-secondary;\n$color-text-inverse-primary: $color-white;\n$color-text-inverse-secondary: $color-white-secondary;\n$color-divider: $color-black-quartenary;\n\n/* typography */\n$font-family: 'Work Sans', Helvetica, Arial, sans-serif;\n$font-size-default: 16px;\n$font-size-secondary: 14px;\n$font-size-small: 12px;\n$line-height-secondary: 20px;\n$headline2: 1.875em; // 30px;\n$headline-mobile: 2.5em;     // 40px\n$headline-desktop: 3.75em; // 60px\n$text-small: 0.75em; // 12px;\n$headline-line-height: 1.25em;\n$large-card-title: 1.5em;\n$line-height: 1.5em;\n\n$font-weight-regular: 300;\n$font-weight-bold: 500;\n\n/* border-radius */\n$card-border-radius: 4px;\n$button-radius: 24px;\n\n/* z-index */\n$z-index-header: 100;\n","@import \"../../styles/_variables.module.scss\";\n\n.headerContainer {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  padding: $spacing-default;\n  height: $spacing-xl;\n  box-shadow: 0 1px 2px 0 rgba(12,18,28,.12);\n  background-color: $color-white;\n  position: relative;\n  z-index: $z-index-header;\n\n  .logo {\n    display: flex;\n    height: $size-xl;\n\n    img {\n      height: $size-xl;\n      width: $size-xl;\n    }\n\n    .logoText {\n      flex-direction: row;\n      padding-left: $spacing-s;\n      white-space: pre-wrap;\n      font-size: 20px;\n      line-height: 22px;\n    }\n\n    .highlight {\n      height: 0;\n      background-color: $color-red;\n      border-radius: $card-border-radius;\n      transition: height 0.08s;\n      margin-top: 3px;\n    }\n  }\n\n  nav {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n\n    .linkContainer {\n      align-self: center;\n      height: 40px;\n\n      .headerLink {\n        padding: $spacing-s;\n        color: $color-text-primary;\n        display: inline-block;\n        font-size: $font-size-secondary;\n\n        @media (min-width: $screen-xxxs) {\n          font-size: $font-size-default;\n        }\n\n        :hover .highlight {\n          height: 3px;\n        }\n      }\n\n      .highlight {\n        height: 0;\n        background-color: $color-red;\n        border-radius: $card-border-radius;\n        transition: height 0.08s;\n      }\n    }\n\n  }\n\n  .linkContainer:hover  .highlight {\n    height: 3px;\n  }\n\n  .logo:hover  .highlight {\n    height: 3px;\n  }\n}\n"]}]);
 // Exports
 exports.locals = {
 	"headerContainer": "Header_headerContainer__MEyVv",
@@ -2311,7 +2539,7 @@ exports.locals = {
 
 exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(true);
 // Module
-exports.push([module.i, "/* Size vars */\n/* Spacing vars */\n/* Media vars */\n/* color vars */\n/* typography */\n/* border-radius */\n/* z-index */\n.Hero_heroContainer__3SaZB {\n  margin-bottom: var(--size-xl);\n  text-align: center;\n  background-color: #FFFFFF; }\n  @media (min-width: 600px) {\n    .Hero_heroContainer__3SaZB {\n      align-items: center;\n      display: flex;\n      min-height: 400px;\n      overflow: visible;\n      position: relative; } }\n  .Hero_heroContainer__3SaZB .Hero_mediaContainer__2qMig {\n    height: 300px; }\n    @media (min-width: 600px) {\n      .Hero_heroContainer__3SaZB .Hero_mediaContainer__2qMig {\n        flex-basis: 50%;\n        order: 2;\n        min-height: 400px; } }\n    @media (min-width: 1440px) {\n      .Hero_heroContainer__3SaZB .Hero_mediaContainer__2qMig {\n        min-height: 600px; } }\n    .Hero_heroContainer__3SaZB .Hero_mediaContainer__2qMig img {\n      height: 100%;\n      width: 100%;\n      -o-object-fit: cover;\n         object-fit: cover; }\n  .Hero_heroContainer__3SaZB .Hero_textContainer__3JZZU {\n    padding: 0 16px 36px 16px; }\n    @media (min-width: 600px) {\n      .Hero_heroContainer__3SaZB .Hero_textContainer__3JZZU {\n        padding-bottom: 0;\n        flex-basis: 50%;\n        position: relative;\n        z-index: 2;\n        order: 1; } }\n    .Hero_heroContainer__3SaZB .Hero_textContainer__3JZZU .Hero_bar__3GfU5 {\n      width: 40px;\n      height: 4px;\n      border-radius: 2px;\n      background-color: #C3161C;\n      margin: 24px auto; }\n    .Hero_heroContainer__3SaZB .Hero_textContainer__3JZZU .Hero_preText__hTrs_ {\n      text-transform: capitalize;\n      margin-bottom: 0; }\n    .Hero_heroContainer__3SaZB .Hero_textContainer__3JZZU .Hero_hero-headline__C_zft {\n      margin: 16px; }\n", "",{"version":3,"sources":["/Users/ctong/Documents/tongskitchen/tk_next/styles/_variables.module.scss","/Users/ctong/Documents/tongskitchen/tk_next/components/Hero/Hero.module.scss"],"names":[],"mappings":"AAAA,cAAA;AAUA,iBAAA;AAUA,eAAA;AAwBA,eAAA;AAaA,eAAA;AAgBA,kBAAA;AAIA,YAAA;AC3EA;EACE,6BAA6B;EAC7B,kBAAkB;EAClB,yBD6CmB,EAAA;EC3CnB;IALF;MAMI,mBAAmB;MACnB,aAAa;MACb,iBAAiB;MACjB,iBAAiB;MACjB,kBAAkB,EAAA,EAmDrB;EA7DD;IAcI,aAAa,EAAA;IAEb;MAhBJ;QAiBM,eAAe;QACf,QAAQ;QACR,iBAAiB,EAAA,EAYpB;IATC;MAtBJ;QAuBM,iBAAiB,EAAA,EAQpB;IA/BH;MA2BM,YAAY;MACZ,WAAW;MACX,oBAAiB;SAAjB,iBAAiB,EAAA;EA7BvB;IAkCI,yBDlCe,EAAA;ICoCf;MApCJ;QAqCM,iBAAiB;QACjB,eAAe;QACf,kBAAkB;QAClB,UAAU;QACV,QAAQ,EAAA,EAmBX;IA5DH;MA6CM,WAAW;MACX,WAAW;MACX,kBAAkB;MAClB,yBDCa;MCAb,iBAAuB,EAAA;IAjD7B;MAqDM,0BAA0B;MAC1B,gBAAgB,EAAA;IAtDtB;MA0DM,YD1Da,EAAA","file":"Hero.module.scss","sourcesContent":["/* Size vars */\n$size-s: 8px;\n$size-default: 16px;\n$size-m: 24px;\n$size-l: 36px;\n$size-xl: 48px;\n$size-xxl: 72px;\n$size-xxxl: 96px;\n$size-xxxxl: 192px;\n\n/* Spacing vars */\n$spacing-s: $size-s;\n$spacing-default: $size-default;\n$spacing-m: $size-m;\n$spacing-l: $size-l;\n$spacing-xl: $size-xl;\n$spacing-xxl: $size-xl;\n$spacing-xxxl: $size-xxxl;\n$spacing-xxxxl: $size-xxxxl;\n\n/* Media vars */\n$screen-xxxs: 480px;\n$screen-xxs: 600px;\n$screen-xs: 720px;\n$screen-s: 840px;\n$screen-m: 960px;\n$screen-l: 1024px;\n$screen-xl: 1280px;\n$screen-xxl: 1440px;\n$screen-xxxl: 1600px;\n$screen-xxxxl: 1920px;\n$screen-sizes:\n  \"screen-xxxs\" $screen-xxxs,\n  \"screen-xxs\" $screen-xxs,\n  \"screen-xs\" $screen-xs,\n  \"screen-s\" $screen-s,\n  \"screen-m\" $screen-m,\n  \"screen-l\" $screen-l,\n  \"screen-xl\" $screen-xl,\n  \"screen-xxl\" $screen-xxl,\n  \"screen-xxxl\" $screen-xxxl,\n  \"screen-xxxxl\" $screen-xxxxl;\n\n\n/* color vars */\n$color-black-primary: #2C313B;\n$color-black-secondary: #6B6E75;\n$color-black-tertiary: #A9AAAF;\n$color-black-quartenary: #E3E4E5;\n$color-background-gray: #F9F8F8;\n$color-white: #FFFFFF;\n$color-red: #C3161C;\n\n$color-text-primary: $color-black-primary;\n$color-text-secondary: $color-black-secondary;\n$color-divider: $color-black-quartenary;\n\n/* typography */\n$font-family: 'Work Sans', Helvetica, Arial, sans-serif;\n$font-size-default: 16px;\n$font-size-secondary: 14px;\n$line-height-secondary: 20px;\n$headline2: 1.875em; // 30px;\n$headline-mobile: 2.5em;     // 40px\n$headline-desktop: 3.75em; // 60px\n$text-small: 0.75em; // 12px;\n$headline-line-height: 1.25em;\n$large-card-title: 1.5em;\n$line-height: 1.5em;\n\n$font-weight-regular: 400;\n$font-weight-bold: 600;\n\n/* border-radius */\n$card-border-radius: 4px;\n$button-radius: 24px;\n\n/* z-index */\n$z-index-header: 100;\n","@import \"../../styles/_variables.module.scss\";\n\n.heroContainer {\n  margin-bottom: var(--size-xl);\n  text-align: center;\n  background-color: $color-white;\n\n  @media (min-width: $screen-xxs) {\n    align-items: center;\n    display: flex;\n    min-height: 400px;\n    overflow: visible;\n    position: relative;\n  }\n\n  .mediaContainer {\n    height: 300px;\n\n    @media (min-width: $screen-xxs) {\n      flex-basis: 50%;\n      order: 2;\n      min-height: 400px;\n    }\n\n    @media (min-width: $screen-xxl) {\n      min-height: 600px;\n    }\n\n    img {\n      height: 100%;\n      width: 100%;\n      object-fit: cover;\n    }\n  }\n\n  .textContainer {\n    padding: 0 $spacing-default $spacing-l $spacing-default;\n\n    @media (min-width: $screen-xxs) {\n      padding-bottom: 0;\n      flex-basis: 50%;\n      position: relative;\n      z-index: 2;\n      order: 1;\n    }\n\n    .bar {\n      width: 40px;\n      height: 4px;\n      border-radius: 2px;\n      background-color: $color-red;\n      margin: $spacing-m auto;\n    }\n\n    .preText {\n      text-transform: capitalize;\n      margin-bottom: 0;\n    }\n\n    .hero-headline {\n      margin: $spacing-default;\n    }\n  }\n}\n"]}]);
+exports.push([module.i, "/* Size vars */\n/* Spacing vars */\n/* Media vars */\n/* color vars */\n/* typography */\n/* border-radius */\n/* z-index */\n.Hero_heroContainer__3SaZB {\n  margin-bottom: var(--size-xl);\n  text-align: center;\n  background-color: #FFFFFF; }\n  @media (min-width: 600px) {\n    .Hero_heroContainer__3SaZB {\n      align-items: center;\n      display: flex;\n      min-height: 400px;\n      overflow: visible;\n      position: relative; } }\n  .Hero_heroContainer__3SaZB .Hero_mediaContainer__2qMig {\n    height: 300px; }\n    @media (min-width: 600px) {\n      .Hero_heroContainer__3SaZB .Hero_mediaContainer__2qMig {\n        flex-basis: 50%;\n        order: 2;\n        min-height: 400px; } }\n    @media (min-width: 1440px) {\n      .Hero_heroContainer__3SaZB .Hero_mediaContainer__2qMig {\n        min-height: 600px; } }\n    .Hero_heroContainer__3SaZB .Hero_mediaContainer__2qMig img {\n      height: 100%;\n      width: 100%;\n      -o-object-fit: cover;\n         object-fit: cover; }\n  .Hero_heroContainer__3SaZB .Hero_textContainer__3JZZU {\n    padding: 0 16px 36px 16px; }\n    @media (min-width: 600px) {\n      .Hero_heroContainer__3SaZB .Hero_textContainer__3JZZU {\n        padding-bottom: 0;\n        flex-basis: 50%;\n        position: relative;\n        z-index: 2;\n        order: 1; } }\n    .Hero_heroContainer__3SaZB .Hero_textContainer__3JZZU .Hero_bar__3GfU5 {\n      width: 40px;\n      height: 4px;\n      border-radius: 2px;\n      background-color: #E03137;\n      margin: 24px auto; }\n    .Hero_heroContainer__3SaZB .Hero_textContainer__3JZZU .Hero_preText__hTrs_ {\n      text-transform: capitalize;\n      margin-bottom: 0; }\n    .Hero_heroContainer__3SaZB .Hero_textContainer__3JZZU .Hero_hero-headline__C_zft {\n      margin: 16px; }\n    .Hero_heroContainer__3SaZB .Hero_textContainer__3JZZU .Hero_postText__2eSUh {\n      margin-top: 16px; }\n", "",{"version":3,"sources":["/Users/ctong/Documents/tongskitchen/tk_next/styles/_variables.module.scss","/Users/ctong/Documents/tongskitchen/tk_next/components/Hero/Hero.module.scss"],"names":[],"mappings":"AAAA,cAAA;AAUA,iBAAA;AAUA,eAAA;AAwBA,eAAA;AAmBA,eAAA;AAiBA,kBAAA;AAIA,YAAA;AClFA;EACE,6BAA6B;EAC7B,kBAAkB;EAClB,yBD8CmB,EAAA;EC5CnB;IALF;MAMI,mBAAmB;MACnB,aAAa;MACb,iBAAiB;MACjB,iBAAiB;MACjB,kBAAkB,EAAA,EAuDrB;EAjED;IAcI,aAAa,EAAA;IAEb;MAhBJ;QAiBM,eAAe;QACf,QAAQ;QACR,iBAAiB,EAAA,EAYpB;IATC;MAtBJ;QAuBM,iBAAiB,EAAA,EAQpB;IA/BH;MA2BM,YAAY;MACZ,WAAW;MACX,oBAAiB;SAAjB,iBAAiB,EAAA;EA7BvB;IAkCI,yBDlCe,EAAA;ICoCf;MApCJ;QAqCM,iBAAiB;QACjB,eAAe;QACf,kBAAkB;QAClB,UAAU;QACV,QAAQ,EAAA,EAuBX;IAhEH;MA6CM,WAAW;MACX,WAAW;MACX,kBAAkB;MAClB,yBDKa;MCJb,iBAAuB,EAAA;IAjD7B;MAqDM,0BAA0B;MAC1B,gBAAgB,EAAA;IAtDtB;MA0DM,YD1Da,EAAA;ICAnB;MA8DM,gBD9Da,EAAA","file":"Hero.module.scss","sourcesContent":["/* Size vars */\n$size-s: 8px;\n$size-default: 16px;\n$size-m: 24px;\n$size-l: 36px;\n$size-xl: 48px;\n$size-xxl: 72px;\n$size-xxxl: 96px;\n$size-xxxxl: 192px;\n\n/* Spacing vars */\n$spacing-s: $size-s;\n$spacing-default: $size-default;\n$spacing-m: $size-m;\n$spacing-l: $size-l;\n$spacing-xl: $size-xl;\n$spacing-xxl: $size-xxl;\n$spacing-xxxl: $size-xxxl;\n$spacing-xxxxl: $size-xxxxl;\n\n/* Media vars */\n$screen-xxxs: 480px;\n$screen-xxs: 600px;\n$screen-xs: 720px;\n$screen-s: 840px;\n$screen-m: 960px;\n$screen-l: 1024px;\n$screen-xl: 1280px;\n$screen-xxl: 1440px;\n$screen-xxxl: 1600px;\n$screen-xxxxl: 1920px;\n$screen-sizes:\n  \"screen-xxxs\" $screen-xxxs,\n  \"screen-xxs\" $screen-xxs,\n  \"screen-xs\" $screen-xs,\n  \"screen-s\" $screen-s,\n  \"screen-m\" $screen-m,\n  \"screen-l\" $screen-l,\n  \"screen-xl\" $screen-xl,\n  \"screen-xxl\" $screen-xxl,\n  \"screen-xxxl\" $screen-xxxl,\n  \"screen-xxxxl\" $screen-xxxxl;\n\n\n/* color vars */\n$color-black-primary: #2C313B;\n$color-black-secondary: #6B6E75;\n$color-black-tertiary: #A9AAAF;\n$color-black-quartenary: #E3E4E5;\n$color-background-gray: #F9F8F8;\n$color-background-dark: #2C313B;\n$color-white: #FFFFFF;\n$color-white-secondary: #B1B2B6;\n// $color-red: #C3161C;\n// $color-red: #F01516;\n$color-red: #E03137;\n\n$color-text-primary: $color-black-primary;\n$color-text-secondary: $color-black-secondary;\n$color-text-inverse-primary: $color-white;\n$color-text-inverse-secondary: $color-white-secondary;\n$color-divider: $color-black-quartenary;\n\n/* typography */\n$font-family: 'Work Sans', Helvetica, Arial, sans-serif;\n$font-size-default: 16px;\n$font-size-secondary: 14px;\n$font-size-small: 12px;\n$line-height-secondary: 20px;\n$headline2: 1.875em; // 30px;\n$headline-mobile: 2.5em;     // 40px\n$headline-desktop: 3.75em; // 60px\n$text-small: 0.75em; // 12px;\n$headline-line-height: 1.25em;\n$large-card-title: 1.5em;\n$line-height: 1.5em;\n\n$font-weight-regular: 300;\n$font-weight-bold: 500;\n\n/* border-radius */\n$card-border-radius: 4px;\n$button-radius: 24px;\n\n/* z-index */\n$z-index-header: 100;\n","@import \"../../styles/_variables.module.scss\";\n\n.heroContainer {\n  margin-bottom: var(--size-xl);\n  text-align: center;\n  background-color: $color-white;\n\n  @media (min-width: $screen-xxs) {\n    align-items: center;\n    display: flex;\n    min-height: 400px;\n    overflow: visible;\n    position: relative;\n  }\n\n  .mediaContainer {\n    height: 300px;\n\n    @media (min-width: $screen-xxs) {\n      flex-basis: 50%;\n      order: 2;\n      min-height: 400px;\n    }\n\n    @media (min-width: $screen-xxl) {\n      min-height: 600px;\n    }\n\n    img {\n      height: 100%;\n      width: 100%;\n      object-fit: cover;\n    }\n  }\n\n  .textContainer {\n    padding: 0 $spacing-default $spacing-l $spacing-default;\n\n    @media (min-width: $screen-xxs) {\n      padding-bottom: 0;\n      flex-basis: 50%;\n      position: relative;\n      z-index: 2;\n      order: 1;\n    }\n\n    .bar {\n      width: 40px;\n      height: 4px;\n      border-radius: 2px;\n      background-color: $color-red;\n      margin: $spacing-m auto;\n    }\n\n    .preText {\n      text-transform: capitalize;\n      margin-bottom: 0;\n    }\n\n    .hero-headline {\n      margin: $spacing-default;\n    }\n\n    .postText {\n      margin-top: $spacing-default;\n    }\n  }\n}\n"]}]);
 // Exports
 exports.locals = {
 	"heroContainer": "Hero_heroContainer__3SaZB",
@@ -2319,7 +2547,8 @@ exports.locals = {
 	"textContainer": "Hero_textContainer__3JZZU",
 	"bar": "Hero_bar__3GfU5",
 	"preText": "Hero_preText__hTrs_",
-	"hero-headline": "Hero_hero-headline__C_zft"
+	"hero-headline": "Hero_hero-headline__C_zft",
+	"postText": "Hero_postText__2eSUh"
 };
 
 /***/ }),
@@ -2354,12 +2583,12 @@ exports.locals = {
 
 exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(true);
 // Module
-exports.push([module.i, "/* Size vars */\n/* Spacing vars */\n/* Media vars */\n/* color vars */\n/* typography */\n/* border-radius */\n/* z-index */\n.homePage_placeholder__1J2VI {\n  background-color: #E5E4E4; }\n\n.homePage_featuredRecipes__EpRQY h2 {\n  margin-bottom: 16px; }\n\n@media (min-width: 840px) {\n  .homePage_featuredRecipes__EpRQY .homePage_featuredRecipesFlex__1dreP {\n    flex-wrap: nowrap; } }\n\n.homePage_featuredRecipes__EpRQY .homePage_featuredRecipesFlex__1dreP .homePage_cardSection__3DfTv {\n  flex-basis: 100%;\n  max-width: 100%; }\n  @media (min-width: 840px) {\n    .homePage_featuredRecipes__EpRQY .homePage_featuredRecipesFlex__1dreP .homePage_cardSection__3DfTv {\n      flex-grow: 1;\n      flex-basis: auto;\n      max-width: none; } }\n\n.homePage_featuredRecipes__EpRQY .homePage_featuredRecipesFlex__1dreP .homePage_adSection__1lMeh {\n  flex-basis: 100%;\n  max-width: 100%;\n  border: 1px solid #E3E4E5;\n  margin: 8px; }\n  @media (min-width: 840px) {\n    .homePage_featuredRecipes__EpRQY .homePage_featuredRecipesFlex__1dreP .homePage_adSection__1lMeh {\n      flex-grow: 0;\n      flex-basis: auto;\n      max-width: none;\n      border: none;\n      margin: 0; } }\n  .homePage_featuredRecipes__EpRQY .homePage_featuredRecipesFlex__1dreP .homePage_adSection__1lMeh .homePage_placeholder__1J2VI {\n    width: 300px;\n    height: 600px;\n    margin: 16px auto; }\n    @media (min-width: 840px) {\n      .homePage_featuredRecipes__EpRQY .homePage_featuredRecipesFlex__1dreP .homePage_adSection__1lMeh .homePage_placeholder__1J2VI {\n        margin: 0; } }\n", "",{"version":3,"sources":["/Users/ctong/Documents/tongskitchen/tk_next/styles/_variables.module.scss","/Users/ctong/Documents/tongskitchen/tk_next/styles/pages/homePage.module.scss"],"names":[],"mappings":"AAAA,cAAA;AAUA,iBAAA;AAUA,eAAA;AAwBA,eAAA;AAaA,eAAA;AAgBA,kBAAA;AAIA,YAAA;AC3EA;EACE,yBAAyB,EAAA;;AAG3B;EAGI,mBDPe,EAAA;;ACYf;EARJ;IASM,iBAAiB,EAAA,EAsCpB;;AA/CH;EAaM,gBAAgB;EAChB,eAAe,EAAA;EAEf;IAhBN;MAiBQ,YAAY;MACZ,gBAAgB;MAChB,eAAe,EAAA,EAElB;;AArBL;EAwBM,gBAAgB;EAChB,eAAe;EACf,yBDgB0B;ECf1B,WDhCM,EAAA;ECkCN;IA7BN;MA8BQ,YAAY;MACZ,gBAAgB;MAChB,eAAe;MACf,YAAY;MACZ,SAAS,EAAA,EAYZ;EA9CL;IAsCQ,YAAY;IACZ,aAAa;IACb,iBAA6B,EAAA;IAE7B;MA1CR;QA2CU,SAAS,EAAA,EAEZ","file":"homePage.module.scss","sourcesContent":["/* Size vars */\n$size-s: 8px;\n$size-default: 16px;\n$size-m: 24px;\n$size-l: 36px;\n$size-xl: 48px;\n$size-xxl: 72px;\n$size-xxxl: 96px;\n$size-xxxxl: 192px;\n\n/* Spacing vars */\n$spacing-s: $size-s;\n$spacing-default: $size-default;\n$spacing-m: $size-m;\n$spacing-l: $size-l;\n$spacing-xl: $size-xl;\n$spacing-xxl: $size-xl;\n$spacing-xxxl: $size-xxxl;\n$spacing-xxxxl: $size-xxxxl;\n\n/* Media vars */\n$screen-xxxs: 480px;\n$screen-xxs: 600px;\n$screen-xs: 720px;\n$screen-s: 840px;\n$screen-m: 960px;\n$screen-l: 1024px;\n$screen-xl: 1280px;\n$screen-xxl: 1440px;\n$screen-xxxl: 1600px;\n$screen-xxxxl: 1920px;\n$screen-sizes:\n  \"screen-xxxs\" $screen-xxxs,\n  \"screen-xxs\" $screen-xxs,\n  \"screen-xs\" $screen-xs,\n  \"screen-s\" $screen-s,\n  \"screen-m\" $screen-m,\n  \"screen-l\" $screen-l,\n  \"screen-xl\" $screen-xl,\n  \"screen-xxl\" $screen-xxl,\n  \"screen-xxxl\" $screen-xxxl,\n  \"screen-xxxxl\" $screen-xxxxl;\n\n\n/* color vars */\n$color-black-primary: #2C313B;\n$color-black-secondary: #6B6E75;\n$color-black-tertiary: #A9AAAF;\n$color-black-quartenary: #E3E4E5;\n$color-background-gray: #F9F8F8;\n$color-white: #FFFFFF;\n$color-red: #C3161C;\n\n$color-text-primary: $color-black-primary;\n$color-text-secondary: $color-black-secondary;\n$color-divider: $color-black-quartenary;\n\n/* typography */\n$font-family: 'Work Sans', Helvetica, Arial, sans-serif;\n$font-size-default: 16px;\n$font-size-secondary: 14px;\n$line-height-secondary: 20px;\n$headline2: 1.875em; // 30px;\n$headline-mobile: 2.5em;     // 40px\n$headline-desktop: 3.75em; // 60px\n$text-small: 0.75em; // 12px;\n$headline-line-height: 1.25em;\n$large-card-title: 1.5em;\n$line-height: 1.5em;\n\n$font-weight-regular: 400;\n$font-weight-bold: 600;\n\n/* border-radius */\n$card-border-radius: 4px;\n$button-radius: 24px;\n\n/* z-index */\n$z-index-header: 100;\n","@import \"../_variables.module.scss\";\n\n.placeholder {\n  background-color: #E5E4E4;\n}\n\n.featuredRecipes {\n\n  h2 {\n    margin-bottom: $spacing-default;\n  }\n\n  .featuredRecipesFlex {\n\n    @media (min-width: $screen-s) {\n      flex-wrap: nowrap;\n    }\n\n    .cardSection {\n      flex-basis: 100%;\n      max-width: 100%;\n\n      @media (min-width: $screen-s) {\n        flex-grow: 1;\n        flex-basis: auto;\n        max-width: none;\n      }\n    }\n\n    .adSection {\n      flex-basis: 100%;\n      max-width: 100%;\n      border: 1px solid $color-divider;\n      margin: $spacing-s;\n\n      @media (min-width: $screen-s) {\n        flex-grow: 0;\n        flex-basis: auto;\n        max-width: none;\n        border: none;\n        margin: 0;\n      }\n\n      .placeholder {\n        width: 300px;\n        height: 600px;\n        margin: $spacing-default auto;\n\n        @media (min-width: $screen-s) {\n          margin: 0;\n        }\n      }\n    }\n  }\n\n\n\n}\n"]}]);
+exports.push([module.i, "/* Size vars */\n/* Spacing vars */\n/* Media vars */\n/* color vars */\n/* typography */\n/* border-radius */\n/* z-index */\n.homePage_placeholder__1J2VI {\n  background-color: #E5E4E4; }\n\n.homePage_descriptionCardGrid__1TGW2 h2 {\n  margin-bottom: 16px; }\n\n@media (min-width: 840px) {\n  .homePage_descriptionCardGrid__1TGW2 .homePage_descriptionCardGridFlex__1wNNC {\n    flex-wrap: nowrap; } }\n\n.homePage_descriptionCardGrid__1TGW2 .homePage_descriptionCardGridFlex__1wNNC .homePage_cardSection__3DfTv {\n  flex-basis: 100%;\n  max-width: 100%; }\n  @media (min-width: 840px) {\n    .homePage_descriptionCardGrid__1TGW2 .homePage_descriptionCardGridFlex__1wNNC .homePage_cardSection__3DfTv {\n      flex-grow: 1;\n      flex-basis: auto;\n      max-width: none; } }\n\n.homePage_descriptionCardGrid__1TGW2 .homePage_descriptionCardGridFlex__1wNNC .homePage_adSection__1lMeh {\n  flex-basis: 100%;\n  max-width: 100%;\n  border: 1px solid #E3E4E5;\n  margin: 8px; }\n  @media (min-width: 840px) {\n    .homePage_descriptionCardGrid__1TGW2 .homePage_descriptionCardGridFlex__1wNNC .homePage_adSection__1lMeh {\n      flex-grow: 0;\n      flex-basis: auto;\n      max-width: none;\n      border: none;\n      margin: 0; } }\n  .homePage_descriptionCardGrid__1TGW2 .homePage_descriptionCardGridFlex__1wNNC .homePage_adSection__1lMeh .homePage_placeholder__1J2VI {\n    width: 300px;\n    height: 600px;\n    margin: 16px auto; }\n    @media (min-width: 840px) {\n      .homePage_descriptionCardGrid__1TGW2 .homePage_descriptionCardGridFlex__1wNNC .homePage_adSection__1lMeh .homePage_placeholder__1J2VI {\n        margin: 0; } }\n", "",{"version":3,"sources":["/Users/ctong/Documents/tongskitchen/tk_next/styles/_variables.module.scss","/Users/ctong/Documents/tongskitchen/tk_next/styles/pages/homePage.module.scss"],"names":[],"mappings":"AAAA,cAAA;AAUA,iBAAA;AAUA,eAAA;AAwBA,eAAA;AAmBA,eAAA;AAiBA,kBAAA;AAIA,YAAA;AClFA;EACE,yBAAyB,EAAA;;AAG3B;EAGI,mBDPe,EAAA;;ACYf;EARJ;IASM,iBAAiB,EAAA,EAsCpB;;AA/CH;EAaM,gBAAgB;EAChB,eAAe,EAAA;EAEf;IAhBN;MAiBQ,YAAY;MACZ,gBAAgB;MAChB,eAAe,EAAA,EAElB;;AArBL;EAwBM,gBAAgB;EAChB,eAAe;EACf,yBDgB0B;ECf1B,WDhCM,EAAA;ECkCN;IA7BN;MA8BQ,YAAY;MACZ,gBAAgB;MAChB,eAAe;MACf,YAAY;MACZ,SAAS,EAAA,EAYZ;EA9CL;IAsCQ,YAAY;IACZ,aAAa;IACb,iBAA6B,EAAA;IAE7B;MA1CR;QA2CU,SAAS,EAAA,EAEZ","file":"homePage.module.scss","sourcesContent":["/* Size vars */\n$size-s: 8px;\n$size-default: 16px;\n$size-m: 24px;\n$size-l: 36px;\n$size-xl: 48px;\n$size-xxl: 72px;\n$size-xxxl: 96px;\n$size-xxxxl: 192px;\n\n/* Spacing vars */\n$spacing-s: $size-s;\n$spacing-default: $size-default;\n$spacing-m: $size-m;\n$spacing-l: $size-l;\n$spacing-xl: $size-xl;\n$spacing-xxl: $size-xxl;\n$spacing-xxxl: $size-xxxl;\n$spacing-xxxxl: $size-xxxxl;\n\n/* Media vars */\n$screen-xxxs: 480px;\n$screen-xxs: 600px;\n$screen-xs: 720px;\n$screen-s: 840px;\n$screen-m: 960px;\n$screen-l: 1024px;\n$screen-xl: 1280px;\n$screen-xxl: 1440px;\n$screen-xxxl: 1600px;\n$screen-xxxxl: 1920px;\n$screen-sizes:\n  \"screen-xxxs\" $screen-xxxs,\n  \"screen-xxs\" $screen-xxs,\n  \"screen-xs\" $screen-xs,\n  \"screen-s\" $screen-s,\n  \"screen-m\" $screen-m,\n  \"screen-l\" $screen-l,\n  \"screen-xl\" $screen-xl,\n  \"screen-xxl\" $screen-xxl,\n  \"screen-xxxl\" $screen-xxxl,\n  \"screen-xxxxl\" $screen-xxxxl;\n\n\n/* color vars */\n$color-black-primary: #2C313B;\n$color-black-secondary: #6B6E75;\n$color-black-tertiary: #A9AAAF;\n$color-black-quartenary: #E3E4E5;\n$color-background-gray: #F9F8F8;\n$color-background-dark: #2C313B;\n$color-white: #FFFFFF;\n$color-white-secondary: #B1B2B6;\n// $color-red: #C3161C;\n// $color-red: #F01516;\n$color-red: #E03137;\n\n$color-text-primary: $color-black-primary;\n$color-text-secondary: $color-black-secondary;\n$color-text-inverse-primary: $color-white;\n$color-text-inverse-secondary: $color-white-secondary;\n$color-divider: $color-black-quartenary;\n\n/* typography */\n$font-family: 'Work Sans', Helvetica, Arial, sans-serif;\n$font-size-default: 16px;\n$font-size-secondary: 14px;\n$font-size-small: 12px;\n$line-height-secondary: 20px;\n$headline2: 1.875em; // 30px;\n$headline-mobile: 2.5em;     // 40px\n$headline-desktop: 3.75em; // 60px\n$text-small: 0.75em; // 12px;\n$headline-line-height: 1.25em;\n$large-card-title: 1.5em;\n$line-height: 1.5em;\n\n$font-weight-regular: 300;\n$font-weight-bold: 500;\n\n/* border-radius */\n$card-border-radius: 4px;\n$button-radius: 24px;\n\n/* z-index */\n$z-index-header: 100;\n","@import \"../_variables.module.scss\";\n\n.placeholder {\n  background-color: #E5E4E4;\n}\n\n.descriptionCardGrid {\n\n  h2 {\n    margin-bottom: $spacing-default;\n  }\n\n  .descriptionCardGridFlex {\n\n    @media (min-width: $screen-s) {\n      flex-wrap: nowrap;\n    }\n\n    .cardSection {\n      flex-basis: 100%;\n      max-width: 100%;\n\n      @media (min-width: $screen-s) {\n        flex-grow: 1;\n        flex-basis: auto;\n        max-width: none;\n      }\n    }\n\n    .adSection {\n      flex-basis: 100%;\n      max-width: 100%;\n      border: 1px solid $color-divider;\n      margin: $spacing-s;\n\n      @media (min-width: $screen-s) {\n        flex-grow: 0;\n        flex-basis: auto;\n        max-width: none;\n        border: none;\n        margin: 0;\n      }\n\n      .placeholder {\n        width: 300px;\n        height: 600px;\n        margin: $spacing-default auto;\n\n        @media (min-width: $screen-s) {\n          margin: 0;\n        }\n      }\n    }\n  }\n\n\n\n}\n"]}]);
 // Exports
 exports.locals = {
 	"placeholder": "homePage_placeholder__1J2VI",
-	"featuredRecipes": "homePage_featuredRecipes__EpRQY",
-	"featuredRecipesFlex": "homePage_featuredRecipesFlex__1dreP",
+	"descriptionCardGrid": "homePage_descriptionCardGrid__1TGW2",
+	"descriptionCardGridFlex": "homePage_descriptionCardGridFlex__1wNNC",
 	"cardSection": "homePage_cardSection__3DfTv",
 	"adSection": "homePage_adSection__1lMeh"
 };
@@ -2375,7 +2604,7 @@ exports.locals = {
 
 exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(true);
 // Module
-exports.push([module.i, "/* Size vars */\n/* Spacing vars */\n/* Media vars */\n/* color vars */\n/* typography */\n/* border-radius */\n/* z-index */\n/* Section spacing */\n.utils_containedSection__mJhfv {\n  margin-left: 16px;\n  margin-right: 16px; }\n  @media (min-width: 1024px) {\n    .utils_containedSection__mJhfv {\n      max-width: 996px;\n      margin-left: auto;\n      margin-right: auto; } }\n\n.utils_sectionSpacing__1CABB {\n  margin-bottom: 48px; }\n  @media (min-width: 840px) {\n    .utils_sectionSpacing__1CABB {\n      margin-bottom: 48px; } }\n  @media (min-width: 1280px) {\n    .utils_sectionSpacing__1CABB {\n      margin-bottom: 96px; } }\n\n/* Typography */\n.utils_bold__uV-eo {\n  font-weight: 600; }\n\n.utils_headline__3WVGk {\n  font-size: 2.5em;\n  line-height: 1.5em; }\n  @media (min-width: 840px) {\n    .utils_headline__3WVGk {\n      font-size: 3.75em; } }\n\n.utils_headline2__3aKDe {\n  font-size: 1.875em;\n  line-height: 1.25em; }\n\n.utils_textSmall__2mS_x {\n  font-size: 0.75em; }\n\n.utils_primaryText__MWOab {\n  font-weight: 600; }\n\n.utils_secondaryText__1D6oY {\n  font-size: 14px;\n  line-height: 20px;\n  color: #6B6E75; }\n\n/* Flexbox grid styles */\n.utils_flexboxGridContainer__ChA8t {\n  display: flex;\n  flex-wrap: wrap;\n  margin-left: -8px;\n  margin-right: -8px;\n  box-sizing: border-box; }\n\n.utils_flexboxGridChild__3EsSr {\n  box-sizing: border-box;\n  padding-left: 8px;\n  padding-right: 8px; }\n", "",{"version":3,"sources":["/Users/ctong/Documents/tongskitchen/tk_next/styles/_variables.module.scss","/Users/ctong/Documents/tongskitchen/tk_next/styles/utils.module.scss"],"names":[],"mappings":"AAAA,cAAA;AAUA,iBAAA;AAUA,eAAA;AAwBA,eAAA;AAaA,eAAA;AAgBA,kBAAA;AAIA,YAAA;AC3EA,oBAAA;AACA;EACE,iBDFiB;ECGjB,kBDHiB,EAAA;ECKjB;IAJF;MAKI,gBAAgB;MAChB,iBAAiB;MACjB,kBAAkB,EAAA,EAErB;;AAED;EACE,mBDVY,EAAA;ECYZ;IAHF;MAIM,mBDbQ,EAAA,ECmBb;EAHC;IAPF;MAQM,mBDfU,EAAA,ECiBf;;AAED,eAAA;AACA;EACE,gBD2CoB,EAAA;;ACxCtB;EACE,gBD+BqB;EC9BrB,kBAAkB,EAAA;EAElB;IAJF;MAKI,iBD4BqB,EAAA,EC1BxB;;AAED;EACE,kBDqBiB;ECpBjB,mBDwB2B,EAAA;;ACrB7B;EACE,iBDmBiB,EAAA;;AChBnB;EACE,gBDqBoB,EAAA;;AClBtB;EACE,eDMwB;ECLxB,iBDM0B;ECL1B,cDV6B,EAAA;;ACc/B,wBAAA;AACA;EACE,aAAa;EACb,eAAe;EACf,iBD/DU;ECgEV,kBDhEU;ECiEV,sBAAsB,EAAA;;AAGxB;EACE,sBAAsB;EACtB,iBDtEU;ECuEV,kBDvEU,EAAA","file":"utils.module.scss","sourcesContent":["/* Size vars */\n$size-s: 8px;\n$size-default: 16px;\n$size-m: 24px;\n$size-l: 36px;\n$size-xl: 48px;\n$size-xxl: 72px;\n$size-xxxl: 96px;\n$size-xxxxl: 192px;\n\n/* Spacing vars */\n$spacing-s: $size-s;\n$spacing-default: $size-default;\n$spacing-m: $size-m;\n$spacing-l: $size-l;\n$spacing-xl: $size-xl;\n$spacing-xxl: $size-xl;\n$spacing-xxxl: $size-xxxl;\n$spacing-xxxxl: $size-xxxxl;\n\n/* Media vars */\n$screen-xxxs: 480px;\n$screen-xxs: 600px;\n$screen-xs: 720px;\n$screen-s: 840px;\n$screen-m: 960px;\n$screen-l: 1024px;\n$screen-xl: 1280px;\n$screen-xxl: 1440px;\n$screen-xxxl: 1600px;\n$screen-xxxxl: 1920px;\n$screen-sizes:\n  \"screen-xxxs\" $screen-xxxs,\n  \"screen-xxs\" $screen-xxs,\n  \"screen-xs\" $screen-xs,\n  \"screen-s\" $screen-s,\n  \"screen-m\" $screen-m,\n  \"screen-l\" $screen-l,\n  \"screen-xl\" $screen-xl,\n  \"screen-xxl\" $screen-xxl,\n  \"screen-xxxl\" $screen-xxxl,\n  \"screen-xxxxl\" $screen-xxxxl;\n\n\n/* color vars */\n$color-black-primary: #2C313B;\n$color-black-secondary: #6B6E75;\n$color-black-tertiary: #A9AAAF;\n$color-black-quartenary: #E3E4E5;\n$color-background-gray: #F9F8F8;\n$color-white: #FFFFFF;\n$color-red: #C3161C;\n\n$color-text-primary: $color-black-primary;\n$color-text-secondary: $color-black-secondary;\n$color-divider: $color-black-quartenary;\n\n/* typography */\n$font-family: 'Work Sans', Helvetica, Arial, sans-serif;\n$font-size-default: 16px;\n$font-size-secondary: 14px;\n$line-height-secondary: 20px;\n$headline2: 1.875em; // 30px;\n$headline-mobile: 2.5em;     // 40px\n$headline-desktop: 3.75em; // 60px\n$text-small: 0.75em; // 12px;\n$headline-line-height: 1.25em;\n$large-card-title: 1.5em;\n$line-height: 1.5em;\n\n$font-weight-regular: 400;\n$font-weight-bold: 600;\n\n/* border-radius */\n$card-border-radius: 4px;\n$button-radius: 24px;\n\n/* z-index */\n$z-index-header: 100;\n","@import \"./_variables.module.scss\";\n\n/* Section spacing */\n.containedSection {\n  margin-left: $spacing-default;\n  margin-right: $spacing-default;\n\n  @media (min-width: $screen-l) {\n    max-width: 996px;\n    margin-left: auto;\n    margin-right: auto;\n  }\n}\n\n.sectionSpacing {\n  margin-bottom: $spacing-xl;\n\n  @media (min-width: $screen-s) {\n      margin-bottom: $spacing-xxl;\n  }\n\n  @media (min-width: $screen-xl) {\n      margin-bottom: $spacing-xxxl;\n  }\n}\n\n/* Typography */\n.bold {\n  font-weight: $font-weight-bold;\n}\n\n.headline {\n  font-size: $headline-mobile;\n  line-height: 1.5em;\n\n  @media (min-width: $screen-s) {\n    font-size: $headline-desktop;\n  }\n}\n\n.headline2 {\n  font-size: $headline2;\n  line-height: $headline-line-height;\n}\n\n.textSmall {\n  font-size: $text-small;\n}\n\n.primaryText {\n  font-weight: $font-weight-bold;\n}\n\n.secondaryText {\n  font-size: $font-size-secondary;\n  line-height: $line-height-secondary;\n  color: $color-text-secondary;\n}\n\n\n/* Flexbox grid styles */\n.flexboxGridContainer {\n  display: flex;\n  flex-wrap: wrap;\n  margin-left: -$spacing-s;\n  margin-right: -$spacing-s;\n  box-sizing: border-box;\n}\n\n.flexboxGridChild {\n  box-sizing: border-box;\n  padding-left: $spacing-s;\n  padding-right: $spacing-s;\n}\n"]}]);
+exports.push([module.i, "/* Size vars */\n/* Spacing vars */\n/* Media vars */\n/* color vars */\n/* typography */\n/* border-radius */\n/* z-index */\n/* Section spacing */\n.utils_containedSection__mJhfv {\n  margin-left: 16px;\n  margin-right: 16px; }\n  @media (min-width: 1024px) {\n    .utils_containedSection__mJhfv {\n      max-width: 996px;\n      margin-left: auto;\n      margin-right: auto; } }\n\n.utils_sectionSpacing__1CABB {\n  margin-bottom: 48px; }\n  @media (min-width: 840px) {\n    .utils_sectionSpacing__1CABB {\n      margin-bottom: 72px; } }\n  @media (min-width: 1280px) {\n    .utils_sectionSpacing__1CABB {\n      margin-bottom: 96px; } }\n\n/* Typography */\n.utils_bold__uV-eo {\n  font-weight: 500; }\n\n.utils_headline__3WVGk {\n  font-size: 2.5em;\n  line-height: 1.5em; }\n  @media (min-width: 840px) {\n    .utils_headline__3WVGk {\n      font-size: 3.75em; } }\n\n.utils_headline2__3aKDe {\n  font-size: 1.875em;\n  line-height: 1.25em; }\n\n.utils_textSmall__2mS_x {\n  font-size: 0.75em; }\n\n.utils_primaryText__MWOab {\n  font-weight: 500; }\n\n.utils_secondaryText__1D6oY {\n  font-size: 14px;\n  line-height: 20px;\n  color: #6B6E75; }\n\n/* Flexbox grid styles */\n.utils_flexboxGridContainer__ChA8t {\n  display: flex;\n  flex-wrap: wrap;\n  margin-left: -8px;\n  margin-right: -8px;\n  box-sizing: border-box; }\n\n.utils_flexboxGridChild__3EsSr {\n  box-sizing: border-box;\n  padding-left: 8px;\n  padding-right: 8px; }\n", "",{"version":3,"sources":["/Users/ctong/Documents/tongskitchen/tk_next/styles/_variables.module.scss","/Users/ctong/Documents/tongskitchen/tk_next/styles/utils.module.scss"],"names":[],"mappings":"AAAA,cAAA;AAUA,iBAAA;AAUA,eAAA;AAwBA,eAAA;AAmBA,eAAA;AAiBA,kBAAA;AAIA,YAAA;AClFA,oBAAA;AACA;EACE,iBDFiB;ECGjB,kBDHiB,EAAA;ECKjB;IAJF;MAKI,gBAAgB;MAChB,iBAAiB;MACjB,kBAAkB,EAAA,EAErB;;AAED;EACE,mBDVY,EAAA;ECYZ;IAHF;MAIM,mBDZS,EAAA,ECkBd;EAHC;IAPF;MAQM,mBDfU,EAAA,ECiBf;;AAED,eAAA;AACA;EACE,gBDkDoB,EAAA;;AC/CtB;EACE,gBDsCqB;ECrCrB,kBAAkB,EAAA;EAElB;IAJF;MAKI,iBDmCqB,EAAA,ECjCxB;;AAED;EACE,kBD4BiB;EC3BjB,mBD+B2B,EAAA;;AC5B7B;EACE,iBD0BiB,EAAA;;ACvBnB;EACE,gBD4BoB,EAAA;;ACzBtB;EACE,eDYwB;ECXxB,iBDa0B;ECZ1B,cDV6B,EAAA;;ACc/B,wBAAA;AACA;EACE,aAAa;EACb,eAAe;EACf,iBD/DU;ECgEV,kBDhEU;ECiEV,sBAAsB,EAAA;;AAGxB;EACE,sBAAsB;EACtB,iBDtEU;ECuEV,kBDvEU,EAAA","file":"utils.module.scss","sourcesContent":["/* Size vars */\n$size-s: 8px;\n$size-default: 16px;\n$size-m: 24px;\n$size-l: 36px;\n$size-xl: 48px;\n$size-xxl: 72px;\n$size-xxxl: 96px;\n$size-xxxxl: 192px;\n\n/* Spacing vars */\n$spacing-s: $size-s;\n$spacing-default: $size-default;\n$spacing-m: $size-m;\n$spacing-l: $size-l;\n$spacing-xl: $size-xl;\n$spacing-xxl: $size-xxl;\n$spacing-xxxl: $size-xxxl;\n$spacing-xxxxl: $size-xxxxl;\n\n/* Media vars */\n$screen-xxxs: 480px;\n$screen-xxs: 600px;\n$screen-xs: 720px;\n$screen-s: 840px;\n$screen-m: 960px;\n$screen-l: 1024px;\n$screen-xl: 1280px;\n$screen-xxl: 1440px;\n$screen-xxxl: 1600px;\n$screen-xxxxl: 1920px;\n$screen-sizes:\n  \"screen-xxxs\" $screen-xxxs,\n  \"screen-xxs\" $screen-xxs,\n  \"screen-xs\" $screen-xs,\n  \"screen-s\" $screen-s,\n  \"screen-m\" $screen-m,\n  \"screen-l\" $screen-l,\n  \"screen-xl\" $screen-xl,\n  \"screen-xxl\" $screen-xxl,\n  \"screen-xxxl\" $screen-xxxl,\n  \"screen-xxxxl\" $screen-xxxxl;\n\n\n/* color vars */\n$color-black-primary: #2C313B;\n$color-black-secondary: #6B6E75;\n$color-black-tertiary: #A9AAAF;\n$color-black-quartenary: #E3E4E5;\n$color-background-gray: #F9F8F8;\n$color-background-dark: #2C313B;\n$color-white: #FFFFFF;\n$color-white-secondary: #B1B2B6;\n// $color-red: #C3161C;\n// $color-red: #F01516;\n$color-red: #E03137;\n\n$color-text-primary: $color-black-primary;\n$color-text-secondary: $color-black-secondary;\n$color-text-inverse-primary: $color-white;\n$color-text-inverse-secondary: $color-white-secondary;\n$color-divider: $color-black-quartenary;\n\n/* typography */\n$font-family: 'Work Sans', Helvetica, Arial, sans-serif;\n$font-size-default: 16px;\n$font-size-secondary: 14px;\n$font-size-small: 12px;\n$line-height-secondary: 20px;\n$headline2: 1.875em; // 30px;\n$headline-mobile: 2.5em;     // 40px\n$headline-desktop: 3.75em; // 60px\n$text-small: 0.75em; // 12px;\n$headline-line-height: 1.25em;\n$large-card-title: 1.5em;\n$line-height: 1.5em;\n\n$font-weight-regular: 300;\n$font-weight-bold: 500;\n\n/* border-radius */\n$card-border-radius: 4px;\n$button-radius: 24px;\n\n/* z-index */\n$z-index-header: 100;\n","@import \"./_variables.module.scss\";\n\n/* Section spacing */\n.containedSection {\n  margin-left: $spacing-default;\n  margin-right: $spacing-default;\n\n  @media (min-width: $screen-l) {\n    max-width: 996px;\n    margin-left: auto;\n    margin-right: auto;\n  }\n}\n\n.sectionSpacing {\n  margin-bottom: $spacing-xl;\n\n  @media (min-width: $screen-s) {\n      margin-bottom: $spacing-xxl;\n  }\n\n  @media (min-width: $screen-xl) {\n      margin-bottom: $spacing-xxxl;\n  }\n}\n\n/* Typography */\n.bold {\n  font-weight: $font-weight-bold;\n}\n\n.headline {\n  font-size: $headline-mobile;\n  line-height: 1.5em;\n\n  @media (min-width: $screen-s) {\n    font-size: $headline-desktop;\n  }\n}\n\n.headline2 {\n  font-size: $headline2;\n  line-height: $headline-line-height;\n}\n\n.textSmall {\n  font-size: $text-small;\n}\n\n.primaryText {\n  font-weight: $font-weight-bold;\n}\n\n.secondaryText {\n  font-size: $font-size-secondary;\n  line-height: $line-height-secondary;\n  color: $color-text-secondary;\n}\n\n\n/* Flexbox grid styles */\n.flexboxGridContainer {\n  display: flex;\n  flex-wrap: wrap;\n  margin-left: -$spacing-s;\n  margin-right: -$spacing-s;\n  box-sizing: border-box;\n}\n\n.flexboxGridChild {\n  box-sizing: border-box;\n  padding-left: $spacing-s;\n  padding-right: $spacing-s;\n}\n"]}]);
 // Exports
 exports.locals = {
 	"containedSection": "utils_containedSection__mJhfv",
@@ -2606,12 +2835,12 @@ var e,t=(e=__webpack_require__(/*! querystring */ "./node_modules/querystring-es
 
 /***/ "./node_modules/next/dist/build/polyfills/object-assign.js":
 /*!***********************************************************************************************************************!*\
-  !*** delegated ./node_modules/next/dist/build/polyfills/object-assign.js from dll-reference dll_2adc2403d89adc16ead0 ***!
+  !*** delegated ./node_modules/next/dist/build/polyfills/object-assign.js from dll-reference dll_c2e10d183b950a67d9e7 ***!
   \***********************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_2adc2403d89adc16ead0 */ "dll-reference dll_2adc2403d89adc16ead0"))("./node_modules/next/dist/build/polyfills/object-assign.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_c2e10d183b950a67d9e7 */ "dll-reference dll_c2e10d183b950a67d9e7"))("./node_modules/next/dist/build/polyfills/object-assign.js");
 
 /***/ }),
 
@@ -4919,12 +5148,12 @@ module.exports = exports['default'];
 
 /***/ "./node_modules/prop-types/checkPropTypes.js":
 /*!*********************************************************************************************************!*\
-  !*** delegated ./node_modules/prop-types/checkPropTypes.js from dll-reference dll_2adc2403d89adc16ead0 ***!
+  !*** delegated ./node_modules/prop-types/checkPropTypes.js from dll-reference dll_c2e10d183b950a67d9e7 ***!
   \*********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_2adc2403d89adc16ead0 */ "dll-reference dll_2adc2403d89adc16ead0"))("./node_modules/prop-types/checkPropTypes.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_c2e10d183b950a67d9e7 */ "dll-reference dll_c2e10d183b950a67d9e7"))("./node_modules/prop-types/checkPropTypes.js");
 
 /***/ }),
 
@@ -5559,12 +5788,12 @@ if (true) {
 
 /***/ "./node_modules/prop-types/lib/ReactPropTypesSecret.js":
 /*!*******************************************************************************************************************!*\
-  !*** delegated ./node_modules/prop-types/lib/ReactPropTypesSecret.js from dll-reference dll_2adc2403d89adc16ead0 ***!
+  !*** delegated ./node_modules/prop-types/lib/ReactPropTypesSecret.js from dll-reference dll_c2e10d183b950a67d9e7 ***!
   \*******************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_2adc2403d89adc16ead0 */ "dll-reference dll_2adc2403d89adc16ead0"))("./node_modules/prop-types/lib/ReactPropTypesSecret.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_c2e10d183b950a67d9e7 */ "dll-reference dll_c2e10d183b950a67d9e7"))("./node_modules/prop-types/lib/ReactPropTypesSecret.js");
 
 /***/ }),
 
@@ -6035,12 +6264,12 @@ if (false) {} else {
 
 /***/ "./node_modules/react/index.js":
 /*!*******************************************************************************************!*\
-  !*** delegated ./node_modules/react/index.js from dll-reference dll_2adc2403d89adc16ead0 ***!
+  !*** delegated ./node_modules/react/index.js from dll-reference dll_c2e10d183b950a67d9e7 ***!
   \*******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_2adc2403d89adc16ead0 */ "dll-reference dll_2adc2403d89adc16ead0"))("./node_modules/react/index.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_c2e10d183b950a67d9e7 */ "dll-reference dll_c2e10d183b950a67d9e7"))("./node_modules/react/index.js");
 
 /***/ }),
 
@@ -7149,7 +7378,7 @@ var HomePage = function HomePage(_ref) {
       columnNumber: 7
     }
   }, __jsx("div", {
-    className: classnames__WEBPACK_IMPORTED_MODULE_3___default()(_styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_6___default.a.sectionSpacing, _styles_pages_homePage_module_scss__WEBPACK_IMPORTED_MODULE_5___default.a.featuredRecipes),
+    className: classnames__WEBPACK_IMPORTED_MODULE_3___default()(_styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_6___default.a.sectionSpacing, _styles_pages_homePage_module_scss__WEBPACK_IMPORTED_MODULE_5___default.a.descriptionCardGrid),
     __self: _this,
     __source: {
       fileName: _jsxFileName,
@@ -7164,7 +7393,7 @@ var HomePage = function HomePage(_ref) {
       columnNumber: 11
     }
   }, "Featured recipes"), __jsx("div", {
-    className: classnames__WEBPACK_IMPORTED_MODULE_3___default()(_styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_6___default.a.flexboxGridContainer, _styles_pages_homePage_module_scss__WEBPACK_IMPORTED_MODULE_5___default.a.featuredRecipesFlex),
+    className: classnames__WEBPACK_IMPORTED_MODULE_3___default()(_styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_6___default.a.flexboxGridContainer, _styles_pages_homePage_module_scss__WEBPACK_IMPORTED_MODULE_5___default.a.descriptionCardGridFlex),
     __self: _this,
     __source: {
       fileName: _jsxFileName,
@@ -7373,6 +7602,113 @@ var HomePage = function HomePage(_ref) {
       lineNumber: 91,
       columnNumber: 13
     }
+  })), __jsx("div", {
+    className: classnames__WEBPACK_IMPORTED_MODULE_3___default()(_styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_6___default.a.sectionSpacing, _styles_pages_homePage_module_scss__WEBPACK_IMPORTED_MODULE_5___default.a.descriptionCardGrid),
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 94,
+      columnNumber: 11
+    }
+  }, __jsx("h2", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 95,
+      columnNumber: 13
+    }
+  }, "Featured recipes"), __jsx("div", {
+    className: classnames__WEBPACK_IMPORTED_MODULE_3___default()(_styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_6___default.a.flexboxGridContainer, _styles_pages_homePage_module_scss__WEBPACK_IMPORTED_MODULE_5___default.a.descriptionCardGrid, _styles_pages_homePage_module_scss__WEBPACK_IMPORTED_MODULE_5___default.a.descriptionCardGridFlex),
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 96,
+      columnNumber: 13
+    }
+  }, __jsx("div", {
+    className: classnames__WEBPACK_IMPORTED_MODULE_3___default()(_styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_6___default.a.flexboxGridChild, _styles_pages_homePage_module_scss__WEBPACK_IMPORTED_MODULE_5___default.a.cardSection),
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 97,
+      columnNumber: 15
+    }
+  }, __jsx(_components__WEBPACK_IMPORTED_MODULE_4__["DescriptionCard"], {
+    cardTitle: "Card title",
+    cardBottomInfo: [{
+      title: 'Time',
+      subtitle: '20 mins'
+    }, {
+      title: 'Time',
+      subtitle: '20 mins'
+    }],
+    cardImage: "https://picsum.photos/id/1045/1000/500",
+    cardLink: "/recipe/recipe1",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 99,
+      columnNumber: 17
+    }
+  }), __jsx(_components__WEBPACK_IMPORTED_MODULE_4__["DescriptionCard"], {
+    cardTitle: "Card title",
+    cardBottomInfo: [{
+      title: 'Time',
+      subtitle: '20 mins'
+    }, {
+      title: 'Time',
+      subtitle: '20 mins'
+    }],
+    cardImage: "https://picsum.photos/id/1045/1000/500",
+    cardLink: "/recipe/recipe1",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 105,
+      columnNumber: 17
+    }
+  }), __jsx(_components__WEBPACK_IMPORTED_MODULE_4__["DescriptionCard"], {
+    cardTitle: "Card title",
+    cardBottomInfo: [{
+      title: 'Time',
+      subtitle: '20 mins'
+    }, {
+      title: 'Time',
+      subtitle: '20 mins'
+    }],
+    cardImage: "https://picsum.photos/id/1045/1000/500",
+    cardLink: "/recipe/recipe1",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 111,
+      columnNumber: 17
+    }
+  })), __jsx("div", {
+    className: classnames__WEBPACK_IMPORTED_MODULE_3___default()(_styles_pages_homePage_module_scss__WEBPACK_IMPORTED_MODULE_5___default.a.adSection, _styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_6___default.a.flexboxGridChild),
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 118,
+      columnNumber: 15
+    }
+  }, __jsx("div", {
+    className: _styles_pages_homePage_module_scss__WEBPACK_IMPORTED_MODULE_5___default.a.placeholder,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 119,
+      columnNumber: 17
+    }
+  }))), __jsx(_components__WEBPACK_IMPORTED_MODULE_4__["Button"], {
+    text: "See all",
+    link: "/blog",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 122,
+      columnNumber: 13
+    }
   }))));
 };
 
@@ -7515,14 +7851,14 @@ module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absol
 
 /***/ }),
 
-/***/ "dll-reference dll_2adc2403d89adc16ead0":
+/***/ "dll-reference dll_c2e10d183b950a67d9e7":
 /*!*******************************************!*\
-  !*** external "dll_2adc2403d89adc16ead0" ***!
+  !*** external "dll_c2e10d183b950a67d9e7" ***!
   \*******************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = dll_2adc2403d89adc16ead0;
+module.exports = dll_c2e10d183b950a67d9e7;
 
 /***/ })
 

@@ -19,6 +19,8 @@
       padding-left: $spacing-default;
       padding-right: $spacing-default;
       transition: color, font-weight 0.15s;
+      font-weight: $font-weight-bold;
+      color: $color-red;
     }
   }
 }
