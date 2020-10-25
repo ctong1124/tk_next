@@ -1650,7 +1650,7 @@ var Layout = function Layout(_ref) {
     }
   }, __jsx("link", {
     rel: "icon",
-    href: "/favicon.ico",
+    href: "/images/favicon.ico",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
@@ -1701,25 +1701,38 @@ var Layout = function Layout(_ref) {
       lineNumber: 22,
       columnNumber: 9
     }
-  })), __jsx(_Header__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }), __jsx("script", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 24,
+      columnNumber: 9
+    }
+  }, "if (window.netlifyIdentity) ", window.netlifyIdentity.on("init", function (user) {
+    if (!user) {
+      window.netlifyIdentity.on("login", function () {
+        document.location.href = "/admin/";
+      });
+    }
+  }))), __jsx(_Header__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 36,
       columnNumber: 7
     }
   }), __jsx("main", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25,
+      lineNumber: 37,
       columnNumber: 7
     }
   }, children), __jsx(_Footer__WEBPACK_IMPORTED_MODULE_6__["default"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28,
+      lineNumber: 40,
       columnNumber: 7
     }
   }));

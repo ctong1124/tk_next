@@ -29,7 +29,7 @@ const Layout = ({ children }) => {
                   document.location.href = "/admin/";
                 });
               }
-            });
+            })
           }
         </script>
       </Head>
