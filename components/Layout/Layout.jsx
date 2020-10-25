@@ -21,7 +21,7 @@ const Layout = ({ children }) => {
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
         {/* might be the wrong place, says to add before closing body tag */}
-        <script>
+        {/* <script>
           if (window.netlifyIdentity) {
             window.netlifyIdentity.on("init", user => {
               if (!user) {
@@ -31,7 +31,7 @@ const Layout = ({ children }) => {
               }
             })
           }
-        </script>
+        </script> */}
       </Head>
       <Header />
       <main>

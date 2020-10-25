@@ -2,14 +2,13 @@ import Head from 'next/head';
 import Link from 'next/link';
 import cn from 'classnames';
 import { Hero, CardGrid, Card, Layout, Button, DescriptionCard } from '../components';
-import { getSortedPostsData } from '../lib/posts'
+// import { getSortedPostsData } from '../lib/posts'
 import classes from '../styles/pages/homePage.module.scss';
 import utils from '../styles/utils.module.scss';
 
 const HomePage = ({
   allPostsData,
 }) => {
-  console.log('getStaticProps', allPostsData);
   return (
     <Layout home>
       <div className={utils.sectionSpacing}>
