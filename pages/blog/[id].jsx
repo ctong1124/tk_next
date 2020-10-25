@@ -66,18 +66,18 @@ export default function Blog() {
   );
 }
 
-export async function getStaticPaths() {
-  return {
-    paths: [
-      { params: { id: 'blog1' } },
-      { params: { id: 'blog2' } },
-    ],
-    fallback: false,
-  }
-}
-
-export async function getStaticProps({ params }) {
-  return {
-    props: {},
-  };
-}
+// export async function getStaticPaths() {
+//   return {
+//     paths: [
+//       { params: { id: 'blog1' } },
+//       { params: { id: 'blog2' } },
+//     ],
+//     fallback: false,
+//   }
+// }
+//
+// export async function getStaticProps({ params }) {
+//   return {
+//     props: {},
+//   };
+// }

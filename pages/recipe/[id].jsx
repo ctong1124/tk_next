@@ -118,19 +118,19 @@ export default function Recipe() {
     </Layout>
   );
 }
-
-export async function getStaticPaths() {
-  return {
-    paths: [
-      { params: { id: 'recipe1' } },
-      { params: { id: 'recipe2' } },
-    ],
-    fallback: false,
-  }
-}
-
-export async function getStaticProps({ params }) {
-  return {
-    props: {},
-  };
-}
+// 
+// export async function getStaticPaths() {
+//   return {
+//     paths: [
+//       { params: { id: 'recipe1' } },
+//       { params: { id: 'recipe2' } },
+//     ],
+//     fallback: false,
+//   }
+// }
+//
+// export async function getStaticProps({ params }) {
+//   return {
+//     props: {},
+//   };
+// }
