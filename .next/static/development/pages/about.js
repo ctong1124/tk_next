@@ -1693,25 +1693,33 @@ var Layout = function Layout(_ref) {
       lineNumber: 21,
       columnNumber: 9
     }
-  })), __jsx(_Header__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }), __jsx("script", {
+    src: "https://identity.netlify.com/v1/netlify-identity-widget.js",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23,
-      columnNumber: 7
+      lineNumber: 22,
+      columnNumber: 9
     }
-  }), __jsx("main", {
+  })), __jsx(_Header__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 24,
       columnNumber: 7
     }
+  }), __jsx("main", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25,
+      columnNumber: 7
+    }
   }, children), __jsx(_Footer__WEBPACK_IMPORTED_MODULE_6__["default"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27,
+      lineNumber: 28,
       columnNumber: 7
     }
   }));

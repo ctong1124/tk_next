@@ -11,7 +11,7 @@ const Layout = ({ children }) => {
   return (
     <div>
       <Head>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/images/favicon.ico" />
         <meta
           name="description"
           content="Learn how to build a personal website using Next.js"
@@ -19,6 +19,19 @@ const Layout = ({ children }) => {
         <meta name="og:title" content="title" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+        {/* might be the wrong place, says to add before closing body tag */}
+        <script>
+          if (window.netlifyIdentity) {
+            window.netlifyIdentity.on("init", user => {
+              if (!user) {
+                window.netlifyIdentity.on("login", () => {
+                  document.location.href = "/admin/";
+                });
+              }
+            });
+          }
+        </script>
       </Head>
       <Header />
       <main>

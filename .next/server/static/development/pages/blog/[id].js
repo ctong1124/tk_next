@@ -1,7 +1,7 @@
 module.exports =
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
-/******/ 	var installedModules = require('../../../ssr-module-cache.js');
+/******/ 	var installedModules = require('../../../../ssr-module-cache.js');
 /******/
 /******/ 	// The require function
 /******/ 	function __webpack_require__(moduleId) {
@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -1511,25 +1511,33 @@ const Layout = ({
       lineNumber: 21,
       columnNumber: 9
     }
-  })), __jsx(_Header__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }), __jsx("script", {
+    src: "https://identity.netlify.com/v1/netlify-identity-widget.js",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23,
-      columnNumber: 7
+      lineNumber: 22,
+      columnNumber: 9
     }
-  }), __jsx("main", {
+  })), __jsx(_Header__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 24,
       columnNumber: 7
     }
+  }), __jsx("main", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25,
+      columnNumber: 7
+    }
   }, children), __jsx(_Footer__WEBPACK_IMPORTED_MODULE_6__["default"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27,
+      lineNumber: 28,
       columnNumber: 7
     }
   }));
@@ -1614,105 +1622,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
-/***/ }),
-
-/***/ "./lib/posts.js":
-/*!**********************!*\
-  !*** ./lib/posts.js ***!
-  \**********************/
-/*! exports provided: getSortedPostsData, getAllPostIds, getPostData */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getSortedPostsData", function() { return getSortedPostsData; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getAllPostIds", function() { return getAllPostIds; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getPostData", function() { return getPostData; });
-/* harmony import */ var fs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! fs */ "fs");
-/* harmony import */ var fs__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(fs__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var path__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! path */ "path");
-/* harmony import */ var path__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(path__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var gray_matter__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! gray-matter */ "gray-matter");
-/* harmony import */ var gray_matter__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(gray_matter__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var remark__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! remark */ "remark");
-/* harmony import */ var remark__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(remark__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var remark_html__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! remark-html */ "remark-html");
-/* harmony import */ var remark_html__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(remark_html__WEBPACK_IMPORTED_MODULE_4__);
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-
-
-
-
-
-const postsDirectory = path__WEBPACK_IMPORTED_MODULE_1___default.a.join(process.cwd(), 'data');
-function getSortedPostsData() {
-  // Get file names under /posts
-  const fileNames = fs__WEBPACK_IMPORTED_MODULE_0___default.a.readdirSync(postsDirectory);
-  const allPostsData = fileNames.map(fileName => {
-    // Remove ".md" from file name to get id
-    const id = fileName.replace(/\.md$/, ''); // Read markdown file as string
-
-    const fullPath = path__WEBPACK_IMPORTED_MODULE_1___default.a.join(postsDirectory, fileName);
-    const fileContents = fs__WEBPACK_IMPORTED_MODULE_0___default.a.readFileSync(fullPath, 'utf8'); // Use gray-matter to parse the post metadata section
-
-    const matterResult = gray_matter__WEBPACK_IMPORTED_MODULE_2___default()(fileContents); // Combine the data with the id
-
-    return _objectSpread({
-      id
-    }, matterResult.data);
-  }); // Sort posts by date
-
-  return allPostsData.sort((a, b) => {
-    if (a.date < b.date) {
-      return 1;
-    } else {
-      return -1;
-    }
-  });
-}
-function getAllPostIds() {
-  const fileNames = fs__WEBPACK_IMPORTED_MODULE_0___default.a.readdirSync(postsDirectory); // Returns an array that looks like this:
-  // [
-  //   {
-  //     params: {
-  //       id: 'ssg-ssr'
-  //     }
-  //   },
-  //   {
-  //     params: {
-  //       id: 'pre-rendering'
-  //     }
-  //   }
-  // ]
-
-  return fileNames.map(fileName => {
-    return {
-      params: {
-        id: fileName.replace(/\.md$/, '')
-      }
-    };
-  });
-}
-async function getPostData(id) {
-  const fullPath = path__WEBPACK_IMPORTED_MODULE_1___default.a.join(postsDirectory, `${id}.md`);
-  const fileContents = fs__WEBPACK_IMPORTED_MODULE_0___default.a.readFileSync(fullPath, 'utf8'); // Use gray-matter to parse the post metadata section
-
-  const matterResult = gray_matter__WEBPACK_IMPORTED_MODULE_2___default()(fileContents); // Use remark to convert markdown into HTML string
-
-  const processedContent = await remark__WEBPACK_IMPORTED_MODULE_3___default()().use(remark_html__WEBPACK_IMPORTED_MODULE_4___default.a).process(matterResult.content);
-  const contentHtml = processedContent.toString(); // Combine the data with the id and contentHtml
-
-  return _objectSpread({
-    id,
-    contentHtml
-  }, matterResult.data);
-}
 
 /***/ }),
 
@@ -3385,31 +3294,30 @@ module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/n
 
 /***/ }),
 
-/***/ "./pages/index.jsx":
-/*!*************************!*\
-  !*** ./pages/index.jsx ***!
-  \*************************/
-/*! exports provided: getStaticProps, default */
+/***/ "./pages/blog/[id].jsx":
+/*!*****************************!*\
+  !*** ./pages/blog/[id].jsx ***!
+  \*****************************/
+/*! exports provided: default, getStaticPaths, getStaticProps */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Blog; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getStaticPaths", function() { return getStaticPaths; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getStaticProps", function() { return getStaticProps; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/head */ "next/head");
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! classnames */ "classnames");
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _components__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components */ "./components/index.js");
-/* harmony import */ var _lib_posts__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../lib/posts */ "./lib/posts.js");
-/* harmony import */ var _styles_pages_homePage_module_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../styles/pages/homePage.module.scss */ "./styles/pages/homePage.module.scss");
-/* harmony import */ var _styles_pages_homePage_module_scss__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_styles_pages_homePage_module_scss__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../styles/utils.module.scss */ "./styles/utils.module.scss");
-/* harmony import */ var _styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_7__);
-var _jsxFileName = "/Users/ctong/Documents/tongskitchen/tk_next/pages/index.jsx";
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! classnames */ "classnames");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components */ "./components/index.js");
+/* harmony import */ var _styles_pages_blog_module_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../styles/pages/blog.module.scss */ "./styles/pages/blog.module.scss");
+/* harmony import */ var _styles_pages_blog_module_scss__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_styles_pages_blog_module_scss__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../styles/utils.module.scss */ "./styles/utils.module.scss");
+/* harmony import */ var _styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_5__);
+var _jsxFileName = "/Users/ctong/Documents/tongskitchen/tk_next/pages/blog/[id].jsx";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -3417,407 +3325,228 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-
-
-
-const HomePage = ({
-  allPostsData
-}) => {
-  console.log('getStaticProps', allPostsData);
-  return __jsx(_components__WEBPACK_IMPORTED_MODULE_4__["Layout"], {
-    home: true,
-    __self: undefined,
+const array = [1, 2, 3];
+function Blog() {
+  return __jsx(_components__WEBPACK_IMPORTED_MODULE_3__["Layout"], {
+    __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14,
+      lineNumber: 11,
       columnNumber: 5
     }
-  }, __jsx("div", {
-    className: _styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_7___default.a.sectionSpacing,
-    __self: undefined,
+  }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12,
+      columnNumber: 7
+    }
+  }, __jsx("title", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13,
+      columnNumber: 9
+    }
+  }, "Title")), __jsx("div", {
+    className: _styles_pages_blog_module_scss__WEBPACK_IMPORTED_MODULE_4___default.a.recipePage,
+    __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 15,
       columnNumber: 7
     }
-  }, __jsx(_components__WEBPACK_IMPORTED_MODULE_4__["Hero"], {
-    heroHeadline: "Hero headline",
-    heroPostText: "View recipe",
-    __self: undefined,
+  }, __jsx("div", {
+    className: _styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_5___default.a.sectionSpacing,
+    __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 16,
       columnNumber: 9
     }
-  })), __jsx("div", {
-    className: _styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_7___default.a.containedSection,
-    __self: undefined,
+  }, __jsx(_components__WEBPACK_IMPORTED_MODULE_3__["Hero"], {
+    heroHeadline: "Blog post headline",
+    __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21,
-      columnNumber: 7
+      lineNumber: 17,
+      columnNumber: 11
     }
-  }, __jsx("div", {
-    className: classnames__WEBPACK_IMPORTED_MODULE_3___default()(_styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_7___default.a.sectionSpacing, _styles_pages_homePage_module_scss__WEBPACK_IMPORTED_MODULE_6___default.a.descriptionCardGrid),
-    __self: undefined,
+  })), __jsx("article", {
+    __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 22,
       columnNumber: 9
     }
-  }, __jsx("h2", {
-    __self: undefined,
+  }, __jsx("div", {
+    className: classnames__WEBPACK_IMPORTED_MODULE_2___default()(_styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_5___default.a.containedSection, _styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_5___default.a.sectionSpacing),
+    __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 23,
       columnNumber: 11
     }
-  }, "Featured recipes"), __jsx("div", {
-    className: classnames__WEBPACK_IMPORTED_MODULE_3___default()(_styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_7___default.a.flexboxGridContainer, _styles_pages_homePage_module_scss__WEBPACK_IMPORTED_MODULE_6___default.a.descriptionCardGridFlex),
-    __self: undefined,
+  }, __jsx("div", {
+    className: _styles_pages_blog_module_scss__WEBPACK_IMPORTED_MODULE_4___default.a.blogSection,
+    __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 24,
-      columnNumber: 11
+      columnNumber: 13
     }
   }, __jsx("div", {
-    className: classnames__WEBPACK_IMPORTED_MODULE_3___default()(_styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_7___default.a.flexboxGridChild, _styles_pages_homePage_module_scss__WEBPACK_IMPORTED_MODULE_6___default.a.cardSection),
-    __self: undefined,
+    className: _styles_pages_blog_module_scss__WEBPACK_IMPORTED_MODULE_4___default.a.intro,
+    __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 25,
-      columnNumber: 13
-    }
-  }, __jsx(_components__WEBPACK_IMPORTED_MODULE_4__["DescriptionCard"], {
-    cardTitle: `Card title`,
-    cardBottomInfo: [{
-      title: 'Time',
-      subtitle: '20 mins'
-    }, {
-      title: 'Time',
-      subtitle: '20 mins'
-    }],
-    cardImage: "https://picsum.photos/id/1045/1000/500",
-    cardLink: "/recipe/recipe1",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 27,
       columnNumber: 15
     }
-  }), __jsx(_components__WEBPACK_IMPORTED_MODULE_4__["DescriptionCard"], {
-    cardTitle: `Card title`,
-    cardBottomInfo: [{
-      title: 'Time',
-      subtitle: '20 mins'
-    }, {
-      title: 'Time',
-      subtitle: '20 mins'
-    }],
-    cardImage: "https://picsum.photos/id/1045/1000/500",
-    cardLink: "/recipe/recipe1",
-    __self: undefined,
+  }, __jsx("p", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26,
+      columnNumber: 17
+    }
+  }, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisi est sit amet facilisis magna etiam tempor orci. Amet est placerat in egestas erat imperdiet sed euismod nisi. Adipiscing diam donec adipiscing tristique risus nec feugiat. Viverra maecenas accumsan lacus vel facilisis volutpat est velit. Mollis aliquam ut porttitor leo a diam. Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis. Dui faucibus in ornare quam viverra orci sagittis. Egestas tellus rutrum tellus pellentesque. Et pharetra pharetra massa massa ultricies mi. Dui vivamus arcu felis bibendum ut tristique et egestas quis. Tincidunt dui ut ornare lectus sit amet est placerat in. Non pulvinar neque laoreet suspendisse interdum consectetur libero id. In hac habitasse platea dictumst vestibulum rhoncus est pellentesque."), __jsx("div", {
+    className: _styles_pages_blog_module_scss__WEBPACK_IMPORTED_MODULE_4___default.a.placeholder,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30,
+      columnNumber: 17
+    }
+  }), __jsx("p", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 31,
+      columnNumber: 17
+    }
+  }, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisi est sit amet facilisis magna etiam tempor orci. Amet est placerat in egestas erat imperdiet sed euismod nisi. Adipiscing diam donec adipiscing tristique risus nec feugiat. Viverra maecenas accumsan lacus vel facilisis volutpat est velit. Mollis aliquam ut porttitor leo a diam. Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis. Dui faucibus in ornare quam viverra orci sagittis. Egestas tellus rutrum tellus pellentesque. Et pharetra pharetra massa massa ultricies mi. Dui vivamus arcu felis bibendum ut tristique et egestas quis. Tincidunt dui ut ornare lectus sit amet est placerat in. Non pulvinar neque laoreet suspendisse interdum consectetur libero id. In hac habitasse platea dictumst vestibulum rhoncus est pellentesque.", __jsx("br", {
+    __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 33,
-      columnNumber: 15
+      columnNumber: 19
     }
-  }), __jsx(_components__WEBPACK_IMPORTED_MODULE_4__["DescriptionCard"], {
-    cardTitle: `Card title`,
-    cardBottomInfo: [{
-      title: 'Time',
-      subtitle: '20 mins'
-    }, {
-      title: 'Time',
-      subtitle: '20 mins'
-    }],
-    cardImage: "https://picsum.photos/id/1045/1000/500",
-    cardLink: "/recipe/recipe1",
-    __self: undefined,
+  }), __jsx("br", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 33,
+      columnNumber: 24
+    }
+  }), "Et tortor at risus viverra adipiscing. Volutpat est velit egestas dui id. Non blandit massa enim nec dui nunc mattis enim ut. Mi bibendum neque egestas congue quisque egestas. Aliquet sagittis id consectetur purus ut faucibus pulvinar. Convallis aenean et tortor at risus viverra adipiscing at in. Adipiscing elit pellentesque habitant morbi tristique senectus et netus. Elit at imperdiet dui accumsan sit amet nulla facilisi morbi. Enim diam vulputate ut pharetra sit amet aliquam id diam. Nec feugiat in fermentum posuere."), __jsx("div", {
+    className: _styles_pages_blog_module_scss__WEBPACK_IMPORTED_MODULE_4___default.a.placeholder,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 37,
+      columnNumber: 17
+    }
+  })), __jsx("div", {
+    className: _styles_pages_blog_module_scss__WEBPACK_IMPORTED_MODULE_4___default.a.adSection,
+    __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 39,
       columnNumber: 15
     }
-  })), __jsx("div", {
-    className: classnames__WEBPACK_IMPORTED_MODULE_3___default()(_styles_pages_homePage_module_scss__WEBPACK_IMPORTED_MODULE_6___default.a.adSection, _styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_7___default.a.flexboxGridChild),
-    __self: undefined,
+  }, __jsx("div", {
+    className: _styles_pages_blog_module_scss__WEBPACK_IMPORTED_MODULE_4___default.a.placeholder,
+    __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46,
-      columnNumber: 13
+      lineNumber: 41,
+      columnNumber: 17
     }
-  }, __jsx("div", {
-    className: _styles_pages_homePage_module_scss__WEBPACK_IMPORTED_MODULE_6___default.a.placeholder,
-    __self: undefined,
+  }))))), __jsx("div", {
+    className: classnames__WEBPACK_IMPORTED_MODULE_2___default()(_styles_pages_blog_module_scss__WEBPACK_IMPORTED_MODULE_4___default.a.underBlogAd, _styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_5___default.a.containedSection, _styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_5___default.a.sectionSpacing),
+    __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 47,
-      columnNumber: 15
+      columnNumber: 9
     }
-  })))), __jsx("div", {
-    className: classnames__WEBPACK_IMPORTED_MODULE_3___default()(_styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_7___default.a.sectionSpacing),
-    __self: undefined,
+  }, __jsx("div", {
+    className: _styles_pages_blog_module_scss__WEBPACK_IMPORTED_MODULE_4___default.a.placeholder,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 48,
+      columnNumber: 11
+    }
+  })), __jsx("div", {
+    className: classnames__WEBPACK_IMPORTED_MODULE_2___default()(_styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_5___default.a.containedSection, _styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_5___default.a.sectionSpacing, _styles_pages_blog_module_scss__WEBPACK_IMPORTED_MODULE_4___default.a.moreBlogPosts),
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 51,
+      columnNumber: 9
+    }
+  }, __jsx("h2", {
+    __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 52,
-      columnNumber: 9
-    }
-  }, __jsx(_components__WEBPACK_IMPORTED_MODULE_4__["CardGrid"], {
-    cardGridTitle: "Latest recipes",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 53,
-      columnNumber: 13
-    }
-  }, __jsx(_components__WEBPACK_IMPORTED_MODULE_4__["Card"], {
-    cardTitle: "Card title",
-    cardBottomInfo: [{
-      title: 'Time',
-      subtitle: '20 mins'
-    }, {
-      title: 'Time',
-      subtitle: '20 mins'
-    }],
-    cardImage: "https://picsum.photos/id/1045/1000/500",
-    cardLink: "/recipe/recipe1",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 54,
-      columnNumber: 15
-    }
-  }), __jsx(_components__WEBPACK_IMPORTED_MODULE_4__["Card"], {
-    cardTitle: "Card title",
-    cardBottomInfo: [{
-      title: 'Time',
-      subtitle: '20 mins'
-    }, {
-      title: 'Time',
-      subtitle: '20 mins'
-    }],
-    cardImage: "https://picsum.photos/id/1045/1000/500",
-    cardLink: "/recipe/recipe1",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 60,
-      columnNumber: 15
-    }
-  }), __jsx(_components__WEBPACK_IMPORTED_MODULE_4__["Card"], {
-    cardTitle: "Card title",
-    cardBottomInfo: [{
-      title: 'Time',
-      subtitle: '20 mins'
-    }, {
-      title: 'Time',
-      subtitle: '20 mins'
-    }],
-    cardImage: "https://picsum.photos/id/1045/1000/500",
-    cardLink: "/recipe/recipe1",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 66,
-      columnNumber: 15
-    }
-  }), __jsx(_components__WEBPACK_IMPORTED_MODULE_4__["Card"], {
-    cardTitle: "Card title",
-    cardBottomInfo: [{
-      title: 'Time',
-      subtitle: '20 mins'
-    }, {
-      title: 'Time',
-      subtitle: '20 mins'
-    }],
-    cardImage: "https://picsum.photos/id/1045/1000/500",
-    cardLink: "/recipe/recipe1",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 72,
-      columnNumber: 15
-    }
-  }), __jsx(_components__WEBPACK_IMPORTED_MODULE_4__["Card"], {
-    cardTitle: "Card title",
-    cardBottomInfo: [{
-      title: 'Time',
-      subtitle: '20 mins'
-    }, {
-      title: 'Time',
-      subtitle: '20 mins'
-    }],
-    cardImage: "https://picsum.photos/id/1045/1000/500",
-    cardLink: "/recipe/recipe1",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 78,
-      columnNumber: 15
-    }
-  }), __jsx(_components__WEBPACK_IMPORTED_MODULE_4__["Card"], {
-    cardTitle: "Card title",
-    cardBottomInfo: [{
-      title: 'Time',
-      subtitle: '20 mins'
-    }, {
-      title: 'Time',
-      subtitle: '20 mins'
-    }],
-    cardImage: "https://picsum.photos/id/1045/1000/500",
-    cardLink: "/recipe/recipe1",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 84,
-      columnNumber: 15
-    }
-  })), __jsx(_components__WEBPACK_IMPORTED_MODULE_4__["Button"], {
-    text: "See all",
-    link: "/recipes",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 91,
-      columnNumber: 13
-    }
-  })), __jsx("div", {
-    className: classnames__WEBPACK_IMPORTED_MODULE_3___default()(_styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_7___default.a.sectionSpacing, _styles_pages_homePage_module_scss__WEBPACK_IMPORTED_MODULE_6___default.a.descriptionCardGrid),
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 94,
       columnNumber: 11
     }
-  }, __jsx("h2", {
-    __self: undefined,
+  }, "More blog posts"), array.map(cardNum => __jsx(_components__WEBPACK_IMPORTED_MODULE_3__["DescriptionCard"], {
+    cardTitle: `Blog title ${cardNum}`,
+    key: `key${cardNum}`,
+    cardImage: "https://picsum.photos/id/1045/1000/500",
+    cardLink: "/blog/blog2",
+    __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 95,
-      columnNumber: 13
-    }
-  }, "Featured recipes"), __jsx("div", {
-    className: classnames__WEBPACK_IMPORTED_MODULE_3___default()(_styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_7___default.a.flexboxGridContainer, _styles_pages_homePage_module_scss__WEBPACK_IMPORTED_MODULE_6___default.a.descriptionCardGrid, _styles_pages_homePage_module_scss__WEBPACK_IMPORTED_MODULE_6___default.a.descriptionCardGridFlex),
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 96,
-      columnNumber: 13
-    }
-  }, __jsx("div", {
-    className: classnames__WEBPACK_IMPORTED_MODULE_3___default()(_styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_7___default.a.flexboxGridChild, _styles_pages_homePage_module_scss__WEBPACK_IMPORTED_MODULE_6___default.a.cardSection),
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 97,
+      lineNumber: 55,
       columnNumber: 15
     }
-  }, __jsx(_components__WEBPACK_IMPORTED_MODULE_4__["DescriptionCard"], {
-    cardTitle: `Card title`,
-    cardBottomInfo: [{
-      title: 'Time',
-      subtitle: '20 mins'
-    }, {
-      title: 'Time',
-      subtitle: '20 mins'
-    }],
-    cardImage: "https://picsum.photos/id/1045/1000/500",
-    cardLink: "/recipe/recipe1",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 99,
-      columnNumber: 17
-    }
-  }), __jsx(_components__WEBPACK_IMPORTED_MODULE_4__["DescriptionCard"], {
-    cardTitle: `Card title`,
-    cardBottomInfo: [{
-      title: 'Time',
-      subtitle: '20 mins'
-    }, {
-      title: 'Time',
-      subtitle: '20 mins'
-    }],
-    cardImage: "https://picsum.photos/id/1045/1000/500",
-    cardLink: "/recipe/recipe1",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 105,
-      columnNumber: 17
-    }
-  }), __jsx(_components__WEBPACK_IMPORTED_MODULE_4__["DescriptionCard"], {
-    cardTitle: `Card title`,
-    cardBottomInfo: [{
-      title: 'Time',
-      subtitle: '20 mins'
-    }, {
-      title: 'Time',
-      subtitle: '20 mins'
-    }],
-    cardImage: "https://picsum.photos/id/1045/1000/500",
-    cardLink: "/recipe/recipe1",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 111,
-      columnNumber: 17
-    }
-  })), __jsx("div", {
-    className: classnames__WEBPACK_IMPORTED_MODULE_3___default()(_styles_pages_homePage_module_scss__WEBPACK_IMPORTED_MODULE_6___default.a.adSection, _styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_7___default.a.flexboxGridChild),
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 118,
-      columnNumber: 15
-    }
-  }, __jsx("div", {
-    className: _styles_pages_homePage_module_scss__WEBPACK_IMPORTED_MODULE_6___default.a.placeholder,
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 119,
-      columnNumber: 17
-    }
-  }))), __jsx(_components__WEBPACK_IMPORTED_MODULE_4__["Button"], {
-    text: "See all",
-    link: "/blog",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 122,
-      columnNumber: 13
-    }
-  }))));
-};
-
-async function getStaticProps() {
-  const allPostsData = Object(_lib_posts__WEBPACK_IMPORTED_MODULE_5__["getSortedPostsData"])();
+  })))));
+}
+async function getStaticPaths() {
   return {
-    props: {
-      allPostsData
-    }
+    paths: [{
+      params: {
+        id: 'blog1'
+      }
+    }, {
+      params: {
+        id: 'blog2'
+      }
+    }],
+    fallback: false
   };
 }
-/* harmony default export */ __webpack_exports__["default"] = (HomePage);
+async function getStaticProps({
+  params
+}) {
+  return {
+    props: {}
+  };
+}
 
 /***/ }),
 
-/***/ "./styles/pages/homePage.module.scss":
-/*!*******************************************!*\
-  !*** ./styles/pages/homePage.module.scss ***!
-  \*******************************************/
+/***/ "./styles/pages/blog.module.scss":
+/*!***************************************!*\
+  !*** ./styles/pages/blog.module.scss ***!
+  \***************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
 // Exports
 module.exports = {
-	"placeholder": "homePage_placeholder__1J2VI",
-	"descriptionCardGrid": "homePage_descriptionCardGrid__1TGW2",
-	"descriptionCardGridFlex": "homePage_descriptionCardGridFlex__1wNNC",
-	"cardSection": "homePage_cardSection__3DfTv",
-	"adSection": "homePage_adSection__1lMeh"
+	"recipePage": "blog_recipePage__1Ef_8",
+	"placeholder": "blog_placeholder__2886l",
+	"blogSection": "blog_blogSection__20psj",
+	"intro": "blog_intro__1TUkF",
+	"adSection": "blog_adSection__2mGUQ",
+	"underBlogAd": "blog_underBlogAd__2vZ-M",
+	"moreBlogPosts": "blog_moreBlogPosts__1srXz"
 };
 
 /***/ }),
@@ -3845,14 +3574,14 @@ module.exports = {
 
 /***/ }),
 
-/***/ 3:
-/*!*******************************!*\
-  !*** multi ./pages/index.jsx ***!
-  \*******************************/
+/***/ 5:
+/*!***********************************!*\
+  !*** multi ./pages/blog/[id].jsx ***!
+  \***********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/ctong/Documents/tongskitchen/tk_next/pages/index.jsx */"./pages/index.jsx");
+module.exports = __webpack_require__(/*! /Users/ctong/Documents/tongskitchen/tk_next/pages/blog/[id].jsx */"./pages/blog/[id].jsx");
 
 
 /***/ }),
@@ -3868,28 +3597,6 @@ module.exports = require("classnames");
 
 /***/ }),
 
-/***/ "fs":
-/*!*********************!*\
-  !*** external "fs" ***!
-  \*********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("fs");
-
-/***/ }),
-
-/***/ "gray-matter":
-/*!******************************!*\
-  !*** external "gray-matter" ***!
-  \******************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("gray-matter");
-
-/***/ }),
-
 /***/ "next/head":
 /*!****************************!*\
   !*** external "next/head" ***!
@@ -3898,17 +3605,6 @@ module.exports = require("gray-matter");
 /***/ (function(module, exports) {
 
 module.exports = require("next/head");
-
-/***/ }),
-
-/***/ "path":
-/*!***********************!*\
-  !*** external "path" ***!
-  \***********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("path");
 
 /***/ }),
 
@@ -3956,28 +3652,6 @@ module.exports = require("react-is");
 
 /***/ }),
 
-/***/ "remark":
-/*!*************************!*\
-  !*** external "remark" ***!
-  \*************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("remark");
-
-/***/ }),
-
-/***/ "remark-html":
-/*!******************************!*\
-  !*** external "remark-html" ***!
-  \******************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("remark-html");
-
-/***/ }),
-
 /***/ "url":
 /*!**********************!*\
   !*** external "url" ***!
@@ -3990,4 +3664,4 @@ module.exports = require("url");
 /***/ })
 
 /******/ });
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=[id].js.map

@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/index.js"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/blog/[id].js"],{
 
 /***/ "./components/Button/Button.jsx":
 /*!**************************************!*\
@@ -1693,25 +1693,33 @@ var Layout = function Layout(_ref) {
       lineNumber: 21,
       columnNumber: 9
     }
-  })), __jsx(_Header__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }), __jsx("script", {
+    src: "https://identity.netlify.com/v1/netlify-identity-widget.js",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23,
-      columnNumber: 7
+      lineNumber: 22,
+      columnNumber: 9
     }
-  }), __jsx("main", {
+  })), __jsx(_Header__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 24,
       columnNumber: 7
     }
+  }), __jsx("main", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25,
+      columnNumber: 7
+    }
   }, children), __jsx(_Footer__WEBPACK_IMPORTED_MODULE_6__["default"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27,
+      lineNumber: 28,
       columnNumber: 7
     }
   }));
@@ -2574,23 +2582,25 @@ exports.locals = {
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./styles/pages/homePage.module.scss":
-/*!***********************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-oneOf-3-1!./node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!./node_modules/resolve-url-loader??ref--5-oneOf-3-3!./node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-3-4!./styles/pages/homePage.module.scss ***!
-  \***********************************************************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./styles/pages/blog.module.scss":
+/*!*******************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-oneOf-3-1!./node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!./node_modules/resolve-url-loader??ref--5-oneOf-3-3!./node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-3-4!./styles/pages/blog.module.scss ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(true);
 // Module
-exports.push([module.i, "/* Size vars */\n/* Spacing vars */\n/* Media vars */\n/* color vars */\n/* typography */\n/* border-radius */\n/* z-index */\n.homePage_placeholder__1J2VI {\n  background-color: #E5E4E4; }\n\n.homePage_descriptionCardGrid__1TGW2 h2 {\n  margin-bottom: 16px; }\n\n@media (min-width: 840px) {\n  .homePage_descriptionCardGrid__1TGW2 .homePage_descriptionCardGridFlex__1wNNC {\n    flex-wrap: nowrap; } }\n\n.homePage_descriptionCardGrid__1TGW2 .homePage_descriptionCardGridFlex__1wNNC .homePage_cardSection__3DfTv {\n  flex-basis: 100%;\n  max-width: 100%; }\n  @media (min-width: 840px) {\n    .homePage_descriptionCardGrid__1TGW2 .homePage_descriptionCardGridFlex__1wNNC .homePage_cardSection__3DfTv {\n      flex-grow: 1;\n      flex-basis: auto;\n      max-width: none; } }\n\n.homePage_descriptionCardGrid__1TGW2 .homePage_descriptionCardGridFlex__1wNNC .homePage_adSection__1lMeh {\n  flex-basis: 100%;\n  max-width: 100%;\n  border: 1px solid #E3E4E5;\n  margin: 8px; }\n  @media (min-width: 840px) {\n    .homePage_descriptionCardGrid__1TGW2 .homePage_descriptionCardGridFlex__1wNNC .homePage_adSection__1lMeh {\n      flex-grow: 0;\n      flex-basis: auto;\n      max-width: none;\n      border: none;\n      margin: 0; } }\n  .homePage_descriptionCardGrid__1TGW2 .homePage_descriptionCardGridFlex__1wNNC .homePage_adSection__1lMeh .homePage_placeholder__1J2VI {\n    width: 300px;\n    height: 600px;\n    margin: 16px auto; }\n    @media (min-width: 840px) {\n      .homePage_descriptionCardGrid__1TGW2 .homePage_descriptionCardGridFlex__1wNNC .homePage_adSection__1lMeh .homePage_placeholder__1J2VI {\n        margin: 0; } }\n", "",{"version":3,"sources":["/Users/ctong/Documents/tongskitchen/tk_next/styles/_variables.module.scss","/Users/ctong/Documents/tongskitchen/tk_next/styles/pages/homePage.module.scss"],"names":[],"mappings":"AAAA,cAAA;AAUA,iBAAA;AAUA,eAAA;AAwBA,eAAA;AAmBA,eAAA;AAiBA,kBAAA;AAIA,YAAA;AClFA;EACE,yBAAyB,EAAA;;AAG3B;EAGI,mBDPe,EAAA;;ACYf;EARJ;IASM,iBAAiB,EAAA,EAsCpB;;AA/CH;EAaM,gBAAgB;EAChB,eAAe,EAAA;EAEf;IAhBN;MAiBQ,YAAY;MACZ,gBAAgB;MAChB,eAAe,EAAA,EAElB;;AArBL;EAwBM,gBAAgB;EAChB,eAAe;EACf,yBDgB0B;ECf1B,WDhCM,EAAA;ECkCN;IA7BN;MA8BQ,YAAY;MACZ,gBAAgB;MAChB,eAAe;MACf,YAAY;MACZ,SAAS,EAAA,EAYZ;EA9CL;IAsCQ,YAAY;IACZ,aAAa;IACb,iBAA6B,EAAA;IAE7B;MA1CR;QA2CU,SAAS,EAAA,EAEZ","file":"homePage.module.scss","sourcesContent":["/* Size vars */\n$size-s: 8px;\n$size-default: 16px;\n$size-m: 24px;\n$size-l: 36px;\n$size-xl: 48px;\n$size-xxl: 72px;\n$size-xxxl: 96px;\n$size-xxxxl: 192px;\n\n/* Spacing vars */\n$spacing-s: $size-s;\n$spacing-default: $size-default;\n$spacing-m: $size-m;\n$spacing-l: $size-l;\n$spacing-xl: $size-xl;\n$spacing-xxl: $size-xxl;\n$spacing-xxxl: $size-xxxl;\n$spacing-xxxxl: $size-xxxxl;\n\n/* Media vars */\n$screen-xxxs: 480px;\n$screen-xxs: 600px;\n$screen-xs: 720px;\n$screen-s: 840px;\n$screen-m: 960px;\n$screen-l: 1024px;\n$screen-xl: 1280px;\n$screen-xxl: 1440px;\n$screen-xxxl: 1600px;\n$screen-xxxxl: 1920px;\n$screen-sizes:\n  \"screen-xxxs\" $screen-xxxs,\n  \"screen-xxs\" $screen-xxs,\n  \"screen-xs\" $screen-xs,\n  \"screen-s\" $screen-s,\n  \"screen-m\" $screen-m,\n  \"screen-l\" $screen-l,\n  \"screen-xl\" $screen-xl,\n  \"screen-xxl\" $screen-xxl,\n  \"screen-xxxl\" $screen-xxxl,\n  \"screen-xxxxl\" $screen-xxxxl;\n\n\n/* color vars */\n$color-black-primary: #2C313B;\n$color-black-secondary: #6B6E75;\n$color-black-tertiary: #A9AAAF;\n$color-black-quartenary: #E3E4E5;\n$color-background-gray: #F9F8F8;\n$color-background-dark: #2C313B;\n$color-white: #FFFFFF;\n$color-white-secondary: #B1B2B6;\n// $color-red: #C3161C;\n// $color-red: #F01516;\n$color-red: #E03137;\n\n$color-text-primary: $color-black-primary;\n$color-text-secondary: $color-black-secondary;\n$color-text-inverse-primary: $color-white;\n$color-text-inverse-secondary: $color-white-secondary;\n$color-divider: $color-black-quartenary;\n\n/* typography */\n$font-family: 'Work Sans', Helvetica, Arial, sans-serif;\n$font-size-default: 16px;\n$font-size-secondary: 14px;\n$font-size-small: 12px;\n$line-height-secondary: 20px;\n$headline2: 1.875em; // 30px;\n$headline-mobile: 2.5em;     // 40px\n$headline-desktop: 3.75em; // 60px\n$text-small: 0.75em; // 12px;\n$headline-line-height: 1.25em;\n$large-card-title: 1.5em;\n$line-height: 1.5em;\n\n$font-weight-regular: 300;\n$font-weight-bold: 500;\n\n/* border-radius */\n$card-border-radius: 4px;\n$button-radius: 24px;\n\n/* z-index */\n$z-index-header: 100;\n","@import \"../_variables.module.scss\";\n\n.placeholder {\n  background-color: #E5E4E4;\n}\n\n.descriptionCardGrid {\n\n  h2 {\n    margin-bottom: $spacing-default;\n  }\n\n  .descriptionCardGridFlex {\n\n    @media (min-width: $screen-s) {\n      flex-wrap: nowrap;\n    }\n\n    .cardSection {\n      flex-basis: 100%;\n      max-width: 100%;\n\n      @media (min-width: $screen-s) {\n        flex-grow: 1;\n        flex-basis: auto;\n        max-width: none;\n      }\n    }\n\n    .adSection {\n      flex-basis: 100%;\n      max-width: 100%;\n      border: 1px solid $color-divider;\n      margin: $spacing-s;\n\n      @media (min-width: $screen-s) {\n        flex-grow: 0;\n        flex-basis: auto;\n        max-width: none;\n        border: none;\n        margin: 0;\n      }\n\n      .placeholder {\n        width: 300px;\n        height: 600px;\n        margin: $spacing-default auto;\n\n        @media (min-width: $screen-s) {\n          margin: 0;\n        }\n      }\n    }\n  }\n\n\n\n}\n"]}]);
+exports.push([module.i, "/* Size vars */\n/* Spacing vars */\n/* Media vars */\n/* color vars */\n/* typography */\n/* border-radius */\n/* z-index */\n.blog_recipePage__1Ef_8 .blog_placeholder__2886l {\n  background-color: #E5E4E4; }\n\n.blog_recipePage__1Ef_8 .blog_blogSection__20psj {\n  display: flex;\n  flex-wrap: wrap;\n  box-sizing: border-box;\n  margin-left: -8px;\n  margin-right: -8px; }\n  .blog_recipePage__1Ef_8 .blog_blogSection__20psj .blog_intro__1TUkF {\n    flex-basis: 100%;\n    max-width: 100%;\n    box-sizing: border-box;\n    padding: 0 8px;\n    order: 2; }\n    @media (min-width: 720px) {\n      .blog_recipePage__1Ef_8 .blog_blogSection__20psj .blog_intro__1TUkF {\n        flex-basis: 85%;\n        max-width: 85%;\n        order: 1; } }\n    .blog_recipePage__1Ef_8 .blog_blogSection__20psj .blog_intro__1TUkF p {\n      color: #6B6E75;\n      margin-bottom: 36px;\n      margin-right: 0; }\n      @media (min-width: 720px) {\n        .blog_recipePage__1Ef_8 .blog_blogSection__20psj .blog_intro__1TUkF p {\n          margin-right: 96px; } }\n    .blog_recipePage__1Ef_8 .blog_blogSection__20psj .blog_intro__1TUkF .blog_placeholder__2886l {\n      width: 100%;\n      height: 400px;\n      margin-bottom: 36px; }\n      @media (min-width: 720px) {\n        .blog_recipePage__1Ef_8 .blog_blogSection__20psj .blog_intro__1TUkF .blog_placeholder__2886l {\n          width: 600px; } }\n  .blog_recipePage__1Ef_8 .blog_blogSection__20psj .blog_adSection__2mGUQ {\n    flex-basis: 100%;\n    max-width: 100%;\n    box-sizing: border-box;\n    padding: 0 8px;\n    order: 1;\n    margin-bottom: 24px; }\n    @media (min-width: 720px) {\n      .blog_recipePage__1Ef_8 .blog_blogSection__20psj .blog_adSection__2mGUQ {\n        flex-basis: 15%;\n        max-width: 15%;\n        order: 2;\n        margin-bottom: 0; } }\n    .blog_recipePage__1Ef_8 .blog_blogSection__20psj .blog_adSection__2mGUQ .blog_placeholder__2886l {\n      height: 100px; }\n      @media (min-width: 720px) {\n        .blog_recipePage__1Ef_8 .blog_blogSection__20psj .blog_adSection__2mGUQ .blog_placeholder__2886l {\n          height: 1000px; } }\n\n.blog_recipePage__1Ef_8 .blog_underBlogAd__2vZ-M .blog_placeholder__2886l {\n  width: 100%;\n  height: 100px; }\n\n.blog_recipePage__1Ef_8 .blog_moreBlogPosts__1srXz h2 {\n  padding: 24px 0; }\n", "",{"version":3,"sources":["/Users/ctong/Documents/tongskitchen/tk_next/styles/_variables.module.scss","/Users/ctong/Documents/tongskitchen/tk_next/styles/pages/blog.module.scss"],"names":[],"mappings":"AAAA,cAAA;AAUA,iBAAA;AAUA,eAAA;AAwBA,eAAA;AAmBA,eAAA;AAiBA,kBAAA;AAIA,YAAA;AClFA;EAEI,yBAAyB,EAAA;;AAF7B;EAMI,aAAa;EACb,eAAe;EACf,sBAAqB;EACrB,iBDVQ;ECWR,kBDXQ,EAAA;ECCZ;IAaM,gBAAgB;IAChB,eAAe;IACf,sBAAsB;IACtB,cDjBM;ICkBN,QAAQ,EAAA;IAER;MAnBN;QAoBQ,eAAe;QACf,cAAc;QACd,QAAQ,EAAA,EAsBX;IA5CL;MA0BQ,cDkBuB;MCjBvB,mBDzBK;MC0BL,eAAe,EAAA;MAEf;QA9BR;UA+BU,kBD1BM,EAAA,EC4BT;IAjCP;MAoCQ,WAAW;MACX,aAAa;MACb,mBDpCK,EAAA;MCsCL;QAxCR;UAyCU,YAAY,EAAA,EAEf;EA3CP;IA+CM,gBAAgB;IAChB,eAAe;IACf,sBAAsB;IACtB,cDnDM;ICoDN,QAAQ;IACR,mBDnDO,EAAA;ICqDP;MAtDN;QAuDQ,eAAe;QACf,cAAc;QACd,QAAQ;QACR,gBAAgB,EAAA,EAWnB;IArEL;MA8DQ,aAAa,EAAA;MAEb;QAhER;UAiEU,cAAc,EAAA,EAGjB;;AApEP;EA0EM,WAAW;EACX,aAAa,EAAA;;AA3EnB;EAiFM,eAAqB,EAAA","file":"blog.module.scss","sourcesContent":["/* Size vars */\n$size-s: 8px;\n$size-default: 16px;\n$size-m: 24px;\n$size-l: 36px;\n$size-xl: 48px;\n$size-xxl: 72px;\n$size-xxxl: 96px;\n$size-xxxxl: 192px;\n\n/* Spacing vars */\n$spacing-s: $size-s;\n$spacing-default: $size-default;\n$spacing-m: $size-m;\n$spacing-l: $size-l;\n$spacing-xl: $size-xl;\n$spacing-xxl: $size-xxl;\n$spacing-xxxl: $size-xxxl;\n$spacing-xxxxl: $size-xxxxl;\n\n/* Media vars */\n$screen-xxxs: 480px;\n$screen-xxs: 600px;\n$screen-xs: 720px;\n$screen-s: 840px;\n$screen-m: 960px;\n$screen-l: 1024px;\n$screen-xl: 1280px;\n$screen-xxl: 1440px;\n$screen-xxxl: 1600px;\n$screen-xxxxl: 1920px;\n$screen-sizes:\n  \"screen-xxxs\" $screen-xxxs,\n  \"screen-xxs\" $screen-xxs,\n  \"screen-xs\" $screen-xs,\n  \"screen-s\" $screen-s,\n  \"screen-m\" $screen-m,\n  \"screen-l\" $screen-l,\n  \"screen-xl\" $screen-xl,\n  \"screen-xxl\" $screen-xxl,\n  \"screen-xxxl\" $screen-xxxl,\n  \"screen-xxxxl\" $screen-xxxxl;\n\n\n/* color vars */\n$color-black-primary: #2C313B;\n$color-black-secondary: #6B6E75;\n$color-black-tertiary: #A9AAAF;\n$color-black-quartenary: #E3E4E5;\n$color-background-gray: #F9F8F8;\n$color-background-dark: #2C313B;\n$color-white: #FFFFFF;\n$color-white-secondary: #B1B2B6;\n// $color-red: #C3161C;\n// $color-red: #F01516;\n$color-red: #E03137;\n\n$color-text-primary: $color-black-primary;\n$color-text-secondary: $color-black-secondary;\n$color-text-inverse-primary: $color-white;\n$color-text-inverse-secondary: $color-white-secondary;\n$color-divider: $color-black-quartenary;\n\n/* typography */\n$font-family: 'Work Sans', Helvetica, Arial, sans-serif;\n$font-size-default: 16px;\n$font-size-secondary: 14px;\n$font-size-small: 12px;\n$line-height-secondary: 20px;\n$headline2: 1.875em; // 30px;\n$headline-mobile: 2.5em;     // 40px\n$headline-desktop: 3.75em; // 60px\n$text-small: 0.75em; // 12px;\n$headline-line-height: 1.25em;\n$large-card-title: 1.5em;\n$line-height: 1.5em;\n\n$font-weight-regular: 300;\n$font-weight-bold: 500;\n\n/* border-radius */\n$card-border-radius: 4px;\n$button-radius: 24px;\n\n/* z-index */\n$z-index-header: 100;\n","@import \"../_variables.module.scss\";\n\n.recipePage {\n  .placeholder {\n    background-color: #E5E4E4;\n  }\n\n  .blogSection {\n    display: flex;\n    flex-wrap: wrap;\n    box-sizing:border-box;\n    margin-left: -$spacing-s;\n    margin-right: -$spacing-s;\n\n    .intro {\n      flex-basis: 100%;\n      max-width: 100%;\n      box-sizing: border-box;\n      padding: 0 $spacing-s;\n      order: 2;\n\n      @media (min-width: $screen-xs) {\n        flex-basis: 85%;\n        max-width: 85%;\n        order: 1;\n      }\n\n      p {\n        color: $color-text-secondary;\n        margin-bottom: $spacing-l;\n        margin-right: 0;\n\n        @media (min-width: $screen-xs) {\n          margin-right: $spacing-xxxl;\n        }\n      }\n\n      .placeholder {\n        width: 100%;\n        height: 400px;\n        margin-bottom: $spacing-l;\n\n        @media (min-width: $screen-xs) {\n          width: 600px;\n        }\n      }\n    }\n\n    .adSection {\n      flex-basis: 100%;\n      max-width: 100%;\n      box-sizing: border-box;\n      padding: 0 $spacing-s;\n      order: 1;\n      margin-bottom: $spacing-m;\n\n      @media (min-width: $screen-xs) {\n        flex-basis: 15%;\n        max-width: 15%;\n        order: 2;\n        margin-bottom: 0;\n      }\n\n      .placeholder {\n        height: 100px;\n\n        @media (min-width: $screen-xs) {\n          height: 1000px;\n        }\n\n      }\n    }\n  }\n\n  .underBlogAd {\n    .placeholder {\n      width: 100%;\n      height: 100px;\n    }\n  }\n\n  .moreBlogPosts {\n    h2 {\n      padding: $spacing-m 0;\n    }\n  }\n}\n"]}]);
 // Exports
 exports.locals = {
-	"placeholder": "homePage_placeholder__1J2VI",
-	"descriptionCardGrid": "homePage_descriptionCardGrid__1TGW2",
-	"descriptionCardGridFlex": "homePage_descriptionCardGridFlex__1wNNC",
-	"cardSection": "homePage_cardSection__3DfTv",
-	"adSection": "homePage_adSection__1lMeh"
+	"recipePage": "blog_recipePage__1Ef_8",
+	"placeholder": "blog_placeholder__2886l",
+	"blogSection": "blog_blogSection__20psj",
+	"intro": "blog_intro__1TUkF",
+	"adSection": "blog_adSection__2mGUQ",
+	"underBlogAd": "blog_underBlogAd__2vZ-M",
+	"moreBlogPosts": "blog_moreBlogPosts__1srXz"
 };
 
 /***/ }),
@@ -2856,21 +2866,21 @@ var assign=Object.assign.bind(Object);function g(){return assign;}Object.defineP
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fctong%2FDocuments%2Ftongskitchen%2Ftk_next%2Fpages%2Findex.jsx!./":
-/*!**************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fctong%2FDocuments%2Ftongskitchen%2Ftk_next%2Fpages%2Findex.jsx ***!
-  \**************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fblog%2F%5Bid%5D&absolutePagePath=%2FUsers%2Fctong%2FDocuments%2Ftongskitchen%2Ftk_next%2Fpages%2Fblog%2F%5Bid%5D.jsx!./":
+/*!***************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fblog%2F%5Bid%5D&absolutePagePath=%2FUsers%2Fctong%2FDocuments%2Ftongskitchen%2Ftk_next%2Fpages%2Fblog%2F%5Bid%5D.jsx ***!
+  \***************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    (window.__NEXT_P=window.__NEXT_P||[]).push(["/", function() {
-      var mod = __webpack_require__(/*! ./pages/index.jsx */ "./pages/index.jsx")
+    (window.__NEXT_P=window.__NEXT_P||[]).push(["/blog/[id]", function() {
+      var mod = __webpack_require__(/*! ./pages/blog/[id].jsx */ "./pages/blog/[id].jsx")
       if(true) {
-        module.hot.accept(/*! ./pages/index.jsx */ "./pages/index.jsx", function() {
-          if(!next.router.components["/"]) return
-          var updatedPage = __webpack_require__(/*! ./pages/index.jsx */ "./pages/index.jsx")
-          next.router.update("/", updatedPage)
+        module.hot.accept(/*! ./pages/blog/[id].jsx */ "./pages/blog/[id].jsx", function() {
+          if(!next.router.components["/blog/[id]"]) return
+          var updatedPage = __webpack_require__(/*! ./pages/blog/[id].jsx */ "./pages/blog/[id].jsx")
+          next.router.update("/blog/[id]", updatedPage)
         })
       }
       return mod
@@ -7306,32 +7316,29 @@ module.exports = function (list, options) {
 
 /***/ }),
 
-/***/ "./pages/index.jsx":
-/*!*************************!*\
-  !*** ./pages/index.jsx ***!
-  \*************************/
+/***/ "./pages/blog/[id].jsx":
+/*!*****************************!*\
+  !*** ./pages/blog/[id].jsx ***!
+  \*****************************/
 /*! exports provided: __N_SSG, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__N_SSG", function() { return __N_SSG; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Blog; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/head */ "./node_modules/next/dist/next-server/lib/head.js");
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _components__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components */ "./components/index.js");
-/* harmony import */ var _styles_pages_homePage_module_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../styles/pages/homePage.module.scss */ "./styles/pages/homePage.module.scss");
-/* harmony import */ var _styles_pages_homePage_module_scss__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_styles_pages_homePage_module_scss__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../styles/utils.module.scss */ "./styles/utils.module.scss");
-/* harmony import */ var _styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_6__);
-var _this = undefined,
-    _jsxFileName = "/Users/ctong/Documents/tongskitchen/tk_next/pages/index.jsx";
-
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components */ "./components/index.js");
+/* harmony import */ var _styles_pages_blog_module_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../styles/pages/blog.module.scss */ "./styles/pages/blog.module.scss");
+/* harmony import */ var _styles_pages_blog_module_scss__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_styles_pages_blog_module_scss__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../styles/utils.module.scss */ "./styles/utils.module.scss");
+/* harmony import */ var _styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_5__);
+var _jsxFileName = "/Users/ctong/Documents/tongskitchen/tk_next/pages/blog/[id].jsx";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -7339,392 +7346,204 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
+var array = [1, 2, 3];
+var __N_SSG = true;
+function Blog() {
+  var _this = this;
 
-
-var HomePage = function HomePage(_ref) {
-  var allPostsData = _ref.allPostsData;
-  console.log('getStaticProps', allPostsData);
-  return __jsx(_components__WEBPACK_IMPORTED_MODULE_4__["Layout"], {
-    home: true,
-    __self: _this,
+  return __jsx(_components__WEBPACK_IMPORTED_MODULE_3__["Layout"], {
+    __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14,
+      lineNumber: 11,
       columnNumber: 5
     }
-  }, __jsx("div", {
-    className: _styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_6___default.a.sectionSpacing,
-    __self: _this,
+  }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12,
+      columnNumber: 7
+    }
+  }, __jsx("title", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13,
+      columnNumber: 9
+    }
+  }, "Title")), __jsx("div", {
+    className: _styles_pages_blog_module_scss__WEBPACK_IMPORTED_MODULE_4___default.a.recipePage,
+    __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 15,
       columnNumber: 7
     }
-  }, __jsx(_components__WEBPACK_IMPORTED_MODULE_4__["Hero"], {
-    heroHeadline: "Hero headline",
-    heroPostText: "View recipe",
-    __self: _this,
+  }, __jsx("div", {
+    className: _styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_5___default.a.sectionSpacing,
+    __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 16,
       columnNumber: 9
     }
-  })), __jsx("div", {
-    className: _styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_6___default.a.containedSection,
-    __self: _this,
+  }, __jsx(_components__WEBPACK_IMPORTED_MODULE_3__["Hero"], {
+    heroHeadline: "Blog post headline",
+    __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21,
-      columnNumber: 7
+      lineNumber: 17,
+      columnNumber: 11
     }
-  }, __jsx("div", {
-    className: classnames__WEBPACK_IMPORTED_MODULE_3___default()(_styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_6___default.a.sectionSpacing, _styles_pages_homePage_module_scss__WEBPACK_IMPORTED_MODULE_5___default.a.descriptionCardGrid),
-    __self: _this,
+  })), __jsx("article", {
+    __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 22,
       columnNumber: 9
     }
-  }, __jsx("h2", {
-    __self: _this,
+  }, __jsx("div", {
+    className: classnames__WEBPACK_IMPORTED_MODULE_2___default()(_styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_5___default.a.containedSection, _styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_5___default.a.sectionSpacing),
+    __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 23,
       columnNumber: 11
     }
-  }, "Featured recipes"), __jsx("div", {
-    className: classnames__WEBPACK_IMPORTED_MODULE_3___default()(_styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_6___default.a.flexboxGridContainer, _styles_pages_homePage_module_scss__WEBPACK_IMPORTED_MODULE_5___default.a.descriptionCardGridFlex),
-    __self: _this,
+  }, __jsx("div", {
+    className: _styles_pages_blog_module_scss__WEBPACK_IMPORTED_MODULE_4___default.a.blogSection,
+    __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 24,
-      columnNumber: 11
+      columnNumber: 13
     }
   }, __jsx("div", {
-    className: classnames__WEBPACK_IMPORTED_MODULE_3___default()(_styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_6___default.a.flexboxGridChild, _styles_pages_homePage_module_scss__WEBPACK_IMPORTED_MODULE_5___default.a.cardSection),
-    __self: _this,
+    className: _styles_pages_blog_module_scss__WEBPACK_IMPORTED_MODULE_4___default.a.intro,
+    __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 25,
-      columnNumber: 13
-    }
-  }, __jsx(_components__WEBPACK_IMPORTED_MODULE_4__["DescriptionCard"], {
-    cardTitle: "Card title",
-    cardBottomInfo: [{
-      title: 'Time',
-      subtitle: '20 mins'
-    }, {
-      title: 'Time',
-      subtitle: '20 mins'
-    }],
-    cardImage: "https://picsum.photos/id/1045/1000/500",
-    cardLink: "/recipe/recipe1",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 27,
       columnNumber: 15
     }
-  }), __jsx(_components__WEBPACK_IMPORTED_MODULE_4__["DescriptionCard"], {
-    cardTitle: "Card title",
-    cardBottomInfo: [{
-      title: 'Time',
-      subtitle: '20 mins'
-    }, {
-      title: 'Time',
-      subtitle: '20 mins'
-    }],
-    cardImage: "https://picsum.photos/id/1045/1000/500",
-    cardLink: "/recipe/recipe1",
-    __self: _this,
+  }, __jsx("p", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26,
+      columnNumber: 17
+    }
+  }, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisi est sit amet facilisis magna etiam tempor orci. Amet est placerat in egestas erat imperdiet sed euismod nisi. Adipiscing diam donec adipiscing tristique risus nec feugiat. Viverra maecenas accumsan lacus vel facilisis volutpat est velit. Mollis aliquam ut porttitor leo a diam. Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis. Dui faucibus in ornare quam viverra orci sagittis. Egestas tellus rutrum tellus pellentesque. Et pharetra pharetra massa massa ultricies mi. Dui vivamus arcu felis bibendum ut tristique et egestas quis. Tincidunt dui ut ornare lectus sit amet est placerat in. Non pulvinar neque laoreet suspendisse interdum consectetur libero id. In hac habitasse platea dictumst vestibulum rhoncus est pellentesque."), __jsx("div", {
+    className: _styles_pages_blog_module_scss__WEBPACK_IMPORTED_MODULE_4___default.a.placeholder,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30,
+      columnNumber: 17
+    }
+  }), __jsx("p", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 31,
+      columnNumber: 17
+    }
+  }, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisi est sit amet facilisis magna etiam tempor orci. Amet est placerat in egestas erat imperdiet sed euismod nisi. Adipiscing diam donec adipiscing tristique risus nec feugiat. Viverra maecenas accumsan lacus vel facilisis volutpat est velit. Mollis aliquam ut porttitor leo a diam. Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis. Dui faucibus in ornare quam viverra orci sagittis. Egestas tellus rutrum tellus pellentesque. Et pharetra pharetra massa massa ultricies mi. Dui vivamus arcu felis bibendum ut tristique et egestas quis. Tincidunt dui ut ornare lectus sit amet est placerat in. Non pulvinar neque laoreet suspendisse interdum consectetur libero id. In hac habitasse platea dictumst vestibulum rhoncus est pellentesque.", __jsx("br", {
+    __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 33,
-      columnNumber: 15
+      columnNumber: 19
     }
-  }), __jsx(_components__WEBPACK_IMPORTED_MODULE_4__["DescriptionCard"], {
-    cardTitle: "Card title",
-    cardBottomInfo: [{
-      title: 'Time',
-      subtitle: '20 mins'
-    }, {
-      title: 'Time',
-      subtitle: '20 mins'
-    }],
-    cardImage: "https://picsum.photos/id/1045/1000/500",
-    cardLink: "/recipe/recipe1",
-    __self: _this,
+  }), __jsx("br", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 33,
+      columnNumber: 24
+    }
+  }), "Et tortor at risus viverra adipiscing. Volutpat est velit egestas dui id. Non blandit massa enim nec dui nunc mattis enim ut. Mi bibendum neque egestas congue quisque egestas. Aliquet sagittis id consectetur purus ut faucibus pulvinar. Convallis aenean et tortor at risus viverra adipiscing at in. Adipiscing elit pellentesque habitant morbi tristique senectus et netus. Elit at imperdiet dui accumsan sit amet nulla facilisi morbi. Enim diam vulputate ut pharetra sit amet aliquam id diam. Nec feugiat in fermentum posuere."), __jsx("div", {
+    className: _styles_pages_blog_module_scss__WEBPACK_IMPORTED_MODULE_4___default.a.placeholder,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 37,
+      columnNumber: 17
+    }
+  })), __jsx("div", {
+    className: _styles_pages_blog_module_scss__WEBPACK_IMPORTED_MODULE_4___default.a.adSection,
+    __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 39,
       columnNumber: 15
     }
-  })), __jsx("div", {
-    className: classnames__WEBPACK_IMPORTED_MODULE_3___default()(_styles_pages_homePage_module_scss__WEBPACK_IMPORTED_MODULE_5___default.a.adSection, _styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_6___default.a.flexboxGridChild),
-    __self: _this,
+  }, __jsx("div", {
+    className: _styles_pages_blog_module_scss__WEBPACK_IMPORTED_MODULE_4___default.a.placeholder,
+    __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46,
-      columnNumber: 13
+      lineNumber: 41,
+      columnNumber: 17
     }
-  }, __jsx("div", {
-    className: _styles_pages_homePage_module_scss__WEBPACK_IMPORTED_MODULE_5___default.a.placeholder,
-    __self: _this,
+  }))))), __jsx("div", {
+    className: classnames__WEBPACK_IMPORTED_MODULE_2___default()(_styles_pages_blog_module_scss__WEBPACK_IMPORTED_MODULE_4___default.a.underBlogAd, _styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_5___default.a.containedSection, _styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_5___default.a.sectionSpacing),
+    __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 47,
-      columnNumber: 15
+      columnNumber: 9
     }
-  })))), __jsx("div", {
-    className: classnames__WEBPACK_IMPORTED_MODULE_3___default()(_styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_6___default.a.sectionSpacing),
-    __self: _this,
+  }, __jsx("div", {
+    className: _styles_pages_blog_module_scss__WEBPACK_IMPORTED_MODULE_4___default.a.placeholder,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 48,
+      columnNumber: 11
+    }
+  })), __jsx("div", {
+    className: classnames__WEBPACK_IMPORTED_MODULE_2___default()(_styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_5___default.a.containedSection, _styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_5___default.a.sectionSpacing, _styles_pages_blog_module_scss__WEBPACK_IMPORTED_MODULE_4___default.a.moreBlogPosts),
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 51,
+      columnNumber: 9
+    }
+  }, __jsx("h2", {
+    __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 52,
-      columnNumber: 9
-    }
-  }, __jsx(_components__WEBPACK_IMPORTED_MODULE_4__["CardGrid"], {
-    cardGridTitle: "Latest recipes",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 53,
-      columnNumber: 13
-    }
-  }, __jsx(_components__WEBPACK_IMPORTED_MODULE_4__["Card"], {
-    cardTitle: "Card title",
-    cardBottomInfo: [{
-      title: 'Time',
-      subtitle: '20 mins'
-    }, {
-      title: 'Time',
-      subtitle: '20 mins'
-    }],
-    cardImage: "https://picsum.photos/id/1045/1000/500",
-    cardLink: "/recipe/recipe1",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 54,
-      columnNumber: 15
-    }
-  }), __jsx(_components__WEBPACK_IMPORTED_MODULE_4__["Card"], {
-    cardTitle: "Card title",
-    cardBottomInfo: [{
-      title: 'Time',
-      subtitle: '20 mins'
-    }, {
-      title: 'Time',
-      subtitle: '20 mins'
-    }],
-    cardImage: "https://picsum.photos/id/1045/1000/500",
-    cardLink: "/recipe/recipe1",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 60,
-      columnNumber: 15
-    }
-  }), __jsx(_components__WEBPACK_IMPORTED_MODULE_4__["Card"], {
-    cardTitle: "Card title",
-    cardBottomInfo: [{
-      title: 'Time',
-      subtitle: '20 mins'
-    }, {
-      title: 'Time',
-      subtitle: '20 mins'
-    }],
-    cardImage: "https://picsum.photos/id/1045/1000/500",
-    cardLink: "/recipe/recipe1",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 66,
-      columnNumber: 15
-    }
-  }), __jsx(_components__WEBPACK_IMPORTED_MODULE_4__["Card"], {
-    cardTitle: "Card title",
-    cardBottomInfo: [{
-      title: 'Time',
-      subtitle: '20 mins'
-    }, {
-      title: 'Time',
-      subtitle: '20 mins'
-    }],
-    cardImage: "https://picsum.photos/id/1045/1000/500",
-    cardLink: "/recipe/recipe1",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 72,
-      columnNumber: 15
-    }
-  }), __jsx(_components__WEBPACK_IMPORTED_MODULE_4__["Card"], {
-    cardTitle: "Card title",
-    cardBottomInfo: [{
-      title: 'Time',
-      subtitle: '20 mins'
-    }, {
-      title: 'Time',
-      subtitle: '20 mins'
-    }],
-    cardImage: "https://picsum.photos/id/1045/1000/500",
-    cardLink: "/recipe/recipe1",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 78,
-      columnNumber: 15
-    }
-  }), __jsx(_components__WEBPACK_IMPORTED_MODULE_4__["Card"], {
-    cardTitle: "Card title",
-    cardBottomInfo: [{
-      title: 'Time',
-      subtitle: '20 mins'
-    }, {
-      title: 'Time',
-      subtitle: '20 mins'
-    }],
-    cardImage: "https://picsum.photos/id/1045/1000/500",
-    cardLink: "/recipe/recipe1",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 84,
-      columnNumber: 15
-    }
-  })), __jsx(_components__WEBPACK_IMPORTED_MODULE_4__["Button"], {
-    text: "See all",
-    link: "/recipes",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 91,
-      columnNumber: 13
-    }
-  })), __jsx("div", {
-    className: classnames__WEBPACK_IMPORTED_MODULE_3___default()(_styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_6___default.a.sectionSpacing, _styles_pages_homePage_module_scss__WEBPACK_IMPORTED_MODULE_5___default.a.descriptionCardGrid),
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 94,
       columnNumber: 11
     }
-  }, __jsx("h2", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 95,
-      columnNumber: 13
-    }
-  }, "Featured recipes"), __jsx("div", {
-    className: classnames__WEBPACK_IMPORTED_MODULE_3___default()(_styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_6___default.a.flexboxGridContainer, _styles_pages_homePage_module_scss__WEBPACK_IMPORTED_MODULE_5___default.a.descriptionCardGrid, _styles_pages_homePage_module_scss__WEBPACK_IMPORTED_MODULE_5___default.a.descriptionCardGridFlex),
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 96,
-      columnNumber: 13
-    }
-  }, __jsx("div", {
-    className: classnames__WEBPACK_IMPORTED_MODULE_3___default()(_styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_6___default.a.flexboxGridChild, _styles_pages_homePage_module_scss__WEBPACK_IMPORTED_MODULE_5___default.a.cardSection),
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 97,
-      columnNumber: 15
-    }
-  }, __jsx(_components__WEBPACK_IMPORTED_MODULE_4__["DescriptionCard"], {
-    cardTitle: "Card title",
-    cardBottomInfo: [{
-      title: 'Time',
-      subtitle: '20 mins'
-    }, {
-      title: 'Time',
-      subtitle: '20 mins'
-    }],
-    cardImage: "https://picsum.photos/id/1045/1000/500",
-    cardLink: "/recipe/recipe1",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 99,
-      columnNumber: 17
-    }
-  }), __jsx(_components__WEBPACK_IMPORTED_MODULE_4__["DescriptionCard"], {
-    cardTitle: "Card title",
-    cardBottomInfo: [{
-      title: 'Time',
-      subtitle: '20 mins'
-    }, {
-      title: 'Time',
-      subtitle: '20 mins'
-    }],
-    cardImage: "https://picsum.photos/id/1045/1000/500",
-    cardLink: "/recipe/recipe1",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 105,
-      columnNumber: 17
-    }
-  }), __jsx(_components__WEBPACK_IMPORTED_MODULE_4__["DescriptionCard"], {
-    cardTitle: "Card title",
-    cardBottomInfo: [{
-      title: 'Time',
-      subtitle: '20 mins'
-    }, {
-      title: 'Time',
-      subtitle: '20 mins'
-    }],
-    cardImage: "https://picsum.photos/id/1045/1000/500",
-    cardLink: "/recipe/recipe1",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 111,
-      columnNumber: 17
-    }
-  })), __jsx("div", {
-    className: classnames__WEBPACK_IMPORTED_MODULE_3___default()(_styles_pages_homePage_module_scss__WEBPACK_IMPORTED_MODULE_5___default.a.adSection, _styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_6___default.a.flexboxGridChild),
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 118,
-      columnNumber: 15
-    }
-  }, __jsx("div", {
-    className: _styles_pages_homePage_module_scss__WEBPACK_IMPORTED_MODULE_5___default.a.placeholder,
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 119,
-      columnNumber: 17
-    }
-  }))), __jsx(_components__WEBPACK_IMPORTED_MODULE_4__["Button"], {
-    text: "See all",
-    link: "/blog",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 122,
-      columnNumber: 13
-    }
+  }, "More blog posts"), array.map(function (cardNum) {
+    return __jsx(_components__WEBPACK_IMPORTED_MODULE_3__["DescriptionCard"], {
+      cardTitle: "Blog title ".concat(cardNum),
+      key: "key".concat(cardNum),
+      cardImage: "https://picsum.photos/id/1045/1000/500",
+      cardLink: "/blog/blog2",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 55,
+        columnNumber: 15
+      }
+    });
   }))));
-};
-
-var __N_SSG = true;
-/* harmony default export */ __webpack_exports__["default"] = (HomePage);
+}
 
 /***/ }),
 
-/***/ "./styles/pages/homePage.module.scss":
-/*!*******************************************!*\
-  !*** ./styles/pages/homePage.module.scss ***!
-  \*******************************************/
+/***/ "./styles/pages/blog.module.scss":
+/*!***************************************!*\
+  !*** ./styles/pages/blog.module.scss ***!
+  \***************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-3-1!../../node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!../../node_modules/resolve-url-loader??ref--5-oneOf-3-3!../../node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-3-4!./homePage.module.scss */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./styles/pages/homePage.module.scss");
+var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-3-1!../../node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!../../node_modules/resolve-url-loader??ref--5-oneOf-3-3!../../node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-3-4!./blog.module.scss */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./styles/pages/blog.module.scss");
 
 if (typeof content === 'string') {
   content = [[module.i, content, '']];
@@ -7758,9 +7577,9 @@ if (content.locals) {
 if (true) {
   if (!content.locals) {
     module.hot.accept(
-      /*! !../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-3-1!../../node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!../../node_modules/resolve-url-loader??ref--5-oneOf-3-3!../../node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-3-4!./homePage.module.scss */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./styles/pages/homePage.module.scss",
+      /*! !../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-3-1!../../node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!../../node_modules/resolve-url-loader??ref--5-oneOf-3-3!../../node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-3-4!./blog.module.scss */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./styles/pages/blog.module.scss",
       function () {
-        var newContent = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-3-1!../../node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!../../node_modules/resolve-url-loader??ref--5-oneOf-3-3!../../node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-3-4!./homePage.module.scss */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./styles/pages/homePage.module.scss");
+        var newContent = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-3-1!../../node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!../../node_modules/resolve-url-loader??ref--5-oneOf-3-3!../../node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-3-4!./blog.module.scss */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./styles/pages/blog.module.scss");
 
         if (typeof newContent === 'string') {
           newContent = [[module.i, newContent, '']];
@@ -7839,14 +7658,14 @@ if (true) {
 
 /***/ }),
 
-/***/ 1:
-/*!******************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fctong%2FDocuments%2Ftongskitchen%2Ftk_next%2Fpages%2Findex.jsx ***!
-  \******************************************************************************************************************************************/
+/***/ 3:
+/*!*******************************************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2Fblog%2F%5Bid%5D&absolutePagePath=%2FUsers%2Fctong%2FDocuments%2Ftongskitchen%2Ftk_next%2Fpages%2Fblog%2F%5Bid%5D.jsx ***!
+  \*******************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fctong%2FDocuments%2Ftongskitchen%2Ftk_next%2Fpages%2Findex.jsx! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fctong%2FDocuments%2Ftongskitchen%2Ftk_next%2Fpages%2Findex.jsx!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fblog%2F%5Bid%5D&absolutePagePath=%2FUsers%2Fctong%2FDocuments%2Ftongskitchen%2Ftk_next%2Fpages%2Fblog%2F%5Bid%5D.jsx! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fblog%2F%5Bid%5D&absolutePagePath=%2FUsers%2Fctong%2FDocuments%2Ftongskitchen%2Ftk_next%2Fpages%2Fblog%2F%5Bid%5D.jsx!./");
 
 
 /***/ }),
@@ -7862,5 +7681,5 @@ module.exports = dll_c2e10d183b950a67d9e7;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
-//# sourceMappingURL=index.js.map
+},[[3,"static/runtime/webpack.js"]]]);
+//# sourceMappingURL=[id].js.map
