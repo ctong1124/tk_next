@@ -8,6 +8,4 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sit amet efficitur s
 
 ![](/public/images/uploads/shutterstock_376532611.jpg)
 
-
-
 Suspendisse volutpat pretium vehicula. Cras iaculis lacus non purus aliquam, at viverra tortor tristique. Nullam quam massa, rutrum fringilla sagittis ut, mattis sed eros. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi mattis pellentesque sem et hendrerit. Nulla facilisi. Mauris ligula orci, sagittis sit amet tempor quis, ultricies a quam. Maecenas non nisi blandit, tempus elit sed, sagittis quam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
