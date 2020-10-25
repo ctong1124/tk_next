@@ -4,6 +4,7 @@ import utilStyles from '../../styles/utils.module.scss';
 import Link from 'next/link';
 import Header from '../Header';
 import Footer from '../Footer';
+import classes from './Layout.module.scss';
 
 const NAME = 'CARISA';
 
@@ -34,10 +35,12 @@ const Layout = ({ children }) => {
         </script> */}
       </Head>
       <Header />
-      <main>
-        {children}
-      </main>
-      <Footer />
+      <div className={classes.layoutBody}>
+        <main>
+          {children}
+        </main>
+        <Footer />
+      </div>
     </div>
   )
 };
