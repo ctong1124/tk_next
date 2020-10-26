@@ -1,11 +1,13 @@
 import Head from 'next/head';
 import PropTypes from 'prop-types';
 import cn from 'classnames';
+import { getAllPostIds, getPostData } from '../../lib/posts'
 import { Hero, CardGrid, Card, Layout } from '../../components';
 import classes from '../../styles/pages/recipe.module.scss';
 import utils from '../../styles/utils.module.scss';
 
-const Recipe = () => {
+const Recipe = (props) => {
+  console.log('recipe props', props);
   return (
     <Layout>
       <Head>
@@ -127,20 +129,21 @@ Recipe.propTypes = {
 Recipe.defaultProps = {
 
 };
-//
+
 // export async function getStaticPaths() {
+//   const paths = getAllPostIds('recipe');
 //   return {
-//     paths: [
-//       { params: { id: 'recipe1' } },
-//       { params: { id: 'recipe2' } },
-//     ],
+//     paths,
 //     fallback: false,
-//   }
+//   };
 // }
 //
 // export async function getStaticProps({ params }) {
+//   const postData = await getPostData({type: 'recipe', id: params.id });
 //   return {
-//     props: {},
+//     props: {
+//       ...postData,
+//     },
 //   };
 // }
 

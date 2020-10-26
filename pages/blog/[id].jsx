@@ -121,12 +121,21 @@ export async function getStaticProps({ params }) {
     getPostDataNoBody({ type: 'blog', id: postSlug })
   ));
 
-  return {
+  const blah = {
     props: {
       ...postData,
       ...(relatedPosts ? { relatedPosts } : {} ),
     },
   };
+  console.log('blog', blah);
+  return blah;
+
+  // return {
+  //   props: {
+  //     ...postData,
+  //     ...(relatedPosts ? { relatedPosts } : {} ),
+  //   },
+  // };
 }
 
 export default Blog;
