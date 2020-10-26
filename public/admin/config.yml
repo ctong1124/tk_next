@@ -22,6 +22,6 @@ collections:
           name: "related",
           widget: "list",
           max: 3,
-          min: 3,
+          min: 0,
           field: {label: "Related Post", name: "relatedPost", widget: "relation", collection: "blog", searchFields: ["title"], valueField: "title"}
         }
