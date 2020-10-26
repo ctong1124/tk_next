@@ -3,13 +3,11 @@ import Link from 'next/link';
 import PropTypes from 'prop-types';
 import cn from 'classnames';
 import { Hero, CardGrid, Card, Layout, Button, DescriptionCard } from '../components';
-// import { getSortedPostsData } from '../lib/posts'
+import { /*getSortedPostsData,*/ getYamlData } from '../lib/posts'
 import classes from '../styles/pages/homePage.module.scss';
 import utils from '../styles/utils.module.scss';
 
-const HomePage = ({
-  allPostsData,
-}) => {
+const HomePage = () => {
   return (
     <Layout home>
       <div className={utils.sectionSpacing}>
@@ -136,13 +134,14 @@ HomePage.defaultProps = {
 
 };
 
-// export async function getStaticProps() {
-//   const allPostsData = getSortedPostsData()
-//   return {
-//     props: {
-//       allPostsData
-//     }
-//   }
-// }
+export async function getStaticProps() {
+  // const allPostsData = getSortedPostsData();
+  const homePageData = getYamlData('/data/pages/homePage.yml');
+  console.log('homePageData', homePageData);
+  return {
+    props: {
+    },
+  }
+}
 
 export default HomePage;
