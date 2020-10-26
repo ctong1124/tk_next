@@ -1,7 +1,7 @@
 ---
 layout: blog
 title: Third example blog post
-publishDate: 2020-10-26T15:59:24.910Z
+publishDate: 2020-10-26T17:00:24.910Z
 thumbnail: /images/uploads/shutterstock_281532815.jpg
 description: Testing slug/file name please work
 related:
