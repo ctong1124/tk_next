@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import PropTypes from 'prop-types';
 import utilStyles from '../styles/utils.module.scss';
 import Link from 'next/link';
 import cn from 'classnames';
@@ -6,26 +7,27 @@ import { getSortedPostsData } from '../lib/posts'
 import classes from '../styles/pages/blogArchive.module.scss';
 import { Layout, DescriptionCard } from '../components';
 
-const array = [1, 2, 3, 4, 5, 6];
-
 const BlogArchive = ({
-  allPostsData,
+  blogPosts,
 }) => {
-  console.log('allPostsData');
   return (
     <Layout>
       <div className={cn(utilStyles.containedSection, utilStyles.sectionSpacing, classes.blogArchivePage)}>
         <h1>All blog posts</h1>
         {
-          allPostsData.map((post, i) => {
-            const dateObject = new Date(post.date);
+          blogPosts.map((post, i) => {
+            const {
+              title, date, description, thumbnail, id,
+            } = post;
+            const dateObject = new Date(date);
             return (
               <DescriptionCard
-                cardTitle={post.title}
+                cardTitle={title}
                 cardSubtitle={dateObject.toDateString()}
-                key={`${post.title}-${i}`}
-                cardImage={post.thumbnail}
-                cardLink={`blog/${post.id}`}
+                cardDescription={description}
+                key={`${title}-${i}`}
+                cardImage={thumbnail}
+                cardLink={`blog/${id}`}
               />
             );
           })
@@ -35,12 +37,25 @@ const BlogArchive = ({
   );
 };
 
+BlogArchive.propTypes = {
+  blogPosts: PropTypes.arrayOf(PropTypes.shape({
+    title: PropTypes.string,
+    date: PropTypes.string,
+    description: PropTypes.string,
+    thumbnail: PropTypes.string,
+    id: PropTypes.string,
+  })),
+};
+
+BlogArchive.defaultProps = {
+  blogPosts: {},
+};
+
 export async function getStaticProps() {
-  const allPostsData = getSortedPostsData('blog');
-  console.log('allPostsData', allPostsData);
+  const blogPosts = getSortedPostsData('blog');
   return {
     props: {
-      allPostsData
+      blogPosts,
     }
   };
 };

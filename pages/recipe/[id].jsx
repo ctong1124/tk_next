@@ -1,10 +1,11 @@
 import Head from 'next/head';
+import PropTypes from 'prop-types';
 import cn from 'classnames';
 import { Hero, CardGrid, Card, Layout } from '../../components';
 import classes from '../../styles/pages/recipe.module.scss';
 import utils from '../../styles/utils.module.scss';
 
-export default function Recipe() {
+const Recipe = () => {
   return (
     <Layout>
       <Head>
@@ -118,7 +119,15 @@ export default function Recipe() {
     </Layout>
   );
 }
-// 
+
+Recipe.propTypes = {
+
+};
+
+Recipe.defaultProps = {
+
+};
+//
 // export async function getStaticPaths() {
 //   return {
 //     paths: [
@@ -134,3 +143,5 @@ export default function Recipe() {
 //     props: {},
 //   };
 // }
+
+export default Recipe;

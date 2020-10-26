@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import PropTypes from 'prop-types';
 import utilStyles from '../styles/utils.module.scss';
 import Link from 'next/link';
 import cn from 'classnames';
@@ -27,5 +28,9 @@ const Recipes = () => {
     </Layout>
   );
 };
+
+Recipes.propTypes = {};
+
+Recipes.defaultProps = {};
 
 export default Recipes;

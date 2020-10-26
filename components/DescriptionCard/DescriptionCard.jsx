@@ -67,7 +67,7 @@ DescriptionCard.propTypes = {
 DescriptionCard.defaultProps = {
   cardTitle: '',
   cardSubtitle: '',
-  cardDescription: 'Placeholder description for now. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sit amet efficitur sapien. Phasellus libero felis, laoreet in purus sollicitudin, eleifend volutpat sapien.',
+  cardDescription: '',
   cardBottomInfo: [],
   cardImage: '',
   cardLink: '',

@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import PropTypes from 'prop-types';
 import Link from 'next/link';
 import cn from 'classnames';
 import { Layout, /*Hero, CardGrid, Card,  Button, DescriptionCard */} from '../components';
@@ -55,6 +56,14 @@ const AboutPage = ({
 
     </Layout>
   )
+};
+
+AboutPage.propTypes = {
+
+};
+
+AboutPage.defaultProps = {
+
 };
 
 export default AboutPage;

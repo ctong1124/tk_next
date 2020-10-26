@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
+import PropTypes from 'prop-types';
 import cn from 'classnames';
 import { Hero, CardGrid, Card, Layout, Button, DescriptionCard } from '../components';
 // import { getSortedPostsData } from '../lib/posts'
@@ -15,6 +16,7 @@ const HomePage = ({
         <Hero
           heroHeadline='Hero headline'
           heroPostText='View recipe'
+          heroLink='/recipe/recipe1'
         />
       </div>
       <div className={utils.containedSection}>
@@ -91,7 +93,7 @@ const HomePage = ({
           </div>
 
           <div className={cn(utils.sectionSpacing, classes.descriptionCardGrid)}>
-            <h2>Featured recipes</h2>
+            <h2>Featured blog posts</h2>
             <div className={cn(utils.flexboxGridContainer, classes.descriptionCardGrid, classes.descriptionCardGridFlex)}>
               <div className={cn(utils.flexboxGridChild, classes.cardSection)}>
 
@@ -124,6 +126,14 @@ const HomePage = ({
 
     </Layout>
   )
+};
+
+HomePage.propTypes = {
+
+};
+
+HomePage.defaultProps = {
+
 };
 
 // export async function getStaticProps() {

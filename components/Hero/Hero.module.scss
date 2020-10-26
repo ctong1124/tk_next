@@ -61,8 +61,33 @@
       margin: $spacing-default;
     }
 
+    .postTextWithLink {
+      display: inline-block;
+      height: 20px;
+
+      // .postText::after {
+      //   content: ' >';
+      //   transition: color 0.08s;
+      // }
+    }
+
     .postText {
       margin-top: $spacing-default;
     }
+
+    .highlight {
+      height: 0;
+      background-color: $color-red;
+      border-radius: $card-border-radius;
+      transition: height 0.08s;
+    }
+
+    .postTextWithLink:hover .highlight {
+      height: 3px;
+    }
+
+    // .postTextWithLink:hover .postText::after {
+    //   color: $color-red;
+    // }
   }
 }

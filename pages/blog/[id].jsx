@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import PropTypes from 'prop-types';
 import cn from 'classnames';
 import { getAllPostIds, getPostData } from '../../lib/posts'
 import { Hero, DescriptionCard, Layout } from '../../components';
@@ -7,12 +8,12 @@ import utils from '../../styles/utils.module.scss';
 
 const array = [1, 2, 3];
 
-export default function Blog({
+const Blog = ({
   title,
   date,
   contentHtml,
   thumbnail,
-}) {
+}) => {
   const dateObject = new Date(date);
   return (
     <Layout>
@@ -73,6 +74,20 @@ export default function Blog({
   );
 }
 
+Blog.propTypes = {
+  title: PropTypes.string,
+  date: PropTypes.string,
+  contentHtml: PropTypes.node,
+  thumbnail: PropTypes.string,
+};
+
+Blog.defaultProps = {
+  title: '',
+  date: '',
+  contentHtml: null,
+  thumbnail: '',
+};
+
 export async function getStaticPaths() {
   const paths = getAllPostIds('blog');
   return {
@@ -89,3 +104,5 @@ export async function getStaticProps({ params }) {
     },
   };
 }
+
+export default Blog;

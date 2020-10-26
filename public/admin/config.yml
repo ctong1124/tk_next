@@ -9,11 +9,19 @@ collections:
     label: "Blog post" # Used in the UI
     folder: "data/blog" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
-    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    slug: "{{date}}_{{slug}}" # Filename template, e.g., YYYY-MM-DD-HH:MM_title.md
     fields: # The fields for each document, usually in front matter
       - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Original Publish Date", name: "publishDate", widget: "datetime"}
       - {label: "Featured Image", name: "thumbnail", widget: "image"}
       - {label: "Description", name: "description", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
+      - {
+          label: "Related Blog Posts",
+          name: "related",
+          widget: "list",
+          max: 3,
+          min: 3,
+          field: {label: "Related Post", name: "relatedPost", widget: "relation", collection: "blog", searchFields: ["title"], valueField: "title"}
+        }

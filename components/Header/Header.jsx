@@ -12,7 +12,7 @@ const Header = () => {
       <Link href="/">
         <a>
           <div className={classes.logo}>
-            <img src="/images/tk_logo.png" alt="Logo" />
+            <img src="/images/tk_logo.svg" alt="Tong's Kitchen logo" />
             <div className={cn(classes.logoText, utilStyles.bold)}>
               Tong's{"\n"}Kitchen
               <div className={classes.highlight}/>
