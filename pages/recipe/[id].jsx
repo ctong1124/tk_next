@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import PropTypes from 'prop-types';
 import cn from 'classnames';
-import { getAllPostIds, getPostData } from '../../lib/posts'
+// import { getAllPostIds, getPostData } from '../../lib/posts'
 import { Hero, CardGrid, Card, Layout } from '../../components';
 import classes from '../../styles/pages/recipe.module.scss';
 import utils from '../../styles/utils.module.scss';
