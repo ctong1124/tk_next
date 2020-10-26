@@ -39,7 +39,7 @@ time: 1 hr
 servings: "4"
 ingredients:
   - ingredient:
-      amount: 1
+      amount: "1"
       name: head broccoli
 steps:
   - step: Prepare the scallop sauce 3 hours in advance. Soak dried scallops in water
