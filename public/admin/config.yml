@@ -23,5 +23,5 @@ collections:
           widget: "list",
           max: 3,
           min: 0,
-          field: {label: "Related Post", name: "relatedPost", widget: "relation", collection: "blog", searchFields: ["title"], valueField: "slug"}
+          field: {label: "Related Post", name: "relatedPost", widget: "relation", collection: "blog", search_fields: ["title"], display_fields: ["title"], value_field: "slug"}
         }
