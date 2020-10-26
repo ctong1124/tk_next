@@ -10,11 +10,11 @@ const array = [1, 2, 3];
 
 const Blog = ({
   title,
-  date,
+  publishDate,
   contentHtml,
   thumbnail,
 }) => {
-  const dateObject = new Date(date);
+  const dateObject = new Date(publishDate);
   return (
     <Layout>
       <Head>
@@ -76,14 +76,14 @@ const Blog = ({
 
 Blog.propTypes = {
   title: PropTypes.string,
-  date: PropTypes.string,
+  publishDate: PropTypes.string,
   contentHtml: PropTypes.node,
   thumbnail: PropTypes.string,
 };
 
 Blog.defaultProps = {
   title: '',
-  date: '',
+  publishDate: '',
   contentHtml: null,
   thumbnail: '',
 };
