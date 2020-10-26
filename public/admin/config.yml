@@ -50,7 +50,7 @@ collections:
             name: "ingredient"
             widget: "object"
             fields:
-              - {label: "Amount", name: "amount", widget: "number"}
+              - {label: "Amount", name: "amount", widget: "string"}
               - {label: "Name", name: "name", widget: "string"}
       - label: "Steps"
         name: "steps"
