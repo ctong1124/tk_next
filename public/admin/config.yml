@@ -65,3 +65,25 @@ collections:
           min: 0,
           field: {label: "Related Recipe", name: "relatedRecipe", widget: "relation", collection: "recipe", search_fields: ["title"], display_fields: ["title"], value_field: "{{slug}}"}
         }
+  - label: "Pages"
+    name: "pages"
+    files:
+      - label: "Home Page"
+        name: "homePage"
+        file: "data/pages/homePage.yml"
+        fields:
+          - label: "Hero"
+            name: "hero"
+            widget: "relation"
+            collection: "recipe"
+            search_fields: ["title"]
+            value_field: "{{slug}}"
+            display_fields: ["title"]
+          - {
+              label: "Featured Recipes",
+              name: "featuredRecipes",
+              widget: "list",
+              max: 3,
+              min: 0,
+              field: {label: "Related Recipe", name: "relatedRecipe", widget: "relation", collection: "recipe", search_fields: ["title"], display_fields: ["title"], value_field: "{{slug}}"}
+            }

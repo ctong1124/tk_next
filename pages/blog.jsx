@@ -52,7 +52,7 @@ BlogArchive.defaultProps = {
 };
 
 export async function getStaticProps() {
-  const blogPosts = getSortedPostsData({ type: 'blog' });
+  const blogPosts = getSortedPostsData({ type: 'blog', n: 10 });
   return {
     props: {
       blogPosts,

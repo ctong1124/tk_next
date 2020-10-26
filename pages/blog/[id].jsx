@@ -79,7 +79,6 @@ const Blog = ({
             </div>
           )
         }
-
       </div>
     </Layout>
   );
@@ -121,21 +120,12 @@ export async function getStaticProps({ params }) {
     getPostDataNoBody({ type: 'blog', id: postSlug })
   ));
 
-  const blah = {
+  return {
     props: {
       ...postData,
       ...(relatedPosts ? { relatedPosts } : {} ),
     },
   };
-  console.log('blog', blah);
-  return blah;
-
-  // return {
-  //   props: {
-  //     ...postData,
-  //     ...(relatedPosts ? { relatedPosts } : {} ),
-  //   },
-  // };
 }
 
 export default Blog;
