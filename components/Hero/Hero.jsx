@@ -10,10 +10,11 @@ const Hero = ({
   heroPostText,
   image,
 }) => {
+  const imageSrc = image || 'https://picsum.photos/id/1045/1000/500';
   return (
     <div className={classes.heroContainer}>
       <div className={classes.mediaContainer}>
-        <img src="https://picsum.photos/id/1045/1000/500"/>
+        <img src={imageSrc}/>
       </div>
       <div className={classes.textContainer}>
         <div className={classes.bar} />

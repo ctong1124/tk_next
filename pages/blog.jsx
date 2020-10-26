@@ -17,14 +17,18 @@ const BlogArchive = ({
       <div className={cn(utilStyles.containedSection, utilStyles.sectionSpacing, classes.blogArchivePage)}>
         <h1>All blog posts</h1>
         {
-          allPostsData.map((post, i) => (
-            <DescriptionCard
-              cardTitle={post.title}
-              key={`${post.title}-${i}`}
-              cardImage={post.thumbnail}
-              cardLink={`blog/${post.id}`}
-            />
-        ))
+          allPostsData.map((post, i) => {
+            const dateObject = new Date(post.date);
+            return (
+              <DescriptionCard
+                cardTitle={post.title}
+                cardSubtitle={dateObject.toDateString()}
+                key={`${post.title}-${i}`}
+                cardImage={post.thumbnail}
+                cardLink={`blog/${post.id}`}
+              />
+            );
+          })
         }
       </div>
     </Layout>

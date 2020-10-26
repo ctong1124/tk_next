@@ -7,6 +7,8 @@ import classes from './DescriptionCard.module.scss';
 
 const DescriptionCard = ({
   cardTitle,
+  cardSubtitle,
+  cardDescription,
   cardBottomInfo,
   cardImage,
   cardLink,
@@ -21,7 +23,14 @@ const DescriptionCard = ({
       <div className={classes.textContainer}>
         <div className={classes.cardTextTop}>
           <h4 className={classes.title}>{ cardTitle }</h4>
-          <p className={cn(classes.description, utils.secondaryText)}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. </p>
+          { cardSubtitle && (
+            <p className={utils.secondaryText}>{cardSubtitle}</p>
+          )}
+          { cardDescription && (
+            <p className={cn(classes.description, utils.secondaryText)}>
+              {cardDescription}
+            </p>
+          )}
         </div>
         <div className={classes.cardTextBottom}>
           {
@@ -44,6 +53,8 @@ const DescriptionCard = ({
 
 DescriptionCard.propTypes = {
   cardTitle: PropTypes.string,
+  cardSubtitle: PropTypes.string,
+  cardDescription: PropTypes.string,
   cardBottomInfo: PropTypes.arrayOf(PropTypes.shape({
       title: PropTypes.string,
       subtitle: PropTypes.string,
@@ -55,6 +66,8 @@ DescriptionCard.propTypes = {
 
 DescriptionCard.defaultProps = {
   cardTitle: '',
+  cardSubtitle: '',
+  cardDescription: 'Placeholder description for now. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sit amet efficitur sapien. Phasellus libero felis, laoreet in purus sollicitudin, eleifend volutpat sapien.',
   cardBottomInfo: [],
   cardImage: '',
   cardLink: '',
