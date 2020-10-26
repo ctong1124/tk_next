@@ -1,18 +1,17 @@
 import Head from 'next/head';
 import PropTypes from 'prop-types';
 import cn from 'classnames';
-import { getAllPostIds, getPostData } from '../../lib/posts'
+import { getAllPostIds, getPostData, getPostDataNoBody } from '../../lib/posts'
 import { Hero, DescriptionCard, Layout } from '../../components';
 import classes from '../../styles/pages/blog.module.scss';
 import utils from '../../styles/utils.module.scss';
-
-const array = [1, 2, 3];
 
 const Blog = ({
   title,
   publishDate,
   contentHtml,
   thumbnail,
+  relatedPosts,
 }) => {
   const dateObject = new Date(publishDate);
   return (
@@ -55,20 +54,32 @@ const Blog = ({
         <div className={cn(classes.underBlogAd, utils.containedSection, utils.sectionSpacing)}>
           <div className={classes.placeholder}></div>
         </div>
+        {
+          relatedPosts.length && (
+            <div className={cn(utils.containedSection, utils.sectionSpacing, classes.moreBlogPosts)}>
+              <h2>More blog posts</h2>
+              {
+                relatedPosts.map((post, i) => {
+                  const {
+                    title, publishDate, description, thumbnail, id,
+                  } = post;
+                  const dateObject = new Date(publishDate);
+                  return (
+                    <DescriptionCard
+                      cardTitle={title}
+                      cardSubtitle={dateObject.toDateString()}
+                      cardDescription={description}
+                      key={`${title}-${i}`}
+                      cardImage={thumbnail}
+                      cardLink={`/blog/${id}`}
+                    />
+                  )
+                })
+              }
+            </div>
+          )
+        }
 
-        <div className={cn(utils.containedSection, utils.sectionSpacing, classes.moreBlogPosts)}>
-          <h2>More blog posts</h2>
-          {
-            array.map((cardNum) => (
-              <DescriptionCard
-                cardTitle={`Blog title ${cardNum}`}
-                key={`key${cardNum}`}
-                cardImage="https://picsum.photos/id/1045/1000/500"
-                cardLink="/blog/blog2"
-              />
-          ))
-          }
-        </div>
       </div>
     </Layout>
   );
@@ -79,6 +90,12 @@ Blog.propTypes = {
   publishDate: PropTypes.string,
   contentHtml: PropTypes.node,
   thumbnail: PropTypes.string,
+  relatedPosts: PropTypes.arrayOf(PropTypes.shape({
+    title: PropTypes.string,
+    publishDate: PropTypes.string,
+    thumbnail: PropTypes.string,
+    description: PropTypes.string,
+  })),
 };
 
 Blog.defaultProps = {
@@ -86,6 +103,7 @@ Blog.defaultProps = {
   publishDate: '',
   contentHtml: null,
   thumbnail: '',
+  relatedPosts: [],
 };
 
 export async function getStaticPaths() {
@@ -97,11 +115,16 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const postData = await getPostData('blog', params.id);
-  console.log('props given to Blog', postData);
+  const postData = await getPostData({type: 'blog', id: params.id });
+
+  const relatedPosts = postData.related && postData.related.map((postSlug) => (
+    getPostDataNoBody({ type: 'blog', id: postSlug })
+  ));
+
   return {
     props: {
       ...postData,
+      ...(relatedPosts ? { relatedPosts } : {} ),
     },
   };
 }

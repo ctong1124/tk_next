@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Link from 'next/link'
+import Link from 'next/link';
 import cn from 'classnames';
 import utilStyles from '../../styles/utils.module.scss';
 import classes from './Button.module.scss';
