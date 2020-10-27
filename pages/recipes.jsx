@@ -16,29 +16,19 @@ const Recipes = ({
       <div className={cn(utilStyles.containedSection, utilStyles.sectionSpacing, classes.recipesPage)}>
         <h1>All recipes</h1>
         {
-          recipes.map((recipe, i) => {
-            const {
-              title,
-              description,
-              thumbnail,
-              difficulty,
-              time,
-              id,
-            } = recipe;
-            return (
-              <DescriptionCard
-                cardTitle={title}
-                key={id}
-                cardDescription={description}
-                cardBottomInfo={[
-                  {title: 'Time', subtitle: time },
-                  {title: 'Difficulty', subtitle: difficulty }
-                ]}
-                cardImage={thumbnail}
-                cardLink={`recipe/${id}`}
-              />
-            );
-          })
+          recipes.map(({ title, description, thumbnail, difficulty, time, id}, i) => (
+            <DescriptionCard
+              cardTitle={title}
+              key={id}
+              cardDescription={description}
+              cardBottomInfo={[
+                {title: 'Time', subtitle: time },
+                {title: 'Difficulty', subtitle: difficulty }
+              ]}
+              cardImage={thumbnail}
+              cardLink={`recipe/${id}`}
+            />
+          ))
         }
       </div>
     </Layout>

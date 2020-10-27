@@ -34,9 +34,11 @@
   }
 
   .textContainer {
-    padding: 0 $spacing-default $spacing-l $spacing-default;
+    padding: 0 $spacing-m $spacing-l $spacing-m;
 
     @media (min-width: $screen-xxs) {
+      padding-left: $spacing-l;
+      padding-right: $spacing-l;
       padding-bottom: 0;
       flex-basis: 50%;
       position: relative;

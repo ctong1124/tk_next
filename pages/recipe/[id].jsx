@@ -108,13 +108,7 @@ const Recipe = ({
             <div className={cn(classes.moreRecipes, utils.containedSection, utils.sectionSpacing)}>
               <CardGrid cardGridTitle="More recipes">
                 {
-                  relatedRecipes.map(({
-                    title,
-                    thumbnail,
-                    difficulty,
-                    time,
-                    id,
-                  }) => (
+                  relatedRecipes.map(({title, thumbnail, difficulty, time, id }) => (
                     <Card
                       cardTitle={title}
                       cardBottomInfo={[
