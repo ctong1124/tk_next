@@ -124,19 +124,31 @@ HomePage.propTypes = {
   hero: PropTypes.shape({
     title: PropTypes.string,
     id: PropTypes.string,
-    heroImage: PropTypes.string,
+    heroImage: PropTypes.shape({
+      src: PropTypes.string,
+      alt: PropTypes.string,
+      title: PropTypes.string,
+    }),
   }),
   featuredRecipes: PropTypes.arrayOf(PropTypes.shape({
     title: PropTypes.string,
     description: PropTypes.string,
-    thumbnail: PropTypes.string,
+    thumbnail: PropTypes.shape({
+      src: PropTypes.string,
+      alt: PropTypes.string,
+      title: PropTypes.string,
+    }),
     difficulty: PropTypes.string,
     time: PropTypes.string,
     id: PropTypes.string,
   })),
   latestRecipes: PropTypes.arrayOf(PropTypes.shape({
     title: PropTypes.string,
-    thumbnail: PropTypes.string,
+    thumbnail: PropTypes.shape({
+      src: PropTypes.string,
+      alt: PropTypes.string,
+      title: PropTypes.string,
+    }),
     difficulty: PropTypes.string,
     time: PropTypes.string,
     id: PropTypes.string,
@@ -145,7 +157,11 @@ HomePage.propTypes = {
     title: PropTypes.string,
     publishDate: PropTypes.string,
     description: PropTypes.string,
-    thumbnail: PropTypes.string,
+    thumbnail: PropTypes.shape({
+      src: PropTypes.string,
+      alt: PropTypes.string,
+      title: PropTypes.string,
+    }),
     id: PropTypes.string,
   })),
 };

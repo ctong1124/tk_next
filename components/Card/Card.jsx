@@ -15,7 +15,7 @@ const Card = ({
     <div className={classes.cardContainer}>
       <div className={classes.mediaContainer}>
         <div className={classes.imageContainer}>
-          <img src={cardImage}/>
+          <img src={cardImage.src} alt={cardImage.alt} title={cardImage.title}/>
         </div>
       </div>
       <div className={classes.textContainer}>
@@ -48,14 +48,18 @@ Card.propTypes = {
       subtitle: PropTypes.string,
     })
   ),
-  cardImage: PropTypes.string,
+  cardImage: PropTypes.shape({
+    src: PropTypes.string,
+    alt: PropTypes.string,
+    title: PropTypes.string,
+  }),
   cardUrl: PropTypes.string,
 };
 
 Card.defaultProps = {
   cardTitle: '',
   cardBottomInfo: [],
-  cardImage: '',
+  cardImage: {},
   cardLink: '',
 };
 

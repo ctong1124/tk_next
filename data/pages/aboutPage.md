@@ -1,9 +1,5 @@
 ---
 title: Welcome to Tong's Kitchen
-images:
-  heroImage: /images/uploads/joseph-barrientos-xcc5ozhk_n8-unsplash.jpg
-  gridImage1: /images/uploads/pawel-czerwinski-njx3cee4zuu-unsplash.jpg
-  gridImage2: /images/uploads/corina-ardeleanu-swlxcwedzzs-unsplash.jpg
 heroImage:
   src: /images/uploads/corina-ardeleanu-swlxcwedzzs-unsplash.jpg
   alt: about page hero alt text

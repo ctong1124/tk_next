@@ -39,7 +39,11 @@ Recipes.propTypes = {
   recipes: PropTypes.arrayOf(PropTypes.shape({
     title: PropTypes.string,
     description: PropTypes.string,
-    thumbnail: PropTypes.string,
+    thumbnail: PropTypes.shape({
+      src: PropTypes.string,
+      alt: PropTypes.string,
+      title: PropTypes.string,
+    }),
     difficulty: PropTypes.string,
     time: PropTypes.string,
     id: PropTypes.string,

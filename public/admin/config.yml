@@ -10,10 +10,12 @@ collections:
     folder: "data/blog" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{publishDate}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-HH:MM_title.md
+    identifier_field: "entryTitle"
     fields: # The fields for each document, usually in front matter
       - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
-      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Entry Title", name: "entryTitle", widget: "string"}
       - {label: "Original Publish Date", name: "publishDate", widget: "datetime", format: "YYYY-MM-DD", time_format: false}
+      - {label: "Blog Title", name: "blogTitle", widget: "string"}
       - name: "thumbnail"
         label: "Thumbnail Image"
         widget: "object"
@@ -36,17 +38,19 @@ collections:
           widget: "list",
           max: 3,
           min: 0,
-          field: {label: "Related Post", name: "relatedPost", widget: "relation", collection: "blog", search_fields: ["title"], display_fields: ["title"], value_field: "{{slug}}"}
+          field: {label: "Related Post", name: "relatedPost", widget: "relation", collection: "blog", search_fields: ["entryTitle"], display_fields: ["entryTitle"], value_field: "{{slug}}"}
         }
   - name: "recipe"
     label: "Recipe post"
     folder: "data/recipe"
     create: true
     slug: "{{publishDate}}-{{slug}}"
+    identifier_field: "entryTitle"
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "recipe"}
-      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Entry Title", name: "entryTitle", widget: "string"}
       - {label: "Original Publish Date", name: "publishDate", widget: "datetime", format: "YYYY-MM-DD", time_format: false}
+      - {label: "Recipe Title", name: "recipeTitle", widget: "string"}
       - name: "thumbnail"
         label: "Thumbnail Image"
         widget: "object"
@@ -87,8 +91,22 @@ collections:
           widget: "list",
           max: 3,
           min: 0,
-          field: {label: "Related Recipe", name: "relatedRecipe", widget: "relation", collection: "recipe", search_fields: ["title"], display_fields: ["title"], value_field: "{{slug}}"}
+          field: {label: "Related Recipe", name: "relatedRecipe", widget: "relation", collection: "recipe", search_fields: ["entryTitle"], display_fields: ["entryTitle"], value_field: "{{slug}}"}
         }
+  - name: "metadata"
+    label: "Page Metadata"
+    folder: "data/metadata"
+    create: true
+    slug: "metadata-{{slug}}"
+    identifier_field: "entryTitle"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "metadata"}
+      - {label: "Entry Title", name: "entryTitle", widget: "string"}
+      - {label: "Meta Title", name: "metaTitle", widget: "text"}
+      - {label: "Meta Description", name: "metaDescription", widget: "text"}
+      - {label: "OG Title", name: "ogTitle", widget: "text"}
+      - {label: "OG Description", name: "ogDescription", widget: "text"}
+      - {label: "OG Image", name: "ogImage", widget: "image"}
   - label: "Pages"
     name: "pages"
     files:
@@ -100,16 +118,16 @@ collections:
             name: "hero"
             widget: "relation"
             collection: "recipe"
-            search_fields: ["title"]
+            search_fields: ["entryTitle"]
             value_field: "{{slug}}"
-            display_fields: ["title"]
+            display_fields: ["entryTitle"]
           - {
               label: "Featured Recipes",
               name: "featuredRecipes",
               widget: "list",
               max: 3,
               min: 0,
-              field: {label: "Related Recipe", name: "relatedRecipe", widget: "relation", collection: "recipe", search_fields: ["title"], display_fields: ["title"], value_field: "{{slug}}"}
+              field: {label: "Related Recipe", name: "relatedRecipe", widget: "relation", collection: "recipe", search_fields: ["entryTitle"], display_fields: ["entryTitle"], value_field: "{{slug}}"}
             }
       - label: "About Page"
         name: "aboutPage"

@@ -21,18 +21,6 @@ const Layout = ({ children }) => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-        {/* might be the wrong place, says to add before closing body tag */}
-        {/* <script>
-          if (window.netlifyIdentity) {
-            window.netlifyIdentity.on("init", user => {
-              if (!user) {
-                window.netlifyIdentity.on("login", () => {
-                  document.location.href = "/admin/";
-                });
-              }
-            })
-          }
-        </script> */}
       </Head>
       <Header />
       <div className={classes.layoutBody}>

@@ -42,7 +42,11 @@ BlogArchive.propTypes = {
     title: PropTypes.string,
     publishDate: PropTypes.string,
     description: PropTypes.string,
-    thumbnail: PropTypes.string,
+    thumbnail: PropTypes.shape({
+      src: PropTypes.string,
+      alt: PropTypes.string,
+      title: PropTypes.string,
+    }),
     id: PropTypes.string,
   })),
 };

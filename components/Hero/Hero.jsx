@@ -22,7 +22,7 @@ const Hero = ({
     </a></Link>
   ) : postText;
 
-  const imageSrc = <img src={image || 'https://picsum.photos/id/1045/1000/500'}/>;
+  const imageSrc = <img src={image.src || 'https://picsum.photos/id/1045/1000/500'} alt={image.alt} title={image.title}/>;
   const imageWithLink = heroLink ? (
     <Link href={heroLink}><a>{imageSrc}</a></Link>
   ) : imageSrc;
@@ -45,7 +45,11 @@ Hero.propTypes = {
   heroPreText: PropTypes.string,
   heroHeadline: PropTypes.string,
   heroPostText: PropTypes.string,
-  image: PropTypes.string,
+  image: PropTypes.shape({
+    src: PropTypes.string,
+    alt: PropTypes.string,
+    title: PropTypes.string,
+  }),
   herolink: PropTypes.string,
 };
 
@@ -53,7 +57,7 @@ Hero.defaultProps = {
   heroPreText: '',
   heroHeadline: '',
   heroPostText: '',
-  image: '',
+  image: {},
   heroLink: '',
 };
 

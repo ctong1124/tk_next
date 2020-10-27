@@ -29,6 +29,7 @@ const Recipe = ({
           <Hero
             heroHeadline={title}
             heroPostText='Jump to recipe'
+            image={heroImage}
           />
         </div>
 
@@ -133,7 +134,11 @@ const Recipe = ({
 Recipe.propTypes = {
   title: PropTypes.string,
   publishDate: PropTypes.string,
-  heroImage: PropTypes.string,
+  heroImage: PropTypes.shape({
+    src: PropTypes.string,
+    alt: PropTypes.string,
+    title: PropTypes.string,
+  }),
   contentHtml: PropTypes.node,
   difficulty: PropTypes.string,
   time: PropTypes.string,
@@ -149,7 +154,11 @@ Recipe.propTypes = {
   })),
   relatedRecipes: PropTypes.arrayOf(PropTypes.shape({
     title: PropTypes.string,
-    thumbnail: PropTypes.string,
+    thumbnail: PropTypes.shape({
+      src: PropTypes.string,
+      alt: PropTypes.string,
+      title: PropTypes.string,
+    }),
     difficulty: PropTypes.string,
     time: PropTypes.string,
     id: PropTypes.string,
@@ -159,7 +168,7 @@ Recipe.propTypes = {
 Recipe.defaultProps = {
   title: '',
   publishDate: '',
-  heroImage: '',
+  heroImage: {},
   contentHtml: null,
   difficulty: '',
   time: '',

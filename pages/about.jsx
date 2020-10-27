@@ -9,12 +9,13 @@ import classes from '../styles/pages/aboutPage.module.scss';
 import utils from '../styles/utils.module.scss';
 
 const AboutPage = ({
-  images,
   title,
+  heroImage,
   bodyText1,
+  gridImage1,
+  gridImage2,
   bodyText2,
 }) => {
-  const { heroImage, gridImage1, gridImage2 } = images;
   return (
     <Layout>
       <div className={classes.aboutPage}>
@@ -24,7 +25,7 @@ const AboutPage = ({
           <div className={classes.image1}>
             <div className={classes.aspectRatioBox}>
               <div className={classes.imageContainer}>
-                <img src={heroImage}/>
+                <img src={heroImage.src} alt={heroImage.alt} title={heroImage.title}/>
               </div>
             </div>
           </div>
@@ -39,7 +40,7 @@ const AboutPage = ({
           <div className={classes.image2}>
             <div className={classes.aspectRatioBox}>
               <div className={classes.imageContainer}>
-                <img src={gridImage1}/>
+                <img src={gridImage1.src} alt={gridImage1.alt} title={gridImage1.title}/>
               </div>
             </div>
           </div>
@@ -47,7 +48,7 @@ const AboutPage = ({
           <div className={classes.image3}>
             <div className={classes.aspectRatioBox}>
               <div className={classes.imageContainer}>
-                <img src={gridImage2}/>
+                <img src={gridImage2.src} alt={gridImage2.alt} title={gridImage2.title}/>
               </div>
             </div>
           </div>
@@ -63,21 +64,33 @@ const AboutPage = ({
 };
 
 AboutPage.propTypes = {
-  images: PropTypes.shape({
-    heroImage: PropTypes.string,
-    gridImage1: PropTypes.string,
-    gridImage2: PropTypes.string,
-  }),
   title: PropTypes.string,
+  heroImage: PropTypes.shape({
+    src: PropTypes.string,
+    alt: PropTypes.string,
+    title: PropTypes.string,
+  }),
   bodyText1: PropTypes.string,
+  gridImage1: PropTypes.shape({
+    src: PropTypes.string,
+    alt: PropTypes.string,
+    title: PropTypes.string,
+  }),
+  gridImage2: PropTypes.shape({
+    src: PropTypes.string,
+    alt: PropTypes.string,
+    title: PropTypes.string,
+  }),
   bodyText2: PropTypes.string,
 };
 
 AboutPage.defaultProps = {
-  images: {},
-  title: PropTypes.string,
-  bodyText1: PropTypes.string,
-  bodyText2: PropTypes.string,
+  title: '',
+  heroImage: {},
+  bodyText1: '',
+  gridImage1: {},
+  gridImage2: {},
+  bodyText2: '',
 };
 
 export async function getStaticProps() {
