@@ -7,7 +7,7 @@ import classes from '../../styles/pages/recipe.module.scss';
 import utils from '../../styles/utils.module.scss';
 
 const Recipe = ({
-  title,
+  recipeTitle,
   publishDate,
   heroImage,
   contentHtml,
@@ -27,7 +27,7 @@ const Recipe = ({
       <div className={classes.recipePage}>
         <div className={utils.sectionSpacing}>
           <Hero
-            heroHeadline={title}
+            heroHeadline={recipeTitle}
             heroPostText='Jump to recipe'
             image={heroImage}
           />
@@ -48,7 +48,7 @@ const Recipe = ({
 
           <div className={cn(utils.containedSection, utils.sectionSpacing)}>
           <div className={classes.recipeSection}>
-            <h2 className={cn(utils.headline2, classes.recipeName)}>{title}</h2>
+            <h2 className={cn(utils.headline2, classes.recipeName)}>{recipeTitle}</h2>
             <div className={classes.specs}>
               <div className={classes.specItem}>
                 <p className={classes.primary}>Difficulty</p>
@@ -109,9 +109,9 @@ const Recipe = ({
             <div className={cn(classes.moreRecipes, utils.containedSection, utils.sectionSpacing)}>
               <CardGrid cardGridTitle="More recipes">
                 {
-                  relatedRecipes.map(({title, thumbnail, difficulty, time, id }) => (
+                  relatedRecipes.map(({recipeTitle, thumbnail, difficulty, time, id }) => (
                     <Card
-                      cardTitle={title}
+                      cardTitle={recipeTitle}
                       cardBottomInfo={[
                         {title: 'Time', subtitle: time},
                         {title: 'Difficulty', subtitle: difficulty},
@@ -132,7 +132,7 @@ const Recipe = ({
 }
 
 Recipe.propTypes = {
-  title: PropTypes.string,
+  recipeTitle: PropTypes.string,
   publishDate: PropTypes.string,
   heroImage: PropTypes.shape({
     src: PropTypes.string,
@@ -153,7 +153,7 @@ Recipe.propTypes = {
     step: PropTypes.string,
   })),
   relatedRecipes: PropTypes.arrayOf(PropTypes.shape({
-    title: PropTypes.string,
+    recipeTitle: PropTypes.string,
     thumbnail: PropTypes.shape({
       src: PropTypes.string,
       alt: PropTypes.string,

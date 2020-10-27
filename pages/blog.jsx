@@ -17,15 +17,15 @@ const BlogArchive = ({
         {
           blogPosts.map((post, i) => {
             const {
-              title, publishDate, description, thumbnail, id,
+              entryTitle, blogTitle, publishDate, description, thumbnail, id,
             } = post;
             const dateObject = new Date(publishDate);
             return (
               <DescriptionCard
-                cardTitle={title}
+                cardTitle={blogTitle}
                 cardSubtitle={dateObject.toDateString()}
                 cardDescription={description}
-                key={`${title}-${i}`}
+                key={`${entryTitle}-${i}`}
                 cardImage={thumbnail}
                 cardLink={`blog/${id}`}
               />
@@ -39,7 +39,8 @@ const BlogArchive = ({
 
 BlogArchive.propTypes = {
   blogPosts: PropTypes.arrayOf(PropTypes.shape({
-    title: PropTypes.string,
+    entryTitle: PropTypes.string,
+    blogTitle: PropTypes.string,
     publishDate: PropTypes.string,
     description: PropTypes.string,
     thumbnail: PropTypes.shape({

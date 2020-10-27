@@ -7,7 +7,7 @@ import classes from '../../styles/pages/blog.module.scss';
 import utils from '../../styles/utils.module.scss';
 
 const Blog = ({
-  title,
+  blogTitle,
   publishDate,
   contentHtml,
   heroImage,
@@ -17,12 +17,12 @@ const Blog = ({
   return (
     <Layout>
       <Head>
-        <title>Title</title>
+        <title>blogTitle</title>
       </Head>
       <div className={classes.recipePage}>
         <div className={utils.sectionSpacing}>
           <Hero
-            heroHeadline={title}
+            heroHeadline={blogTitle}
             heroPostText={dateObject.toDateString()}
             image={heroImage}
           />
@@ -45,21 +45,21 @@ const Blog = ({
           <div className={classes.placeholder}></div>
         </div>
         {
-          relatedPosts.length && (
+          relatedPosts.length ? (
             <div className={cn(utils.containedSection, utils.sectionSpacing, classes.moreBlogPosts)}>
               <h2>More blog posts</h2>
               {
                 relatedPosts.map((post, i) => {
                   const {
-                    title, publishDate, description, thumbnail, id,
+                    entryTitle, blogTitle, publishDate, description, thumbnail, id,
                   } = post;
                   const dateObject = new Date(publishDate);
                   return (
                     <DescriptionCard
-                      cardTitle={title}
+                      cardTitle={blogTitle}
                       cardSubtitle={dateObject.toDateString()}
                       cardDescription={description}
-                      key={`${title}-${i}`}
+                      key={`${entryTitle}-${i}`}
                       cardImage={thumbnail}
                       cardLink={`/blog/${id}`}
                     />
@@ -67,7 +67,7 @@ const Blog = ({
                 })
               }
             </div>
-          )
+          ) : null
         }
       </div>
     </Layout>
@@ -75,7 +75,7 @@ const Blog = ({
 }
 
 Blog.propTypes = {
-  title: PropTypes.string,
+  blogTitle: PropTypes.string,
   publishDate: PropTypes.string,
   contentHtml: PropTypes.node,
   heroImage: PropTypes.shape({
@@ -84,7 +84,8 @@ Blog.propTypes = {
     title: PropTypes.string,
   }),
   relatedPosts: PropTypes.arrayOf(PropTypes.shape({
-    title: PropTypes.string,
+    entryTitle: PropTypes.string,
+    blogTitle: PropTypes.string,
     publishDate: PropTypes.string,
     thumbnail: PropTypes.shape({
       src: PropTypes.string,

@@ -19,7 +19,7 @@ const HomePage = ({
         Object.keys(hero).length && (
           <div className={utils.sectionSpacing}>
             <Hero
-              heroHeadline={hero.title}
+              heroHeadline={hero.recipeTitle}
               heroPostText='View recipe'
               heroLink={`/recipe/${hero.id}`}
               image={hero.heroImage}
@@ -35,9 +35,16 @@ const HomePage = ({
               <div className={cn(utils.flexboxGridContainer, classes.descriptionCardGridFlex)}>
                 <div className={cn(utils.flexboxGridChild, classes.cardSection)}>
                   {
-                    featuredRecipes.map(({ title, description, thumbnail, difficulty, time, id}, i) => (
+                    featuredRecipes.map(({
+                      recipeTitle,
+                      description,
+                      thumbnail,
+                      difficulty,
+                      time,
+                      id
+                    }, i) => (
                       <DescriptionCard
-                        cardTitle={title}
+                        cardTitle={recipeTitle}
                         key={id}
                         cardDescription={description}
                         cardBottomInfo={[
@@ -63,9 +70,9 @@ const HomePage = ({
             <div className={cn(utils.sectionSpacing)}>
               <CardGrid cardGridTitle="Latest recipes">
                 {
-                  latestRecipes.map(({title, thumbnail, difficulty, time, id }) => (
+                  latestRecipes.map(({recipeTitle, thumbnail, difficulty, time, id }) => (
                     <Card
-                      cardTitle={title}
+                      cardTitle={recipeTitle}
                       cardBottomInfo={[
                         {title: 'Time', subtitle: time},
                         {title: 'Difficulty', subtitle: difficulty},
@@ -91,15 +98,15 @@ const HomePage = ({
                   {
                     latestBlogPosts.map((post, i) => {
                       const {
-                        title, publishDate, description, thumbnail, id,
+                        entryTitle, blogTitle, publishDate, description, thumbnail, id,
                       } = post;
                       const dateObject = new Date(publishDate);
                       return (
                         <DescriptionCard
-                          cardTitle={title}
+                          cardTitle={blogTitle}
                           cardSubtitle={dateObject.toDateString()}
                           cardDescription={description}
-                          key={`${title}-${i}`}
+                          key={`${entryTitle}-${i}`}
                           cardImage={thumbnail}
                           cardLink={`/blog/${id}`}
                         />
@@ -122,7 +129,7 @@ const HomePage = ({
 
 HomePage.propTypes = {
   hero: PropTypes.shape({
-    title: PropTypes.string,
+    recipeTitle: PropTypes.string,
     id: PropTypes.string,
     heroImage: PropTypes.shape({
       src: PropTypes.string,
@@ -131,7 +138,7 @@ HomePage.propTypes = {
     }),
   }),
   featuredRecipes: PropTypes.arrayOf(PropTypes.shape({
-    title: PropTypes.string,
+    recipeTitle: PropTypes.string,
     description: PropTypes.string,
     thumbnail: PropTypes.shape({
       src: PropTypes.string,
@@ -143,7 +150,7 @@ HomePage.propTypes = {
     id: PropTypes.string,
   })),
   latestRecipes: PropTypes.arrayOf(PropTypes.shape({
-    title: PropTypes.string,
+    recipeTitle: PropTypes.string,
     thumbnail: PropTypes.shape({
       src: PropTypes.string,
       alt: PropTypes.string,
@@ -154,7 +161,8 @@ HomePage.propTypes = {
     id: PropTypes.string,
   })),
   latestBlogPosts: PropTypes.arrayOf(PropTypes.shape({
-    title: PropTypes.string,
+    entryTitle: PropTypes.string,
+    blogTitle: PropTypes.string,
     publishDate: PropTypes.string,
     description: PropTypes.string,
     thumbnail: PropTypes.shape({

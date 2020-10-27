@@ -16,9 +16,9 @@ const Recipes = ({
       <div className={cn(utilStyles.containedSection, utilStyles.sectionSpacing, classes.recipesPage)}>
         <h1>All recipes</h1>
         {
-          recipes.map(({ title, description, thumbnail, difficulty, time, id}, i) => (
+          recipes.map(({ recipeTitle, description, thumbnail, difficulty, time, id}, i) => (
             <DescriptionCard
-              cardTitle={title}
+              cardTitle={recipeTitle}
               key={id}
               cardDescription={description}
               cardBottomInfo={[
@@ -37,7 +37,7 @@ const Recipes = ({
 
 Recipes.propTypes = {
   recipes: PropTypes.arrayOf(PropTypes.shape({
-    title: PropTypes.string,
+    recipeTitle: PropTypes.string,
     description: PropTypes.string,
     thumbnail: PropTypes.shape({
       src: PropTypes.string,
