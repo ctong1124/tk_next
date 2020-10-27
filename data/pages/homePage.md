@@ -1,5 +1,5 @@
 ---
-hero: 2020-10-26-second-example-recipe
+hero: 2020-10-24-first-recipe-example
 featuredRecipes:
-  - 2020-10-25-example-recipe-1
+  - 2020-10-26-second-example-recipe
 ---
