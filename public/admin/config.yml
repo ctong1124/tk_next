@@ -14,20 +14,20 @@ collections:
       - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Original Publish Date", name: "publishDate", widget: "datetime", format: "YYYY-MM-DD", time_format: false}
-      - name: thumbnail
-        label: Thumbnail Image
-        widget: object
+      - name: "thumbnail"
+        label: "Thumbnail Image"
+        widget: "object"
         fields:
-          - {name: src, label: Image, widget: image}
-          - {name: alt, label: Alt Text, widget: string}
-          - {name: title, label: Title, widget: string}
-      - name: heroImage
-        label: Hero Image
-        widget: object
+          - {name: "src", label: "Image", widget: "image"}
+          - {name: "alt", label: "Alt Text", widget: "string"}
+          - {name: "title", label: "Title", widget: "string"}
+      - name: "heroImage"
+        label: "Hero Image"
+        widget: "object"
         fields:
-          - {name: src, label: Image, widget: image}
-          - {name: alt, label: Alt Text, widget: string}
-          - {name: title, label: Title, widget: string}
+          - {name: "src", label: "Image", widget: "image"}
+          - {name: "alt", label: "Alt Text", widget: "string"}
+          - {name: "title", label: "Title", widget: "string"}
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {
@@ -47,20 +47,20 @@ collections:
       - {label: "Layout", name: "layout", widget: "hidden", default: "recipe"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Original Publish Date", name: "publishDate", widget: "datetime", format: "YYYY-MM-DD", time_format: false}
-      - name: thumbnail
-        label: Thumbnail Image
-        widget: object
+      - name: "thumbnail"
+        label: "Thumbnail Image"
+        widget: "object"
         fields:
-          - {name: src, label: Image, widget: image}
-          - {name: alt, label: Alt Text, widget: string}
-          - {name: title, label: Title, widget: string}
-      - name: heroImage
-        label: Hero Image
-        widget: object
+          - {name: "src", label: "Image", widget: "image"}
+          - {name: "alt", label: "Alt Text", widget: "string"}
+          - {name: "title", label: "Title", widget: "string"}
+      - name: "heroImage"
+        label: "Hero Image"
+        widget: "object"
         fields:
-          - {name: src, label: Image, widget: image}
-          - {name: alt, label: Alt Text, widget: string}
-          - {name: title, label: Title, widget: string}
+          - {name: "src", label: "Image", widget: "image"}
+          - {name: "alt", label: "Alt Text", widget: "string"}
+          - {name: "title", label: "Title", widget: "string"}
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Difficulty", name: "difficulty", widget: "select", options: ["Easy", "Medium", "Hard"]}
@@ -116,26 +116,26 @@ collections:
         file: "data/pages/aboutPage.md"
         fields:
           - {label: "Title", name: "title", widget: "text"}
-          - name: heroImage
-            label: Hero Image
-            widget: object
+          - name: "heroImage"
+            label: "Hero Image"
+            widget: "object"
             fields:
-              - {name: src, label: Image, widget: image}
-              - {name: alt, label: Alt Text, widget: string}
-              - {name: title, label: Title, widget: string}
+              - {name: "src", label: "Image", widget: "image"}
+              - {name: "alt", label: "Alt Text", widget: "string"}
+              - {name: "title", label: "Title", widget: "string"}
           - {label: "Body Text 1", name: "bodyText1", widget: "text"}
-          - name: gridImage1
-            label: Grid Image 1
-            widget: object
+          - name: "gridImage1"
+            label: "Grid Image 1"
+            widget: "object"
             fields:
-              - {name: src, label: Image, widget: image}
-              - {name: alt, label: Alt Text, widget: string}
-              - {name: title, label: Title, widget: string}
-          - name: gridImage1
-            label: Grid Image 2
-            widget: object
+              - {name: "src", label: "Image", widget: "image"}
+              - {name: "alt", label: "Alt Text", widget: "string"}
+              - {name: "title", label: "Title", widget: "string"}
+          - name: "gridImage1"
+            label: "Grid Image 2"
+            widget: "object"
             fields:
-              - {name: src, label: Image, widget: image}
-              - {name: alt, label: Alt Text, widget: string}
-              - {name: title, label: Title, widget: string}
+              - {name: "src", label: "Image", widget: "image"}
+              - {name: "alt", label: "Alt Text", widget: "string"}
+              - {name: "title", label: "Title", widget: "string"}
           - {label: "Body Text 2", name: "bodyText2", widget: "text"}
