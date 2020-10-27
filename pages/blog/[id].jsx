@@ -10,7 +10,7 @@ const Blog = ({
   title,
   publishDate,
   contentHtml,
-  thumbnail,
+  heroImage,
   relatedPosts,
 }) => {
   const dateObject = new Date(publishDate);
@@ -24,7 +24,7 @@ const Blog = ({
           <Hero
             heroHeadline={title}
             heroPostText={dateObject.toDateString()}
-            image={thumbnail}
+            image={heroImage}
           />
         </div>
 
@@ -88,7 +88,7 @@ Blog.propTypes = {
   title: PropTypes.string,
   publishDate: PropTypes.string,
   contentHtml: PropTypes.node,
-  thumbnail: PropTypes.string,
+  heroImage: PropTypes.string,
   relatedPosts: PropTypes.arrayOf(PropTypes.shape({
     title: PropTypes.string,
     publishDate: PropTypes.string,
@@ -101,7 +101,7 @@ Blog.defaultProps = {
   title: '',
   publishDate: '',
   contentHtml: null,
-  thumbnail: '',
+  heroImage: '',
   relatedPosts: [],
 };
 
