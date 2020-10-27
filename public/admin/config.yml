@@ -40,6 +40,13 @@ collections:
           min: 0,
           field: {label: "Related Post", name: "relatedPost", widget: "relation", collection: "blog", search_fields: ["entryTitle"], display_fields: ["entryTitle"], value_field: "{{slug}}"}
         }
+      - label: "Page Metadata"
+        name: "pageMetadata"
+        widget: "relation"
+        collection: "metadata"
+        search_fields: ["entryTitle"]
+        value_field: "{{slug}}"
+        display_fields: ["entryTitle"]
   - name: "recipe"
     label: "Recipe post"
     folder: "data/recipe"
@@ -93,6 +100,13 @@ collections:
           min: 0,
           field: {label: "Related Recipe", name: "relatedRecipe", widget: "relation", collection: "recipe", search_fields: ["entryTitle"], display_fields: ["entryTitle"], value_field: "{{slug}}"}
         }
+      - label: "Page Metadata"
+        name: "pageMetadata"
+        widget: "relation"
+        collection: "metadata"
+        search_fields: ["entryTitle"]
+        value_field: "{{slug}}"
+        display_fields: ["entryTitle"]
   - name: "metadata"
     label: "Page Metadata"
     folder: "data/metadata"
