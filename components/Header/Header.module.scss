@@ -15,9 +15,12 @@
     display: flex;
     height: $size-xl;
 
-    img {
+    svg {
       height: $size-xl;
       width: $size-xl;
+      path {
+        fill: $color-red;
+      }
     }
 
     .logoText {

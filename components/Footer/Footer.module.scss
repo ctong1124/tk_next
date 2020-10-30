@@ -43,9 +43,16 @@
     }
 
     .instagram, .youtube {
-      width: 40px;
-      height: 40px;
-      background-color: #5D6169;
+      padding: $spacing-s;
+      height: $size-icon;
+      svg {
+        width: $size-icon;
+        height: $size-icon;
+
+        path {
+          fill: $color-white-secondary;
+        }
+      }
     }
 
     .footerNonLinks {
@@ -88,6 +95,7 @@
       .copyright {
         text-align: center;
         font-size: $font-size-small;
+        color: $color-text-inverse-secondary;
 
         @media (min-width: $screen-xxxs) {
           text-align: left;

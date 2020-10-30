@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import Link from 'next/link'
 import cn from 'classnames';
+import Icon from '../Icon';
 import utilStyles from '../../styles/utils.module.scss';
 import classes from './Header.module.scss';
 
@@ -12,7 +13,8 @@ const Header = () => {
       <Link href="/">
         <a>
           <div className={classes.logo}>
-            <img src="/images/tk_logo.svg" alt="Tong's Kitchen logo" />
+            {/* <img src="/images/tk_logo.svg" alt="Tong's Kitchen logo" />*/}
+            <Icon name="logo" />
             <div className={cn(classes.logoText, utilStyles.bold)}>
               Tong's{"\n"}Kitchen
               <div className={classes.highlight}/>

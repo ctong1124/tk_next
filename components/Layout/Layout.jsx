@@ -13,12 +13,6 @@ const Layout = ({ children }) => {
     <div>
       <Head>
         <link rel="icon" href="/images/favicon.ico" />
-        <meta
-          name="description"
-          content="Learn how to build a personal website using Next.js"
-        />
-        <meta name="og:title" content="title" />
-        <meta name="twitter:card" content="summary_large_image" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
       </Head>

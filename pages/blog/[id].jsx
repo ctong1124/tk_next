@@ -1,8 +1,7 @@
-import Head from 'next/head';
 import PropTypes from 'prop-types';
 import cn from 'classnames';
-import { getAllPostIds, getPostData, getPostDataNoBody } from '../../lib/posts'
-import { Hero, DescriptionCard, Layout } from '../../components';
+import { getAllPostIds, getPostData, getPostDataNoBody, getYamlData } from '../../lib/posts'
+import { Hero, DescriptionCard, Layout, PageMetadata } from '../../components';
 import classes from '../../styles/pages/blog.module.scss';
 import utils from '../../styles/utils.module.scss';
 
@@ -12,13 +11,21 @@ const Blog = ({
   contentHtml,
   heroImage,
   relatedPosts,
+  metadata,
+  description,
+  thumbnail,
 }) => {
   const dateObject = new Date(publishDate);
   return (
     <Layout>
-      <Head>
-        <title>blogTitle</title>
-      </Head>
+      <PageMetadata
+        metadata={metadata}
+        fallbackData={{
+          title: blogTitle,
+          description: description,
+          image: thumbnail
+        }}
+      />
       <div className={classes.recipePage}>
         <div className={utils.sectionSpacing}>
           <Hero
@@ -94,6 +101,17 @@ Blog.propTypes = {
     }),
     description: PropTypes.string,
   })),
+  metadata: PropTypes.shape({
+    metaTitle: PropTypes.string,
+    metaDescription: PropTypes.string,
+    ogTitle: PropTypes.string,
+    ogDescription: PropTypes.string,
+    ogImage: PropTypes.string,
+  }),
+  description: PropTypes.string,
+  thumbnail: PropTypes.shape({
+    src: PropTypes.string,
+  }),
 };
 
 Blog.defaultProps = {
@@ -102,6 +120,9 @@ Blog.defaultProps = {
   contentHtml: null,
   heroImage: {},
   relatedPosts: [],
+  metadata: {},
+  description: '',
+  thumbnail: {},
 };
 
 export async function getStaticPaths() {
@@ -119,10 +140,13 @@ export async function getStaticProps({ params }) {
     getPostDataNoBody({ type: 'blog', id: postSlug })
   ));
 
+  const getMetadataInfo = postData.pageMetadata ? getYamlData(`/data/metadata/${postData.pageMetadata}.md`) : {};
+
   return {
     props: {
       ...postData,
       ...(relatedPosts ? { relatedPosts } : {} ),
+      metadata: getMetadataInfo,
     },
   };
 }
