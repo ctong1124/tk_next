@@ -9,7 +9,7 @@ collections:
     label: "Blog post" # Used in the UI
     folder: "data/blog" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
-    slug: "{{publishDate}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-HH:MM_title.md
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-HH:MM_title.md
     identifier_field: "entryTitle"
     fields: # The fields for each document, usually in front matter
       - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
@@ -51,7 +51,7 @@ collections:
     label: "Recipe post"
     folder: "data/recipe"
     create: true
-    slug: "{{publishDate}}-{{slug}}"
+    slug: "{{slug}}"
     identifier_field: "entryTitle"
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "recipe"}
