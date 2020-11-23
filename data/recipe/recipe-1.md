@@ -34,6 +34,8 @@ steps:
       affogato man bun pinterest iceland cliche. Ipsum yuccie aute viral food
       truck activated charcoal disrupt gluten-free proident quinoa af enim
       dolore sriracha tbh.
+related:
+  - recipe-2
 pageMetadata: metadata-recipe-metadata
 ---
 Banjo sartorial DIY PBR&B keffiyeh nulla. Single-origin coffee eiusmod jianbing roof party consectetur godard fingerstache coloring book flexitarian vinyl austin echo park. Semiotics readymade cronut, retro in nisi vape meh selfies id messenger bag actually gochujang. Truffaut quinoa adipisicing minim butcher mumblecore. Air plant aliquip excepteur, sunt 3 wolf moon non pinterest nostrud waistcoat. Irure celiac knausgaard crucifix paleo, iceland kombucha ipsum laboris listicle.
