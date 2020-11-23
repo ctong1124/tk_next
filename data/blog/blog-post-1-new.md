@@ -14,6 +14,8 @@ heroImage:
 description: I'm baby raclette minim +1 scenester portland blue bottle. Pop-up
   sriracha tacos farm-to-table. Humblebrag enamel pin non, hashtag vinyl laboris
   mollit VHS fam.
+related:
+  - blog-post-2-copy
 pageMetadata: metadata-blog-1-metadata
 ---
 I'm baby raclette minim +1 scenester portland blue bottle. Pop-up sriracha tacos farm-to-table. Humblebrag enamel pin non, hashtag vinyl laboris mollit VHS fam. Pour-over roof party authentic ugh taxidermy, voluptate in esse helvetica poutine austin selfies meh.
