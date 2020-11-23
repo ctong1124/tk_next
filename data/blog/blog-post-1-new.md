@@ -1,7 +1,7 @@
 ---
 layout: blog
 entryTitle: blog post 1 new
-publishDate: 2020-11-23
+publishDate: 2020-10-01
 blogTitle: Gochujang cliche bespoke microdosing
 thumbnail:
   src: /images/uploads/corina-ardeleanu-swlxcwedzzs-unsplash.jpg
