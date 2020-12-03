@@ -11,6 +11,10 @@
   position: relative;
   z-index: $z-index-header;
 
+  @media (min-width: $screen-xxs) {
+    padding: $spacing-m;
+  }
+
   .logo {
     display: flex;
     height: $size-xl;
@@ -25,6 +29,7 @@
 
     .logoText {
       flex-direction: row;
+      padding-top: 3px;
       padding-left: $spacing-s;
       white-space: pre-wrap;
       font-size: 20px;

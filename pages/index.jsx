@@ -12,6 +12,7 @@ const HomePage = ({
   featuredRecipes,
   latestRecipes,
   latestBlogPosts,
+  adsOn,
 }) => {
   return (
     <Layout home>
@@ -57,7 +58,7 @@ const HomePage = ({
                     ))
                   }
                 </div>
-                <div className={cn(classes.adSection, utils.flexboxGridChild)}>
+                <div className={cn(classes.adSection, utils.flexboxGridChild, {[classes.adsOff]: !adsOn})}>
                   <div className={classes.placeholder}></div>
                 </div>
               </div>
@@ -114,7 +115,7 @@ const HomePage = ({
                     })
                   }
                 </div>
-                <div className={cn(classes.adSection, utils.flexboxGridChild)}>
+                <div className={cn(classes.adSection, utils.flexboxGridChild, {[classes.adsOff]: !adsOn})}>
                   <div className={classes.placeholder}></div>
                 </div>
               </div>
@@ -172,6 +173,7 @@ HomePage.propTypes = {
     }),
     id: PropTypes.string,
   })),
+  adsOn: PropTypes.boolean,
 };
 
 HomePage.defaultProps = {
@@ -179,6 +181,7 @@ HomePage.defaultProps = {
   featuredRecipes: [],
   latestRecipes: [],
   latestBlogPosts: [],
+  adsOn: false,
 };
 
 export async function getStaticProps() {

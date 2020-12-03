@@ -5,6 +5,11 @@
   margin-left: $spacing-default;
   margin-right: $spacing-default;
 
+  @media (min-width: $screen-xxs) {
+    margin-left: $spacing-m;
+    margin-right: $spacing-m;
+  }
+
   @media (min-width: $screen-l) {
     max-width: 996px;
     margin-left: auto;

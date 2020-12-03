@@ -17,6 +17,7 @@ const Recipe = ({
   ingredients,
   steps,
   relatedRecipes,
+  adsOn,
 }) => {
   // console.log('recipe props', props);
   return (
@@ -39,7 +40,7 @@ const Recipe = ({
               <div className={classes.intro}>
                 <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
               </div>
-              <div className={classes.adSection}>
+              <div className={cn(classes.adSection, {[classes.adsOff]: !adsOn})}>
                 {/*<img className='placeholder'/>*/}
                 <div className={classes.placeholder}></div>
               </div>
@@ -100,7 +101,7 @@ const Recipe = ({
         </div>
         </article>
 
-        <div className={cn(classes.underRecipeAd, utils.containedSection, utils.sectionSpacing)}>
+        <div className={cn(classes.underRecipeAd, utils.containedSection, utils.sectionSpacing, {[classes.adsOff]: !adsOn})}>
           <div className={classes.placeholder}></div>
         </div>
 
@@ -163,6 +164,7 @@ Recipe.propTypes = {
     time: PropTypes.string,
     id: PropTypes.string,
   })),
+  adsOn: PropTypes.boolean,
 };
 
 Recipe.defaultProps = {
@@ -176,6 +178,7 @@ Recipe.defaultProps = {
   ingredients: [],
   steps: [],
   relatedRecipes: [],
+  adsOn: false,
 };
 
 export async function getStaticPaths() {

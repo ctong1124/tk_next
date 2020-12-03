@@ -14,6 +14,7 @@ const Blog = ({
   metadata,
   description,
   thumbnail,
+  adsOn,
 }) => {
   const dateObject = new Date(publishDate);
   return (
@@ -41,14 +42,14 @@ const Blog = ({
               <div className={classes.blogContent}>
                 <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
               </div>
-              <div className={classes.adSection}>
+              <div className={classes.adSection, {[classes.adsOff]: !adsOn}}>
                 <div className={classes.placeholder}></div>
               </div>
             </div>
           </div>
         </article>
 
-        <div className={cn(classes.underBlogAd, utils.containedSection, utils.sectionSpacing)}>
+        <div className={cn(classes.underBlogAd, utils.containedSection, utils.sectionSpacing, {[classes.adsOff]: !adsOn})}>
           <div className={classes.placeholder}></div>
         </div>
         {
@@ -112,6 +113,7 @@ Blog.propTypes = {
   thumbnail: PropTypes.shape({
     src: PropTypes.string,
   }),
+  adsOn: PropTypes.boolean,
 };
 
 Blog.defaultProps = {
@@ -123,6 +125,7 @@ Blog.defaultProps = {
   metadata: {},
   description: '',
   thumbnail: {},
+  adsOn: false,
 };
 
 export async function getStaticPaths() {
