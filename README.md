@@ -1,1 +1,1 @@
-This is a starter template for [Learn Next.js](https://nextjs.org/learn).
+This is a the beginning of a recipe site built on the next.js starter utilizing Netlify CMS. All content can be added/editted through the Netlify CMS UI with permissions handled by Netlify Identity. Content is stored and version controlled in Git, to take advantage of the speed of static content on a next.js site.
